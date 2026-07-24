@@ -1,0 +1,4058 @@
+[submodule "art"]
+	path = art
+	url = https://github.com/bluestacks/art-a16.git
+
+[submodule "bionic"]
+	path = bionic
+	url = https://github.com/bluestacks/bionic-a16.git
+
+[submodule "bootable/deprecated-ota"]
+	path = bootable/deprecated-ota
+	url = https://github.com/bluestacks/bootable-deprecated-ota-a16.git
+
+[submodule "bootable/libbootloader"]
+	path = bootable/libbootloader
+	url = https://github.com/bluestacks/bootable-libbootloader-a16.git
+
+[submodule "bootable/recovery"]
+	path = bootable/recovery
+	url = https://github.com/bluestacks/bootable-recovery-a16.git
+
+[submodule "build/blueprint"]
+	path = build/blueprint
+	url = https://github.com/bluestacks/build-blueprint-a16.git
+
+[submodule "build/make"]
+	path = build/make
+	url = https://github.com/bluestacks/build-make-a16.git
+
+[submodule "build/pesto"]
+	path = build/pesto
+	url = https://github.com/bluestacks/build-pesto-a16.git
+
+[submodule "build/release"]
+	path = build/release
+	url = https://github.com/bluestacks/build-release-a16.git
+
+[submodule "build/soong"]
+	path = build/soong
+	url = https://github.com/bluestacks/build-soong-a16.git
+
+[submodule "cts"]
+	path = cts
+	url = https://github.com/bluestacks/cts-a16.git
+
+[submodule "dalvik"]
+	path = dalvik
+	url = https://github.com/bluestacks/dalvik-a16.git
+
+[submodule "developers/build"]
+	path = developers/build
+	url = https://github.com/bluestacks/developers-build-a16.git
+
+[submodule "developers/samples/android"]
+	path = developers/samples/android
+	url = https://github.com/bluestacks/developers-samples-android-a16.git
+
+[submodule "development"]
+	path = development
+	url = https://github.com/bluestacks/development-a16.git
+
+[submodule "device/amlogic/yukawa"]
+	path = device/amlogic/yukawa
+	url = https://github.com/bluestacks/device-amlogic-yukawa-a16.git
+
+[submodule "device/amlogic/yukawa-kernel"]
+	path = device/amlogic/yukawa-kernel
+	url = https://github.com/bluestacks/device-amlogic-yukawa-kernel-a16.git
+
+[submodule "device/common"]
+	path = device/common
+	url = https://github.com/bluestacks/device-common-a16.git
+
+[submodule "device/generic/arm64"]
+	path = device/generic/arm64
+	url = https://github.com/bluestacks/device-generic-arm64-a16.git
+
+[submodule "device/generic/armv7-a-neon"]
+	path = device/generic/armv7-a-neon
+	url = https://github.com/bluestacks/device-generic-armv7-a-neon-a16.git
+
+[submodule "device/generic/art"]
+	path = device/generic/art
+	url = https://github.com/bluestacks/device-generic-art-a16.git
+
+[submodule "device/generic/car"]
+	path = device/generic/car
+	url = https://github.com/bluestacks/device-generic-car-a16.git
+
+[submodule "device/generic/common"]
+	path = device/generic/common
+	url = https://github.com/bluestacks/device-generic-common-a16.git
+
+[submodule "device/generic/goldfish"]
+	path = device/generic/goldfish
+	url = https://github.com/bluestacks/device-generic-goldfish-a16.git
+
+[submodule "device/generic/trusty"]
+	path = device/generic/trusty
+	url = https://github.com/bluestacks/device-generic-trusty-a16.git
+
+[submodule "device/generic/x86"]
+	path = device/generic/x86
+	url = https://github.com/bluestacks/device-generic-x86-a16.git
+
+[submodule "device/generic/x86_64"]
+	path = device/generic/x86_64
+	url = https://github.com/bluestacks/device-generic-x86_64-a16.git
+
+[submodule "device/google/atv"]
+	path = device/google/atv
+	url = https://github.com/bluestacks/device-google-atv-a16.git
+
+[submodule "device/google/common/etm"]
+	path = device/google/common/etm
+	url = https://github.com/bluestacks/device-google-common-etm-a16.git
+
+[submodule "device/google/contexthub"]
+	path = device/google/contexthub
+	url = https://github.com/bluestacks/device-google-contexthub-a16.git
+
+[submodule "device/google/cuttlefish"]
+	path = device/google/cuttlefish
+	url = https://github.com/bluestacks/device-google-cuttlefish-a16.git
+
+[submodule "device/google/cuttlefish_prebuilts"]
+	path = device/google/cuttlefish_prebuilts
+	url = https://github.com/bluestacks/device-google-cuttlefish_prebuilts-a16.git
+
+[submodule "device/google/cuttlefish_vmm"]
+	path = device/google/cuttlefish_vmm
+	url = https://github.com/bluestacks/device-google-cuttlefish_vmm-a16.git
+
+[submodule "device/google/trout"]
+	path = device/google/trout
+	url = https://github.com/bluestacks/device-google-trout-a16.git
+
+[submodule "device/google_car"]
+	path = device/google_car
+	url = https://github.com/bluestacks/device-google_car-a16.git
+
+[submodule "device/linaro/dragonboard"]
+	path = device/linaro/dragonboard
+	url = https://github.com/bluestacks/device-linaro-dragonboard-a16.git
+
+[submodule "device/linaro/dragonboard-kernel"]
+	path = device/linaro/dragonboard-kernel
+	url = https://github.com/bluestacks/device-linaro-dragonboard-kernel-a16.git
+
+[submodule "device/linaro/hikey"]
+	path = device/linaro/hikey
+	url = https://github.com/bluestacks/device-linaro-hikey-a16.git
+
+[submodule "device/linaro/hikey-kernel"]
+	path = device/linaro/hikey-kernel
+	url = https://github.com/bluestacks/device-linaro-hikey-kernel-a16.git
+
+[submodule "device/sample"]
+	path = device/sample
+	url = https://github.com/bluestacks/device-sample-a16.git
+
+[submodule "external/AFLplusplus"]
+	path = external/AFLplusplus
+	url = https://github.com/bluestacks/external-AFLplusplus-a16.git
+
+[submodule "external/ComputeLibrary"]
+	path = external/ComputeLibrary
+	url = https://github.com/bluestacks/external-ComputeLibrary-a16.git
+
+[submodule "external/FP16"]
+	path = external/FP16
+	url = https://github.com/bluestacks/external-FP16-a16.git
+
+[submodule "external/FXdiv"]
+	path = external/FXdiv
+	url = https://github.com/bluestacks/external-FXdiv-a16.git
+
+[submodule "external/Little-CMS"]
+	path = external/Little-CMS
+	url = https://github.com/bluestacks/external-Little-CMS-a16.git
+
+[submodule "external/MPAndroidChart"]
+	path = external/MPAndroidChart
+	url = https://github.com/bluestacks/external-MPAndroidChart-a16.git
+
+[submodule "external/OpenCL-CLHPP"]
+	path = external/OpenCL-CLHPP
+	url = https://github.com/bluestacks/external-OpenCL-CLHPP-a16.git
+
+[submodule "external/OpenCL-CTS"]
+	path = external/OpenCL-CTS
+	url = https://github.com/bluestacks/external-OpenCL-CTS-a16.git
+
+[submodule "external/OpenCL-Headers"]
+	path = external/OpenCL-Headers
+	url = https://github.com/bluestacks/external-OpenCL-Headers-a16.git
+
+[submodule "external/OpenCL-ICD-Loader"]
+	path = external/OpenCL-ICD-Loader
+	url = https://github.com/bluestacks/external-OpenCL-ICD-Loader-a16.git
+
+[submodule "external/OpenCSD"]
+	path = external/OpenCSD
+	url = https://github.com/bluestacks/external-OpenCSD-a16.git
+
+[submodule "external/SPIRV-Headers"]
+	path = external/SPIRV-Headers
+	url = https://github.com/bluestacks/external-SPIRV-Headers-a16.git
+
+[submodule "external/SPIRV-Tools"]
+	path = external/SPIRV-Tools
+	url = https://github.com/bluestacks/external-SPIRV-Tools-a16.git
+
+[submodule "external/TestParameterInjector"]
+	path = external/TestParameterInjector
+	url = https://github.com/bluestacks/external-TestParameterInjector-a16.git
+
+[submodule "external/XMP-Toolkit-SDK"]
+	path = external/XMP-Toolkit-SDK
+	url = https://github.com/bluestacks/external-XMP-Toolkit-SDK-a16.git
+
+[submodule "external/XNNPACK"]
+	path = external/XNNPACK
+	url = https://github.com/bluestacks/external-XNNPACK-a16.git
+
+[submodule "external/aac"]
+	path = external/aac
+	url = https://github.com/bluestacks/external-aac-a16.git
+
+[submodule "external/abseil-cpp"]
+	path = external/abseil-cpp
+	url = https://github.com/bluestacks/external-abseil-cpp-a16.git
+
+[submodule "external/accessibility-test-framework"]
+	path = external/accessibility-test-framework
+	url = https://github.com/bluestacks/external-accessibility-test-framework-a16.git
+
+[submodule "external/accompanist"]
+	path = external/accompanist
+	url = https://github.com/bluestacks/external-accompanist-a16.git
+
+[submodule "external/android-key-attestation"]
+	path = external/android-key-attestation
+	url = https://github.com/bluestacks/external-android-key-attestation-a16.git
+
+[submodule "external/android-nn-driver"]
+	path = external/android-nn-driver
+	url = https://github.com/bluestacks/external-android-nn-driver-a16.git
+
+[submodule "external/android_onboarding"]
+	path = external/android_onboarding
+	url = https://github.com/bluestacks/external-android_onboarding-a16.git
+
+[submodule "external/androidplot"]
+	path = external/androidplot
+	url = https://github.com/bluestacks/external-androidplot-a16.git
+
+[submodule "external/angle"]
+	path = external/angle
+	url = https://github.com/bluestacks/external-angle-a16.git
+
+[submodule "external/anonymous-counting-tokens"]
+	path = external/anonymous-counting-tokens
+	url = https://github.com/bluestacks/external-anonymous-counting-tokens-a16.git
+
+[submodule "external/antlr"]
+	path = external/antlr
+	url = https://github.com/bluestacks/external-antlr-a16.git
+
+[submodule "external/apache-commons-bcel"]
+	path = external/apache-commons-bcel
+	url = https://github.com/bluestacks/external-apache-commons-bcel-a16.git
+
+[submodule "external/apache-commons-compress"]
+	path = external/apache-commons-compress
+	url = https://github.com/bluestacks/external-apache-commons-compress-a16.git
+
+[submodule "external/apache-commons-io"]
+	path = external/apache-commons-io
+	url = https://github.com/bluestacks/external-apache-commons-io-a16.git
+
+[submodule "external/apache-commons-lang"]
+	path = external/apache-commons-lang
+	url = https://github.com/bluestacks/external-apache-commons-lang-a16.git
+
+[submodule "external/apache-commons-math"]
+	path = external/apache-commons-math
+	url = https://github.com/bluestacks/external-apache-commons-math-a16.git
+
+[submodule "external/apache-harmony"]
+	path = external/apache-harmony
+	url = https://github.com/bluestacks/external-apache-harmony-a16.git
+
+[submodule "external/apache-http"]
+	path = external/apache-http
+	url = https://github.com/bluestacks/external-apache-http-a16.git
+
+[submodule "external/apache-velocity-engine"]
+	path = external/apache-velocity-engine
+	url = https://github.com/bluestacks/external-apache-velocity-engine-a16.git
+
+[submodule "external/apache-xml"]
+	path = external/apache-xml
+	url = https://github.com/bluestacks/external-apache-xml-a16.git
+
+[submodule "external/arm-neon-tests"]
+	path = external/arm-neon-tests
+	url = https://github.com/bluestacks/external-arm-neon-tests-a16.git
+
+[submodule "external/arm-optimized-routines"]
+	path = external/arm-optimized-routines
+	url = https://github.com/bluestacks/external-arm-optimized-routines-a16.git
+
+[submodule "external/arm-trusted-firmware"]
+	path = external/arm-trusted-firmware
+	url = https://github.com/bluestacks/external-arm-trusted-firmware-a16.git
+
+[submodule "external/armnn"]
+	path = external/armnn
+	url = https://github.com/bluestacks/external-armnn-a16.git
+
+[submodule "external/auto"]
+	path = external/auto
+	url = https://github.com/bluestacks/external-auto-a16.git
+
+[submodule "external/automotive-design-compose-protos"]
+	path = external/automotive-design-compose-protos
+	url = https://github.com/bluestacks/external-automotive-design-compose-protos-a16.git
+
+[submodule "external/avb"]
+	path = external/avb
+	url = https://github.com/bluestacks/external-avb-a16.git
+
+[submodule "external/aws-crt-java"]
+	path = external/aws-crt-java
+	url = https://github.com/bluestacks/external-aws-crt-java-a16.git
+
+[submodule "external/aws-eventstream-java"]
+	path = external/aws-eventstream-java
+	url = https://github.com/bluestacks/external-aws-eventstream-java-a16.git
+
+[submodule "external/aws-sdk-java-v2"]
+	path = external/aws-sdk-java-v2
+	url = https://github.com/bluestacks/external-aws-sdk-java-v2-a16.git
+
+[submodule "external/bazelbuild-remote-apis"]
+	path = external/bazelbuild-remote-apis
+	url = https://github.com/bluestacks/external-bazelbuild-remote-apis-a16.git
+
+[submodule "external/bc"]
+	path = external/bc
+	url = https://github.com/bluestacks/external-bc-a16.git
+
+[submodule "external/bcc"]
+	path = external/bcc
+	url = https://github.com/bluestacks/external-bcc-a16.git
+
+[submodule "external/blktrace"]
+	path = external/blktrace
+	url = https://github.com/bluestacks/external-blktrace-a16.git
+
+[submodule "external/boringssl"]
+	path = external/boringssl
+	url = https://github.com/bluestacks/external-boringssl-a16.git
+
+[submodule "external/bouncycastle"]
+	path = external/bouncycastle
+	url = https://github.com/bluestacks/external-bouncycastle-a16.git
+
+[submodule "external/bpftool"]
+	path = external/bpftool
+	url = https://github.com/bluestacks/external-bpftool-a16.git
+
+[submodule "external/brotli"]
+	path = external/brotli
+	url = https://github.com/bluestacks/external-brotli-a16.git
+
+[submodule "external/bsdiff"]
+	path = external/bsdiff
+	url = https://github.com/bluestacks/external-bsdiff-a16.git
+
+[submodule "external/bzip2"]
+	path = external/bzip2
+	url = https://github.com/bluestacks/external-bzip2-a16.git
+
+[submodule "external/cairo"]
+	path = external/cairo
+	url = https://github.com/bluestacks/external-cairo-a16.git
+
+[submodule "external/caliper"]
+	path = external/caliper
+	url = https://github.com/bluestacks/external-caliper-a16.git
+
+[submodule "external/capstone"]
+	path = external/capstone
+	url = https://github.com/bluestacks/external-capstone-a16.git
+
+[submodule "external/cblas"]
+	path = external/cblas
+	url = https://github.com/bluestacks/external-cblas-a16.git
+
+[submodule "external/cbor-java"]
+	path = external/cbor-java
+	url = https://github.com/bluestacks/external-cbor-java-a16.git
+
+[submodule "external/chromium-crossbench"]
+	path = external/chromium-crossbench
+	url = https://github.com/bluestacks/external-chromium-crossbench-a16.git
+
+[submodule "external/chromium-trace"]
+	path = external/chromium-trace
+	url = https://github.com/bluestacks/external-chromium-trace-a16.git
+
+[submodule "external/chromium-web-tests"]
+	path = external/chromium-web-tests
+	url = https://github.com/bluestacks/external-chromium-web-tests-a16.git
+
+[submodule "external/chromium-webview"]
+	path = external/chromium-webview
+	url = https://github.com/bluestacks/external-chromium-webview-a16.git
+
+[submodule "external/chromiumos-config"]
+	path = external/chromiumos-config
+	url = https://github.com/bluestacks/external-chromiumos-config-a16.git
+
+[submodule "external/clang"]
+	path = external/clang
+	url = https://github.com/bluestacks/external-clang-a16.git
+
+[submodule "external/cldr"]
+	path = external/cldr
+	url = https://github.com/bluestacks/external-cldr-a16.git
+
+[submodule "external/clpeak"]
+	path = external/clpeak
+	url = https://github.com/bluestacks/external-clpeak-a16.git
+
+[submodule "external/clspv"]
+	path = external/clspv
+	url = https://github.com/bluestacks/external-clspv-a16.git
+
+[submodule "external/clvk"]
+	path = external/clvk
+	url = https://github.com/bluestacks/external-clvk-a16.git
+
+[submodule "external/cn-cbor"]
+	path = external/cn-cbor
+	url = https://github.com/bluestacks/external-cn-cbor-a16.git
+
+[submodule "external/compiler-rt"]
+	path = external/compiler-rt
+	url = https://github.com/bluestacks/external-compiler-rt-a16.git
+
+[submodule "external/connectedappssdk"]
+	path = external/connectedappssdk
+	url = https://github.com/bluestacks/external-connectedappssdk-a16.git
+
+[submodule "external/conscrypt"]
+	path = external/conscrypt
+	url = https://github.com/bluestacks/external-conscrypt-a16.git
+
+[submodule "external/coreboot"]
+	path = external/coreboot
+	url = https://github.com/bluestacks/external-coreboot-a16.git
+
+[submodule "external/cpu_features"]
+	path = external/cpu_features
+	url = https://github.com/bluestacks/external-cpu_features-a16.git
+
+[submodule "external/cpuinfo"]
+	path = external/cpuinfo
+	url = https://github.com/bluestacks/external-cpuinfo-a16.git
+
+[submodule "external/cronet"]
+	path = external/cronet
+	url = https://github.com/bluestacks/external-cronet-a16.git
+
+[submodule "external/crosvm"]
+	path = external/crosvm
+	url = https://github.com/bluestacks/external-crosvm-a16.git
+
+[submodule "external/curl"]
+	path = external/curl
+	url = https://github.com/bluestacks/external-curl-a16.git
+
+[submodule "external/dagger2"]
+	path = external/dagger2
+	url = https://github.com/bluestacks/external-dagger2-a16.git
+
+[submodule "external/deqp"]
+	path = external/deqp
+	url = https://github.com/bluestacks/external-deqp-a16.git
+
+[submodule "external/deqp-deps/SPIRV-Headers"]
+	path = external/deqp-deps/SPIRV-Headers
+	url = https://github.com/bluestacks/external-deqp-deps-SPIRV-Headers-a16.git
+
+[submodule "external/deqp-deps/SPIRV-Tools"]
+	path = external/deqp-deps/SPIRV-Tools
+	url = https://github.com/bluestacks/external-deqp-deps-SPIRV-Tools-a16.git
+
+[submodule "external/deqp-deps/amber"]
+	path = external/deqp-deps/amber
+	url = https://github.com/bluestacks/external-deqp-deps-amber-a16.git
+
+[submodule "external/deqp-deps/glslang"]
+	path = external/deqp-deps/glslang
+	url = https://github.com/bluestacks/external-deqp-deps-glslang-a16.git
+
+[submodule "external/dexmaker"]
+	path = external/dexmaker
+	url = https://github.com/bluestacks/external-dexmaker-a16.git
+
+[submodule "external/dlmalloc"]
+	path = external/dlmalloc
+	url = https://github.com/bluestacks/external-dlmalloc-a16.git
+
+[submodule "external/dng_sdk"]
+	path = external/dng_sdk
+	url = https://github.com/bluestacks/external-dng_sdk-a16.git
+
+[submodule "external/dnsmasq"]
+	path = external/dnsmasq
+	url = https://github.com/bluestacks/external-dnsmasq-a16.git
+
+[submodule "external/doclava"]
+	path = external/doclava
+	url = https://github.com/bluestacks/external-doclava-a16.git
+
+[submodule "external/dokka"]
+	path = external/dokka
+	url = https://github.com/bluestacks/external-dokka-a16.git
+
+[submodule "external/double-conversion"]
+	path = external/double-conversion
+	url = https://github.com/bluestacks/external-double-conversion-a16.git
+
+[submodule "external/downloader"]
+	path = external/downloader
+	url = https://github.com/bluestacks/external-downloader-a16.git
+
+[submodule "external/drm_hwcomposer"]
+	path = external/drm_hwcomposer
+	url = https://github.com/bluestacks/external-drm_hwcomposer-a16.git
+
+[submodule "external/dtc"]
+	path = external/dtc
+	url = https://github.com/bluestacks/external-dtc-a16.git
+
+[submodule "external/dynamic_depth"]
+	path = external/dynamic_depth
+	url = https://github.com/bluestacks/external-dynamic_depth-a16.git
+
+[submodule "external/e2fsprogs"]
+	path = external/e2fsprogs
+	url = https://github.com/bluestacks/external-e2fsprogs-a16.git
+
+[submodule "external/easymock"]
+	path = external/easymock
+	url = https://github.com/bluestacks/external-easymock-a16.git
+
+[submodule "external/eigen"]
+	path = external/eigen
+	url = https://github.com/bluestacks/external-eigen-a16.git
+
+[submodule "external/elfutils"]
+	path = external/elfutils
+	url = https://github.com/bluestacks/external-elfutils-a16.git
+
+[submodule "external/emboss"]
+	path = external/emboss
+	url = https://github.com/bluestacks/external-emboss-a16.git
+
+[submodule "external/emma"]
+	path = external/emma
+	url = https://github.com/bluestacks/external-emma-a16.git
+
+[submodule "external/epson-inkjet-printer-escpr"]
+	path = external/epson-inkjet-printer-escpr
+	url = https://github.com/bluestacks/external-epson-inkjet-printer-escpr-a16.git
+
+[submodule "external/erofs-utils"]
+	path = external/erofs-utils
+	url = https://github.com/bluestacks/external-erofs-utils-a16.git
+
+[submodule "external/error_prone"]
+	path = external/error_prone
+	url = https://github.com/bluestacks/external-error_prone-a16.git
+
+[submodule "external/escapevelocity"]
+	path = external/escapevelocity
+	url = https://github.com/bluestacks/external-escapevelocity-a16.git
+
+[submodule "external/ethtool"]
+	path = external/ethtool
+	url = https://github.com/bluestacks/external-ethtool-a16.git
+
+[submodule "external/executorch"]
+	path = external/executorch
+	url = https://github.com/bluestacks/external-executorch-a16.git
+
+[submodule "external/exfatprogs"]
+	path = external/exfatprogs
+	url = https://github.com/bluestacks/external-exfatprogs-a16.git
+
+[submodule "external/exoplayer"]
+	path = external/exoplayer
+	url = https://github.com/bluestacks/external-exoplayer-a16.git
+
+[submodule "external/expat"]
+	path = external/expat
+	url = https://github.com/bluestacks/external-expat-a16.git
+
+[submodule "external/f2fs-tools"]
+	path = external/f2fs-tools
+	url = https://github.com/bluestacks/external-f2fs-tools-a16.git
+
+[submodule "external/fastrpc"]
+	path = external/fastrpc
+	url = https://github.com/bluestacks/external-fastrpc-a16.git
+
+[submodule "external/fbjni"]
+	path = external/fbjni
+	url = https://github.com/bluestacks/external-fbjni-a16.git
+
+[submodule "external/fdlibm"]
+	path = external/fdlibm
+	url = https://github.com/bluestacks/external-fdlibm-a16.git
+
+[submodule "external/fec"]
+	path = external/fec
+	url = https://github.com/bluestacks/external-fec-a16.git
+
+[submodule "external/federated-compute"]
+	path = external/federated-compute
+	url = https://github.com/bluestacks/external-federated-compute-a16.git
+
+[submodule "external/fft2d"]
+	path = external/fft2d
+	url = https://github.com/bluestacks/external-fft2d-a16.git
+
+[submodule "external/fhir/spec/r4"]
+	path = external/fhir/spec/r4
+	url = https://github.com/bluestacks/external-fhir-spec-r4-a16.git
+
+[submodule "external/fio"]
+	path = external/fio
+	url = https://github.com/bluestacks/external-fio-a16.git
+
+[submodule "external/firebase-messaging"]
+	path = external/firebase-messaging
+	url = https://github.com/bluestacks/external-firebase-messaging-a16.git
+
+[submodule "external/flac"]
+	path = external/flac
+	url = https://github.com/bluestacks/external-flac-a16.git
+
+[submodule "external/flashrom"]
+	path = external/flashrom
+	url = https://github.com/bluestacks/external-flashrom-a16.git
+
+[submodule "external/flatbuffers"]
+	path = external/flatbuffers
+	url = https://github.com/bluestacks/external-flatbuffers-a16.git
+
+[submodule "external/fmtlib"]
+	path = external/fmtlib
+	url = https://github.com/bluestacks/external-fmtlib-a16.git
+
+[submodule "external/fonttools"]
+	path = external/fonttools
+	url = https://github.com/bluestacks/external-fonttools-a16.git
+
+[submodule "external/freetype"]
+	path = external/freetype
+	url = https://github.com/bluestacks/external-freetype-a16.git
+
+[submodule "external/fsck_msdos"]
+	path = external/fsck_msdos
+	url = https://github.com/bluestacks/external-fsck_msdos-a16.git
+
+[submodule "external/fsverity-utils"]
+	path = external/fsverity-utils
+	url = https://github.com/bluestacks/external-fsverity-utils-a16.git
+
+[submodule "external/gemmlowp"]
+	path = external/gemmlowp
+	url = https://github.com/bluestacks/external-gemmlowp-a16.git
+
+[submodule "external/geojson-jackson"]
+	path = external/geojson-jackson
+	url = https://github.com/bluestacks/external-geojson-jackson-a16.git
+
+[submodule "external/geonames"]
+	path = external/geonames
+	url = https://github.com/bluestacks/external-geonames-a16.git
+
+[submodule "external/gflags"]
+	path = external/gflags
+	url = https://github.com/bluestacks/external-gflags-a16.git
+
+[submodule "external/giflib"]
+	path = external/giflib
+	url = https://github.com/bluestacks/external-giflib-a16.git
+
+[submodule "external/glide"]
+	path = external/glide
+	url = https://github.com/bluestacks/external-glide-a16.git
+
+[submodule "external/gmmlib"]
+	path = external/gmmlib
+	url = https://github.com/bluestacks/external-gmmlib-a16.git
+
+[submodule "external/go-cmp"]
+	path = external/go-cmp
+	url = https://github.com/bluestacks/external-go-cmp-a16.git
+
+[submodule "external/golang-protobuf"]
+	path = external/golang-protobuf
+	url = https://github.com/bluestacks/external-golang-protobuf-a16.git
+
+[submodule "external/google-auth-library-java"]
+	path = external/google-auth-library-java
+	url = https://github.com/bluestacks/external-google-auth-library-java-a16.git
+
+[submodule "external/google-benchmark"]
+	path = external/google-benchmark
+	url = https://github.com/bluestacks/external-google-benchmark-a16.git
+
+[submodule "external/google-breakpad"]
+	path = external/google-breakpad
+	url = https://github.com/bluestacks/external-google-breakpad-a16.git
+
+[submodule "external/google-cloud-java"]
+	path = external/google-cloud-java
+	url = https://github.com/bluestacks/external-google-cloud-java-a16.git
+
+[submodule "external/google-fonts/arbutus-slab"]
+	path = external/google-fonts/arbutus-slab
+	url = https://github.com/bluestacks/external-google-fonts-arbutus-slab-a16.git
+
+[submodule "external/google-fonts/arvo"]
+	path = external/google-fonts/arvo
+	url = https://github.com/bluestacks/external-google-fonts-arvo-a16.git
+
+[submodule "external/google-fonts/barlow"]
+	path = external/google-fonts/barlow
+	url = https://github.com/bluestacks/external-google-fonts-barlow-a16.git
+
+[submodule "external/google-fonts/big-shoulders-text"]
+	path = external/google-fonts/big-shoulders-text
+	url = https://github.com/bluestacks/external-google-fonts-big-shoulders-text-a16.git
+
+[submodule "external/google-fonts/carrois-gothic-sc"]
+	path = external/google-fonts/carrois-gothic-sc
+	url = https://github.com/bluestacks/external-google-fonts-carrois-gothic-sc-a16.git
+
+[submodule "external/google-fonts/coming-soon"]
+	path = external/google-fonts/coming-soon
+	url = https://github.com/bluestacks/external-google-fonts-coming-soon-a16.git
+
+[submodule "external/google-fonts/cutive-mono"]
+	path = external/google-fonts/cutive-mono
+	url = https://github.com/bluestacks/external-google-fonts-cutive-mono-a16.git
+
+[submodule "external/google-fonts/dancing-script"]
+	path = external/google-fonts/dancing-script
+	url = https://github.com/bluestacks/external-google-fonts-dancing-script-a16.git
+
+[submodule "external/google-fonts/fraunces"]
+	path = external/google-fonts/fraunces
+	url = https://github.com/bluestacks/external-google-fonts-fraunces-a16.git
+
+[submodule "external/google-fonts/karla"]
+	path = external/google-fonts/karla
+	url = https://github.com/bluestacks/external-google-fonts-karla-a16.git
+
+[submodule "external/google-fonts/lato"]
+	path = external/google-fonts/lato
+	url = https://github.com/bluestacks/external-google-fonts-lato-a16.git
+
+[submodule "external/google-fonts/lustria"]
+	path = external/google-fonts/lustria
+	url = https://github.com/bluestacks/external-google-fonts-lustria-a16.git
+
+[submodule "external/google-fonts/rubik"]
+	path = external/google-fonts/rubik
+	url = https://github.com/bluestacks/external-google-fonts-rubik-a16.git
+
+[submodule "external/google-fonts/source-sans-pro"]
+	path = external/google-fonts/source-sans-pro
+	url = https://github.com/bluestacks/external-google-fonts-source-sans-pro-a16.git
+
+[submodule "external/google-fonts/zilla-slab"]
+	path = external/google-fonts/zilla-slab
+	url = https://github.com/bluestacks/external-google-fonts-zilla-slab-a16.git
+
+[submodule "external/google-fruit"]
+	path = external/google-fruit
+	url = https://github.com/bluestacks/external-google-fruit-a16.git
+
+[submodule "external/google-highway"]
+	path = external/google-highway
+	url = https://github.com/bluestacks/external-google-highway-a16.git
+
+[submodule "external/google-java-format"]
+	path = external/google-java-format
+	url = https://github.com/bluestacks/external-google-java-format-a16.git
+
+[submodule "external/google-smali"]
+	path = external/google-smali
+	url = https://github.com/bluestacks/external-google-smali-a16.git
+
+[submodule "external/googleapis"]
+	path = external/googleapis
+	url = https://github.com/bluestacks/external-googleapis-a16.git
+
+[submodule "external/googletest"]
+	path = external/googletest
+	url = https://github.com/bluestacks/external-googletest-a16.git
+
+[submodule "external/gptfdisk"]
+	path = external/gptfdisk
+	url = https://github.com/bluestacks/external-gptfdisk-a16.git
+
+[submodule "external/grpc-grpc"]
+	path = external/grpc-grpc
+	url = https://github.com/bluestacks/external-grpc-grpc-a16.git
+
+[submodule "external/grpc-grpc-java"]
+	path = external/grpc-grpc-java
+	url = https://github.com/bluestacks/external-grpc-grpc-java-a16.git
+
+[submodule "external/gsc-utils"]
+	path = external/gsc-utils
+	url = https://github.com/bluestacks/external-gsc-utils-a16.git
+
+[submodule "external/gson"]
+	path = external/gson
+	url = https://github.com/bluestacks/external-gson-a16.git
+
+[submodule "external/gturri-aXMLRPC"]
+	path = external/gturri-aXMLRPC
+	url = https://github.com/bluestacks/external-gturri-aXMLRPC-a16.git
+
+[submodule "external/gturri-jISO8601"]
+	path = external/gturri-jISO8601
+	url = https://github.com/bluestacks/external-gturri-jISO8601-a16.git
+
+[submodule "external/guava"]
+	path = external/guava
+	url = https://github.com/bluestacks/external-guava-a16.git
+
+[submodule "external/guice"]
+	path = external/guice
+	url = https://github.com/bluestacks/external-guice-a16.git
+
+[submodule "external/gwp_asan"]
+	path = external/gwp_asan
+	url = https://github.com/bluestacks/external-gwp_asan-a16.git
+
+[submodule "external/hafnium"]
+	path = external/hafnium
+	url = https://github.com/bluestacks/external-hafnium-a16.git
+
+[submodule "external/hamcrest"]
+	path = external/hamcrest
+	url = https://github.com/bluestacks/external-hamcrest-a16.git
+
+[submodule "external/harfbuzz_ng"]
+	path = external/harfbuzz_ng
+	url = https://github.com/bluestacks/external-harfbuzz_ng-a16.git
+
+[submodule "external/hplip"]
+	path = external/hplip
+	url = https://github.com/bluestacks/external-hplip-a16.git
+
+[submodule "external/hyphenation-patterns"]
+	path = external/hyphenation-patterns
+	url = https://github.com/bluestacks/external-hyphenation-patterns-a16.git
+
+[submodule "external/iamf_tools"]
+	path = external/iamf_tools
+	url = https://github.com/bluestacks/external-iamf_tools-a16.git
+
+[submodule "external/icing"]
+	path = external/icing
+	url = https://github.com/bluestacks/external-icing-a16.git
+
+[submodule "external/icu"]
+	path = external/icu
+	url = https://github.com/bluestacks/external-icu-a16.git
+
+[submodule "external/igt-gpu-tools"]
+	path = external/igt-gpu-tools
+	url = https://github.com/bluestacks/external-igt-gpu-tools-a16.git
+
+[submodule "external/image_io"]
+	path = external/image_io
+	url = https://github.com/bluestacks/external-image_io-a16.git
+
+[submodule "external/ims"]
+	path = external/ims
+	url = https://github.com/bluestacks/external-ims-a16.git
+
+[submodule "external/intel-pmt-metadata"]
+	path = external/intel-pmt-metadata
+	url = https://github.com/bluestacks/external-intel-pmt-metadata-a16.git
+
+[submodule "external/iperf3"]
+	path = external/iperf3
+	url = https://github.com/bluestacks/external-iperf3-a16.git
+
+[submodule "external/iproute2"]
+	path = external/iproute2
+	url = https://github.com/bluestacks/external-iproute2-a16.git
+
+[submodule "external/iptables"]
+	path = external/iptables
+	url = https://github.com/bluestacks/external-iptables-a16.git
+
+[submodule "external/iputils"]
+	path = external/iputils
+	url = https://github.com/bluestacks/external-iputils-a16.git
+
+[submodule "external/iw"]
+	path = external/iw
+	url = https://github.com/bluestacks/external-iw-a16.git
+
+[submodule "external/jackson-annotations"]
+	path = external/jackson-annotations
+	url = https://github.com/bluestacks/external-jackson-annotations-a16.git
+
+[submodule "external/jackson-core"]
+	path = external/jackson-core
+	url = https://github.com/bluestacks/external-jackson-core-a16.git
+
+[submodule "external/jackson-databind"]
+	path = external/jackson-databind
+	url = https://github.com/bluestacks/external-jackson-databind-a16.git
+
+[submodule "external/jacoco"]
+	path = external/jacoco
+	url = https://github.com/bluestacks/external-jacoco-a16.git
+
+[submodule "external/jakarta.inject"]
+	path = external/jakarta.inject
+	url = https://github.com/bluestacks/external-jakarta.inject-a16.git
+
+[submodule "external/jarjar"]
+	path = external/jarjar
+	url = https://github.com/bluestacks/external-jarjar-a16.git
+
+[submodule "external/javaparser"]
+	path = external/javaparser
+	url = https://github.com/bluestacks/external-javaparser-a16.git
+
+[submodule "external/javapoet"]
+	path = external/javapoet
+	url = https://github.com/bluestacks/external-javapoet-a16.git
+
+[submodule "external/javasqlite"]
+	path = external/javasqlite
+	url = https://github.com/bluestacks/external-javasqlite-a16.git
+
+[submodule "external/javassist"]
+	path = external/javassist
+	url = https://github.com/bluestacks/external-javassist-a16.git
+
+[submodule "external/jazzer-api"]
+	path = external/jazzer-api
+	url = https://github.com/bluestacks/external-jazzer-api-a16.git
+
+[submodule "external/jcommander"]
+	path = external/jcommander
+	url = https://github.com/bluestacks/external-jcommander-a16.git
+
+[submodule "external/jemalloc_new"]
+	path = external/jemalloc_new
+	url = https://github.com/bluestacks/external-jemalloc_new-a16.git
+
+[submodule "external/jetpack-camera-app"]
+	path = external/jetpack-camera-app
+	url = https://github.com/bluestacks/external-jetpack-camera-app-a16.git
+
+[submodule "external/jimfs"]
+	path = external/jimfs
+	url = https://github.com/bluestacks/external-jimfs-a16.git
+
+[submodule "external/jline"]
+	path = external/jline
+	url = https://github.com/bluestacks/external-jline-a16.git
+
+[submodule "external/jsilver"]
+	path = external/jsilver
+	url = https://github.com/bluestacks/external-jsilver-a16.git
+
+[submodule "external/jsmn"]
+	path = external/jsmn
+	url = https://github.com/bluestacks/external-jsmn-a16.git
+
+[submodule "external/json-schema-validator"]
+	path = external/json-schema-validator
+	url = https://github.com/bluestacks/external-json-schema-validator-a16.git
+
+[submodule "external/jsoncpp"]
+	path = external/jsoncpp
+	url = https://github.com/bluestacks/external-jsoncpp-a16.git
+
+[submodule "external/jsoup"]
+	path = external/jsoup
+	url = https://github.com/bluestacks/external-jsoup-a16.git
+
+[submodule "external/jspecify"]
+	path = external/jspecify
+	url = https://github.com/bluestacks/external-jspecify-a16.git
+
+[submodule "external/jsr305"]
+	path = external/jsr305
+	url = https://github.com/bluestacks/external-jsr305-a16.git
+
+[submodule "external/jsr330"]
+	path = external/jsr330
+	url = https://github.com/bluestacks/external-jsr330-a16.git
+
+[submodule "external/junit"]
+	path = external/junit
+	url = https://github.com/bluestacks/external-junit-a16.git
+
+[submodule "external/junit-params"]
+	path = external/junit-params
+	url = https://github.com/bluestacks/external-junit-params-a16.git
+
+[submodule "external/jxmpp"]
+	path = external/jxmpp
+	url = https://github.com/bluestacks/external-jxmpp-a16.git
+
+[submodule "external/kernel-headers"]
+	path = external/kernel-headers
+	url = https://github.com/bluestacks/external-kernel-headers-a16.git
+
+[submodule "external/kmod"]
+	path = external/kmod
+	url = https://github.com/bluestacks/external-kmod-a16.git
+
+[submodule "external/kotlin-compose-compiler"]
+	path = external/kotlin-compose-compiler
+	url = https://github.com/bluestacks/external-kotlin-compose-compiler-a16.git
+
+[submodule "external/kotlin.metadata"]
+	path = external/kotlin.metadata
+	url = https://github.com/bluestacks/external-kotlin.metadata-a16.git
+
+[submodule "external/kotlinc"]
+	path = external/kotlinc
+	url = https://github.com/bluestacks/external-kotlinc-a16.git
+
+[submodule "external/kotlinpoet"]
+	path = external/kotlinpoet
+	url = https://github.com/bluestacks/external-kotlinpoet-a16.git
+
+[submodule "external/kotlinx.atomicfu"]
+	path = external/kotlinx.atomicfu
+	url = https://github.com/bluestacks/external-kotlinx.atomicfu-a16.git
+
+[submodule "external/kotlinx.coroutines"]
+	path = external/kotlinx.coroutines
+	url = https://github.com/bluestacks/external-kotlinx.coroutines-a16.git
+
+[submodule "external/kotlinx.metadata"]
+	path = external/kotlinx.metadata
+	url = https://github.com/bluestacks/external-kotlinx.metadata-a16.git
+
+[submodule "external/kotlinx.serialization"]
+	path = external/kotlinx.serialization
+	url = https://github.com/bluestacks/external-kotlinx.serialization-a16.git
+
+[submodule "external/ksoap2"]
+	path = external/ksoap2
+	url = https://github.com/bluestacks/external-ksoap2-a16.git
+
+[submodule "external/ksp"]
+	path = external/ksp
+	url = https://github.com/bluestacks/external-ksp-a16.git
+
+[submodule "external/ktfmt"]
+	path = external/ktfmt
+	url = https://github.com/bluestacks/external-ktfmt-a16.git
+
+[submodule "external/leakcanary2"]
+	path = external/leakcanary2
+	url = https://github.com/bluestacks/external-leakcanary2-a16.git
+
+[submodule "external/leveldb"]
+	path = external/leveldb
+	url = https://github.com/bluestacks/external-leveldb-a16.git
+
+[submodule "external/libaom"]
+	path = external/libaom
+	url = https://github.com/bluestacks/external-libaom-a16.git
+
+[submodule "external/libavc"]
+	path = external/libavc
+	url = https://github.com/bluestacks/external-libavc-a16.git
+
+[submodule "external/libbackup"]
+	path = external/libbackup
+	url = https://github.com/bluestacks/external-libbackup-a16.git
+
+[submodule "external/libbpf"]
+	path = external/libbpf
+	url = https://github.com/bluestacks/external-libbpf-a16.git
+
+[submodule "external/libbrillo"]
+	path = external/libbrillo
+	url = https://github.com/bluestacks/external-libbrillo-a16.git
+
+[submodule "external/libcamera"]
+	path = external/libcamera
+	url = https://github.com/bluestacks/external-libcamera-a16.git
+
+[submodule "external/libcap"]
+	path = external/libcap
+	url = https://github.com/bluestacks/external-libcap-a16.git
+
+[submodule "external/libcap-ng"]
+	path = external/libcap-ng
+	url = https://github.com/bluestacks/external-libcap-ng-a16.git
+
+[submodule "external/libchrome"]
+	path = external/libchrome
+	url = https://github.com/bluestacks/external-libchrome-a16.git
+
+[submodule "external/libchrome-gestures"]
+	path = external/libchrome-gestures
+	url = https://github.com/bluestacks/external-libchrome-gestures-a16.git
+
+[submodule "external/libconfig"]
+	path = external/libconfig
+	url = https://github.com/bluestacks/external-libconfig-a16.git
+
+[submodule "external/libcups"]
+	path = external/libcups
+	url = https://github.com/bluestacks/external-libcups-a16.git
+
+[submodule "external/libcupsfilters"]
+	path = external/libcupsfilters
+	url = https://github.com/bluestacks/external-libcupsfilters-a16.git
+
+[submodule "external/libcxx"]
+	path = external/libcxx
+	url = https://github.com/bluestacks/external-libcxx-a16.git
+
+[submodule "external/libcxxabi"]
+	path = external/libcxxabi
+	url = https://github.com/bluestacks/external-libcxxabi-a16.git
+
+[submodule "external/libdav1d"]
+	path = external/libdav1d
+	url = https://github.com/bluestacks/external-libdav1d-a16.git
+
+[submodule "external/libdisplay-info"]
+	path = external/libdisplay-info
+	url = https://github.com/bluestacks/external-libdisplay-info-a16.git
+
+[submodule "external/libdivsufsort"]
+	path = external/libdivsufsort
+	url = https://github.com/bluestacks/external-libdivsufsort-a16.git
+
+[submodule "external/libdrm"]
+	path = external/libdrm
+	url = https://github.com/bluestacks/external-libdrm-a16.git
+
+[submodule "external/libepoxy"]
+	path = external/libepoxy
+	url = https://github.com/bluestacks/external-libepoxy-a16.git
+
+[submodule "external/libese"]
+	path = external/libese
+	url = https://github.com/bluestacks/external-libese-a16.git
+
+[submodule "external/libevent"]
+	path = external/libevent
+	url = https://github.com/bluestacks/external-libevent-a16.git
+
+[submodule "external/libexif"]
+	path = external/libexif
+	url = https://github.com/bluestacks/external-libexif-a16.git
+
+[submodule "external/libffi"]
+	path = external/libffi
+	url = https://github.com/bluestacks/external-libffi-a16.git
+
+[submodule "external/libfuse"]
+	path = external/libfuse
+	url = https://github.com/bluestacks/external-libfuse-a16.git
+
+[submodule "external/libgav1"]
+	path = external/libgav1
+	url = https://github.com/bluestacks/external-libgav1-a16.git
+
+[submodule "external/libgsm"]
+	path = external/libgsm
+	url = https://github.com/bluestacks/external-libgsm-a16.git
+
+[submodule "external/libhevc"]
+	path = external/libhevc
+	url = https://github.com/bluestacks/external-libhevc-a16.git
+
+[submodule "external/libjpeg-turbo"]
+	path = external/libjpeg-turbo
+	url = https://github.com/bluestacks/external-libjpeg-turbo-a16.git
+
+[submodule "external/libjxl"]
+	path = external/libjxl
+	url = https://github.com/bluestacks/external-libjxl-a16.git
+
+[submodule "external/libkmsxx"]
+	path = external/libkmsxx
+	url = https://github.com/bluestacks/external-libkmsxx-a16.git
+
+[submodule "external/liblc3"]
+	path = external/liblc3
+	url = https://github.com/bluestacks/external-liblc3-a16.git
+
+[submodule "external/libldac"]
+	path = external/libldac
+	url = https://github.com/bluestacks/external-libldac-a16.git
+
+[submodule "external/libmonet"]
+	path = external/libmonet
+	url = https://github.com/bluestacks/external-libmonet-a16.git
+
+[submodule "external/libmpeg2"]
+	path = external/libmpeg2
+	url = https://github.com/bluestacks/external-libmpeg2-a16.git
+
+[submodule "external/libnetfilter_conntrack"]
+	path = external/libnetfilter_conntrack
+	url = https://github.com/bluestacks/external-libnetfilter_conntrack-a16.git
+
+[submodule "external/libnfnetlink"]
+	path = external/libnfnetlink
+	url = https://github.com/bluestacks/external-libnfnetlink-a16.git
+
+[submodule "external/libnl"]
+	path = external/libnl
+	url = https://github.com/bluestacks/external-libnl-a16.git
+
+[submodule "external/libogg"]
+	path = external/libogg
+	url = https://github.com/bluestacks/external-libogg-a16.git
+
+[submodule "external/libopenapv"]
+	path = external/libopenapv
+	url = https://github.com/bluestacks/external-libopenapv-a16.git
+
+[submodule "external/libopus"]
+	path = external/libopus
+	url = https://github.com/bluestacks/external-libopus-a16.git
+
+[submodule "external/libpalmrejection"]
+	path = external/libpalmrejection
+	url = https://github.com/bluestacks/external-libpalmrejection-a16.git
+
+[submodule "external/libpcap"]
+	path = external/libpcap
+	url = https://github.com/bluestacks/external-libpcap-a16.git
+
+[submodule "external/libpciaccess"]
+	path = external/libpciaccess
+	url = https://github.com/bluestacks/external-libpciaccess-a16.git
+
+[submodule "external/libphonenumber"]
+	path = external/libphonenumber
+	url = https://github.com/bluestacks/external-libphonenumber-a16.git
+
+[submodule "external/libpng"]
+	path = external/libpng
+	url = https://github.com/bluestacks/external-libpng-a16.git
+
+[submodule "external/libppd"]
+	path = external/libppd
+	url = https://github.com/bluestacks/external-libppd-a16.git
+
+[submodule "external/libprotobuf-mutator"]
+	path = external/libprotobuf-mutator
+	url = https://github.com/bluestacks/external-libprotobuf-mutator-a16.git
+
+[submodule "external/libsrtp2"]
+	path = external/libsrtp2
+	url = https://github.com/bluestacks/external-libsrtp2-a16.git
+
+[submodule "external/libtextclassifier"]
+	path = external/libtextclassifier
+	url = https://github.com/bluestacks/external-libtextclassifier-a16.git
+
+[submodule "external/libtraceevent"]
+	path = external/libtraceevent
+	url = https://github.com/bluestacks/external-libtraceevent-a16.git
+
+[submodule "external/libtracefs"]
+	path = external/libtracefs
+	url = https://github.com/bluestacks/external-libtracefs-a16.git
+
+[submodule "external/libudev-zero"]
+	path = external/libudev-zero
+	url = https://github.com/bluestacks/external-libudev-zero-a16.git
+
+[submodule "external/libultrahdr"]
+	path = external/libultrahdr
+	url = https://github.com/bluestacks/external-libultrahdr-a16.git
+
+[submodule "external/liburing"]
+	path = external/liburing
+	url = https://github.com/bluestacks/external-liburing-a16.git
+
+[submodule "external/libusb"]
+	path = external/libusb
+	url = https://github.com/bluestacks/external-libusb-a16.git
+
+[submodule "external/libutf"]
+	path = external/libutf
+	url = https://github.com/bluestacks/external-libutf-a16.git
+
+[submodule "external/libva"]
+	path = external/libva
+	url = https://github.com/bluestacks/external-libva-a16.git
+
+[submodule "external/libva-utils"]
+	path = external/libva-utils
+	url = https://github.com/bluestacks/external-libva-utils-a16.git
+
+[submodule "external/libvpx"]
+	path = external/libvpx
+	url = https://github.com/bluestacks/external-libvpx-a16.git
+
+[submodule "external/libwebm"]
+	path = external/libwebm
+	url = https://github.com/bluestacks/external-libwebm-a16.git
+
+[submodule "external/libwebsockets"]
+	path = external/libwebsockets
+	url = https://github.com/bluestacks/external-libwebsockets-a16.git
+
+[submodule "external/libxaac"]
+	path = external/libxaac
+	url = https://github.com/bluestacks/external-libxaac-a16.git
+
+[submodule "external/libxkbcommon"]
+	path = external/libxkbcommon
+	url = https://github.com/bluestacks/external-libxkbcommon-a16.git
+
+[submodule "external/libxml2"]
+	path = external/libxml2
+	url = https://github.com/bluestacks/external-libxml2-a16.git
+
+[submodule "external/libyaml"]
+	path = external/libyaml
+	url = https://github.com/bluestacks/external-libyaml-a16.git
+
+[submodule "external/libyuv"]
+	path = external/libyuv
+	url = https://github.com/bluestacks/external-libyuv-a16.git
+
+[submodule "external/licenseclassifier"]
+	path = external/licenseclassifier
+	url = https://github.com/bluestacks/external-licenseclassifier-a16.git
+
+[submodule "external/linux-firmware"]
+	path = external/linux-firmware
+	url = https://github.com/bluestacks/external-linux-firmware-a16.git
+
+[submodule "external/linux-kselftest"]
+	path = external/linux-kselftest
+	url = https://github.com/bluestacks/external-linux-kselftest-a16.git
+
+[submodule "external/llvm"]
+	path = external/llvm
+	url = https://github.com/bluestacks/external-llvm-a16.git
+
+[submodule "external/llvm-libc"]
+	path = external/llvm-libc
+	url = https://github.com/bluestacks/external-llvm-libc-a16.git
+
+[submodule "external/lottie"]
+	path = external/lottie
+	url = https://github.com/bluestacks/external-lottie-a16.git
+
+[submodule "external/ltp"]
+	path = external/ltp
+	url = https://github.com/bluestacks/external-ltp-a16.git
+
+[submodule "external/lua"]
+	path = external/lua
+	url = https://github.com/bluestacks/external-lua-a16.git
+
+[submodule "external/lz4"]
+	path = external/lz4
+	url = https://github.com/bluestacks/external-lz4-a16.git
+
+[submodule "external/lzma"]
+	path = external/lzma
+	url = https://github.com/bluestacks/external-lzma-a16.git
+
+[submodule "external/marisa-trie"]
+	path = external/marisa-trie
+	url = https://github.com/bluestacks/external-marisa-trie-a16.git
+
+[submodule "external/mbedtls"]
+	path = external/mbedtls
+	url = https://github.com/bluestacks/external-mbedtls-a16.git
+
+[submodule "external/mdnsresponder"]
+	path = external/mdnsresponder
+	url = https://github.com/bluestacks/external-mdnsresponder-a16.git
+
+[submodule "external/mesa3d"]
+	path = external/mesa3d
+	url = https://github.com/bluestacks/external-mesa3d-a16.git
+
+[submodule "external/mime-support"]
+	path = external/mime-support
+	url = https://github.com/bluestacks/external-mime-support-a16.git
+
+[submodule "external/minidns"]
+	path = external/minidns
+	url = https://github.com/bluestacks/external-minidns-a16.git
+
+[submodule "external/minigbm"]
+	path = external/minigbm
+	url = https://github.com/bluestacks/external-minigbm-a16.git
+
+[submodule "external/minijail"]
+	path = external/minijail
+	url = https://github.com/bluestacks/external-minijail-a16.git
+
+[submodule "external/mksh"]
+	path = external/mksh
+	url = https://github.com/bluestacks/external-mksh-a16.git
+
+[submodule "external/ml_dtypes"]
+	path = external/ml_dtypes
+	url = https://github.com/bluestacks/external-ml_dtypes-a16.git
+
+[submodule "external/mobile-data-download"]
+	path = external/mobile-data-download
+	url = https://github.com/bluestacks/external-mobile-data-download-a16.git
+
+[submodule "external/mobly-bundled-snippets"]
+	path = external/mobly-bundled-snippets
+	url = https://github.com/bluestacks/external-mobly-bundled-snippets-a16.git
+
+[submodule "external/mobly-snippet-lib"]
+	path = external/mobly-snippet-lib
+	url = https://github.com/bluestacks/external-mobly-snippet-lib-a16.git
+
+[submodule "external/mockftpserver"]
+	path = external/mockftpserver
+	url = https://github.com/bluestacks/external-mockftpserver-a16.git
+
+[submodule "external/mockito"]
+	path = external/mockito
+	url = https://github.com/bluestacks/external-mockito-a16.git
+
+[submodule "external/mockito-kotlin"]
+	path = external/mockito-kotlin
+	url = https://github.com/bluestacks/external-mockito-kotlin-a16.git
+
+[submodule "external/mockwebserver"]
+	path = external/mockwebserver
+	url = https://github.com/bluestacks/external-mockwebserver-a16.git
+
+[submodule "external/modp_b64"]
+	path = external/modp_b64
+	url = https://github.com/bluestacks/external-modp_b64-a16.git
+
+[submodule "external/moshi"]
+	path = external/moshi
+	url = https://github.com/bluestacks/external-moshi-a16.git
+
+[submodule "external/mp4parser"]
+	path = external/mp4parser
+	url = https://github.com/bluestacks/external-mp4parser-a16.git
+
+[submodule "external/mpdecimal"]
+	path = external/mpdecimal
+	url = https://github.com/bluestacks/external-mpdecimal-a16.git
+
+[submodule "external/ms-tpm-20-ref"]
+	path = external/ms-tpm-20-ref
+	url = https://github.com/bluestacks/external-ms-tpm-20-ref-a16.git
+
+[submodule "external/mtools"]
+	path = external/mtools
+	url = https://github.com/bluestacks/external-mtools-a16.git
+
+[submodule "external/musl"]
+	path = external/musl
+	url = https://github.com/bluestacks/external-musl-a16.git
+
+[submodule "external/nanohttpd"]
+	path = external/nanohttpd
+	url = https://github.com/bluestacks/external-nanohttpd-a16.git
+
+[submodule "external/nanopb-c"]
+	path = external/nanopb-c
+	url = https://github.com/bluestacks/external-nanopb-c-a16.git
+
+[submodule "external/naver-fonts"]
+	path = external/naver-fonts
+	url = https://github.com/bluestacks/external-naver-fonts-a16.git
+
+[submodule "external/neon_2_sse"]
+	path = external/neon_2_sse
+	url = https://github.com/bluestacks/external-neon_2_sse-a16.git
+
+[submodule "external/neven"]
+	path = external/neven
+	url = https://github.com/bluestacks/external-neven-a16.git
+
+[submodule "external/newfs_msdos"]
+	path = external/newfs_msdos
+	url = https://github.com/bluestacks/external-newfs_msdos-a16.git
+
+[submodule "external/nist-pkits"]
+	path = external/nist-pkits
+	url = https://github.com/bluestacks/external-nist-pkits-a16.git
+
+[submodule "external/nist-sip"]
+	path = external/nist-sip
+	url = https://github.com/bluestacks/external-nist-sip-a16.git
+
+[submodule "external/nos/host/generic"]
+	path = external/nos/host/generic
+	url = https://github.com/bluestacks/external-nos-host-generic-a16.git
+
+[submodule "external/noto-fonts"]
+	path = external/noto-fonts
+	url = https://github.com/bluestacks/external-noto-fonts-a16.git
+
+[submodule "external/nullaway"]
+	path = external/nullaway
+	url = https://github.com/bluestacks/external-nullaway-a16.git
+
+[submodule "external/oauth"]
+	path = external/oauth
+	url = https://github.com/bluestacks/external-oauth-a16.git
+
+[submodule "external/obex"]
+	path = external/obex
+	url = https://github.com/bluestacks/external-obex-a16.git
+
+[submodule "external/objenesis"]
+	path = external/objenesis
+	url = https://github.com/bluestacks/external-objenesis-a16.git
+
+[submodule "external/oboe"]
+	path = external/oboe
+	url = https://github.com/bluestacks/external-oboe-a16.git
+
+[submodule "external/obstack"]
+	path = external/obstack
+	url = https://github.com/bluestacks/external-obstack-a16.git
+
+[submodule "external/oj-libjdwp"]
+	path = external/oj-libjdwp
+	url = https://github.com/bluestacks/external-oj-libjdwp-a16.git
+
+[submodule "external/okhttp"]
+	path = external/okhttp
+	url = https://github.com/bluestacks/external-okhttp-a16.git
+
+[submodule "external/okio"]
+	path = external/okio
+	url = https://github.com/bluestacks/external-okio-a16.git
+
+[submodule "external/one-true-awk"]
+	path = external/one-true-awk
+	url = https://github.com/bluestacks/external-one-true-awk-a16.git
+
+[submodule "external/open-dice"]
+	path = external/open-dice
+	url = https://github.com/bluestacks/external-open-dice-a16.git
+
+[submodule "external/opencensus-java"]
+	path = external/opencensus-java
+	url = https://github.com/bluestacks/external-opencensus-java-a16.git
+
+[submodule "external/opencl/llvm-project"]
+	path = external/opencl/llvm-project
+	url = https://github.com/bluestacks/external-opencl-llvm-project-a16.git
+
+[submodule "external/openscreen"]
+	path = external/openscreen
+	url = https://github.com/bluestacks/external-openscreen-a16.git
+
+[submodule "external/openthread"]
+	path = external/openthread
+	url = https://github.com/bluestacks/external-openthread-a16.git
+
+[submodule "external/openwrt-prebuilts"]
+	path = external/openwrt-prebuilts
+	url = https://github.com/bluestacks/external-openwrt-prebuilts-a16.git
+
+[submodule "external/opus-experimental"]
+	path = external/opus-experimental
+	url = https://github.com/bluestacks/external-opus-experimental-a16.git
+
+[submodule "external/ot-br-posix"]
+	path = external/ot-br-posix
+	url = https://github.com/bluestacks/external-ot-br-posix-a16.git
+
+[submodule "external/ow2-asm"]
+	path = external/ow2-asm
+	url = https://github.com/bluestacks/external-ow2-asm-a16.git
+
+[submodule "external/owasp/java-encoder"]
+	path = external/owasp/java-encoder
+	url = https://github.com/bluestacks/external-owasp-java-encoder-a16.git
+
+[submodule "external/owasp/sanitizer"]
+	path = external/owasp/sanitizer
+	url = https://github.com/bluestacks/external-owasp-sanitizer-a16.git
+
+[submodule "external/pandora/mmi2grpc"]
+	path = external/pandora/mmi2grpc
+	url = https://github.com/bluestacks/external-pandora-mmi2grpc-a16.git
+
+[submodule "external/parameter-framework"]
+	path = external/parameter-framework
+	url = https://github.com/bluestacks/external-parameter-framework-a16.git
+
+[submodule "external/pciutils"]
+	path = external/pciutils
+	url = https://github.com/bluestacks/external-pciutils-a16.git
+
+[submodule "external/pcre"]
+	path = external/pcre
+	url = https://github.com/bluestacks/external-pcre-a16.git
+
+[submodule "external/pdfium"]
+	path = external/pdfium
+	url = https://github.com/bluestacks/external-pdfium-a16.git
+
+[submodule "external/perfetto"]
+	path = external/perfetto
+	url = https://github.com/bluestacks/external-perfetto-a16.git
+
+[submodule "external/perfmark"]
+	path = external/perfmark
+	url = https://github.com/bluestacks/external-perfmark-a16.git
+
+[submodule "external/pffft"]
+	path = external/pffft
+	url = https://github.com/bluestacks/external-pffft-a16.git
+
+[submodule "external/piex"]
+	path = external/piex
+	url = https://github.com/bluestacks/external-piex-a16.git
+
+[submodule "external/pigweed"]
+	path = external/pigweed
+	url = https://github.com/bluestacks/external-pigweed-a16.git
+
+[submodule "external/pixman"]
+	path = external/pixman
+	url = https://github.com/bluestacks/external-pixman-a16.git
+
+[submodule "external/ply"]
+	path = external/ply
+	url = https://github.com/bluestacks/external-ply-a16.git
+
+[submodule "external/pogreb"]
+	path = external/pogreb
+	url = https://github.com/bluestacks/external-pogreb-a16.git
+
+[submodule "external/private-join-and-compute"]
+	path = external/private-join-and-compute
+	url = https://github.com/bluestacks/external-private-join-and-compute-a16.git
+
+[submodule "external/protobuf"]
+	path = external/protobuf
+	url = https://github.com/bluestacks/external-protobuf-a16.git
+
+[submodule "external/pthreadpool"]
+	path = external/pthreadpool
+	url = https://github.com/bluestacks/external-pthreadpool-a16.git
+
+[submodule "external/puffin"]
+	path = external/puffin
+	url = https://github.com/bluestacks/external-puffin-a16.git
+
+[submodule "external/python/absl-py"]
+	path = external/python/absl-py
+	url = https://github.com/bluestacks/external-python-absl-py-a16.git
+
+[submodule "external/python/apitools"]
+	path = external/python/apitools
+	url = https://github.com/bluestacks/external-python-apitools-a16.git
+
+[submodule "external/python/asn1crypto"]
+	path = external/python/asn1crypto
+	url = https://github.com/bluestacks/external-python-asn1crypto-a16.git
+
+[submodule "external/python/bumble"]
+	path = external/python/bumble
+	url = https://github.com/bluestacks/external-python-bumble-a16.git
+
+[submodule "external/python/cachetools"]
+	path = external/python/cachetools
+	url = https://github.com/bluestacks/external-python-cachetools-a16.git
+
+[submodule "external/python/cpplint"]
+	path = external/python/cpplint
+	url = https://github.com/bluestacks/external-python-cpplint-a16.git
+
+[submodule "external/python/cpython3"]
+	path = external/python/cpython3
+	url = https://github.com/bluestacks/external-python-cpython3-a16.git
+
+[submodule "external/python/dateutil"]
+	path = external/python/dateutil
+	url = https://github.com/bluestacks/external-python-dateutil-a16.git
+
+[submodule "external/python/enum34"]
+	path = external/python/enum34
+	url = https://github.com/bluestacks/external-python-enum34-a16.git
+
+[submodule "external/python/google-api-python-client"]
+	path = external/python/google-api-python-client
+	url = https://github.com/bluestacks/external-python-google-api-python-client-a16.git
+
+[submodule "external/python/google-auth-library-python"]
+	path = external/python/google-auth-library-python
+	url = https://github.com/bluestacks/external-python-google-auth-library-python-a16.git
+
+[submodule "external/python/httplib2"]
+	path = external/python/httplib2
+	url = https://github.com/bluestacks/external-python-httplib2-a16.git
+
+[submodule "external/python/ipaddress"]
+	path = external/python/ipaddress
+	url = https://github.com/bluestacks/external-python-ipaddress-a16.git
+
+[submodule "external/python/jinja"]
+	path = external/python/jinja
+	url = https://github.com/bluestacks/external-python-jinja-a16.git
+
+[submodule "external/python/mako"]
+	path = external/python/mako
+	url = https://github.com/bluestacks/external-python-mako-a16.git
+
+[submodule "external/python/markupsafe"]
+	path = external/python/markupsafe
+	url = https://github.com/bluestacks/external-python-markupsafe-a16.git
+
+[submodule "external/python/mobly"]
+	path = external/python/mobly
+	url = https://github.com/bluestacks/external-python-mobly-a16.git
+
+[submodule "external/python/oauth2client"]
+	path = external/python/oauth2client
+	url = https://github.com/bluestacks/external-python-oauth2client-a16.git
+
+[submodule "external/python/parse_type"]
+	path = external/python/parse_type
+	url = https://github.com/bluestacks/external-python-parse_type-a16.git
+
+[submodule "external/python/pexpect"]
+	path = external/python/pexpect
+	url = https://github.com/bluestacks/external-python-pexpect-a16.git
+
+[submodule "external/python/portpicker"]
+	path = external/python/portpicker
+	url = https://github.com/bluestacks/external-python-portpicker-a16.git
+
+[submodule "external/python/ptyprocess"]
+	path = external/python/ptyprocess
+	url = https://github.com/bluestacks/external-python-ptyprocess-a16.git
+
+[submodule "external/python/pyasn1"]
+	path = external/python/pyasn1
+	url = https://github.com/bluestacks/external-python-pyasn1-a16.git
+
+[submodule "external/python/pyasn1-modules"]
+	path = external/python/pyasn1-modules
+	url = https://github.com/bluestacks/external-python-pyasn1-modules-a16.git
+
+[submodule "external/python/pycparser"]
+	path = external/python/pycparser
+	url = https://github.com/bluestacks/external-python-pycparser-a16.git
+
+[submodule "external/python/pyee"]
+	path = external/python/pyee
+	url = https://github.com/bluestacks/external-python-pyee-a16.git
+
+[submodule "external/python/pyfakefs"]
+	path = external/python/pyfakefs
+	url = https://github.com/bluestacks/external-python-pyfakefs-a16.git
+
+[submodule "external/python/pyserial"]
+	path = external/python/pyserial
+	url = https://github.com/bluestacks/external-python-pyserial-a16.git
+
+[submodule "external/python/python-api-core"]
+	path = external/python/python-api-core
+	url = https://github.com/bluestacks/external-python-python-api-core-a16.git
+
+[submodule "external/python/pyyaml"]
+	path = external/python/pyyaml
+	url = https://github.com/bluestacks/external-python-pyyaml-a16.git
+
+[submodule "external/python/rsa"]
+	path = external/python/rsa
+	url = https://github.com/bluestacks/external-python-rsa-a16.git
+
+[submodule "external/python/six"]
+	path = external/python/six
+	url = https://github.com/bluestacks/external-python-six-a16.git
+
+[submodule "external/python/snippet-uiautomator"]
+	path = external/python/snippet-uiautomator
+	url = https://github.com/bluestacks/external-python-snippet-uiautomator-a16.git
+
+[submodule "external/python/timeout-decorator"]
+	path = external/python/timeout-decorator
+	url = https://github.com/bluestacks/external-python-timeout-decorator-a16.git
+
+[submodule "external/python/typing"]
+	path = external/python/typing
+	url = https://github.com/bluestacks/external-python-typing-a16.git
+
+[submodule "external/python/typing_extensions"]
+	path = external/python/typing_extensions
+	url = https://github.com/bluestacks/external-python-typing_extensions-a16.git
+
+[submodule "external/python/uritemplates"]
+	path = external/python/uritemplates
+	url = https://github.com/bluestacks/external-python-uritemplates-a16.git
+
+[submodule "external/python/watchdog"]
+	path = external/python/watchdog
+	url = https://github.com/bluestacks/external-python-watchdog-a16.git
+
+[submodule "external/pytorch"]
+	path = external/pytorch
+	url = https://github.com/bluestacks/external-pytorch-a16.git
+
+[submodule "external/qdl"]
+	path = external/qdl
+	url = https://github.com/bluestacks/external-qdl-a16.git
+
+[submodule "external/qpdf"]
+	path = external/qpdf
+	url = https://github.com/bluestacks/external-qpdf-a16.git
+
+[submodule "external/rappor"]
+	path = external/rappor
+	url = https://github.com/bluestacks/external-rappor-a16.git
+
+[submodule "external/regex-re2"]
+	path = external/regex-re2
+	url = https://github.com/bluestacks/external-regex-re2-a16.git
+
+[submodule "external/renderscript-intrinsics-replacement-toolkit"]
+	path = external/renderscript-intrinsics-replacement-toolkit
+	url = https://github.com/bluestacks/external-renderscript-intrinsics-replacement-toolkit-a16.git
+
+[submodule "external/replicaisland"]
+	path = external/replicaisland
+	url = https://github.com/bluestacks/external-replicaisland-a16.git
+
+[submodule "external/rmi4utils"]
+	path = external/rmi4utils
+	url = https://github.com/bluestacks/external-rmi4utils-a16.git
+
+[submodule "external/rnnoise"]
+	path = external/rnnoise
+	url = https://github.com/bluestacks/external-rnnoise-a16.git
+
+[submodule "external/robolectric"]
+	path = external/robolectric
+	url = https://github.com/bluestacks/external-robolectric-a16.git
+
+[submodule "external/roboto-flex-fonts"]
+	path = external/roboto-flex-fonts
+	url = https://github.com/bluestacks/external-roboto-flex-fonts-a16.git
+
+[submodule "external/roboto-fonts"]
+	path = external/roboto-fonts
+	url = https://github.com/bluestacks/external-roboto-fonts-a16.git
+
+[submodule "external/roboto-mono"]
+	path = external/roboto-mono
+	url = https://github.com/bluestacks/external-roboto-mono-a16.git
+
+[submodule "external/rootdev"]
+	path = external/rootdev
+	url = https://github.com/bluestacks/external-rootdev-a16.git
+
+[submodule "external/rust/android-crates-io"]
+	path = external/rust/android-crates-io
+	url = https://github.com/bluestacks/external-rust-android-crates-io-a16.git
+
+[submodule "external/rust/autocxx"]
+	path = external/rust/autocxx
+	url = https://github.com/bluestacks/external-rust-autocxx-a16.git
+
+[submodule "external/rust/beto-rust"]
+	path = external/rust/beto-rust
+	url = https://github.com/bluestacks/external-rust-beto-rust-a16.git
+
+[submodule "external/rust/crabbyavif"]
+	path = external/rust/crabbyavif
+	url = https://github.com/bluestacks/external-rust-crabbyavif-a16.git
+
+[submodule "external/rust/crates/openssl"]
+	path = external/rust/crates/openssl
+	url = https://github.com/bluestacks/external-rust-crates-openssl-a16.git
+
+[submodule "external/rust/crates/v4l2r"]
+	path = external/rust/crates/v4l2r
+	url = https://github.com/bluestacks/external-rust-crates-v4l2r-a16.git
+
+[submodule "external/rust/crates/vhost-device-vsock"]
+	path = external/rust/crates/vhost-device-vsock
+	url = https://github.com/bluestacks/external-rust-crates-vhost-device-vsock-a16.git
+
+[submodule "external/rust/cros-libva"]
+	path = external/rust/cros-libva
+	url = https://github.com/bluestacks/external-rust-cros-libva-a16.git
+
+[submodule "external/rust/cxx"]
+	path = external/rust/cxx
+	url = https://github.com/bluestacks/external-rust-cxx-a16.git
+
+[submodule "external/rust/ninja-to-soong"]
+	path = external/rust/ninja-to-soong
+	url = https://github.com/bluestacks/external-rust-ninja-to-soong-a16.git
+
+[submodule "external/rust/pica"]
+	path = external/rust/pica
+	url = https://github.com/bluestacks/external-rust-pica-a16.git
+
+[submodule "external/rust/rutabaga_gfx"]
+	path = external/rust/rutabaga_gfx
+	url = https://github.com/bluestacks/external-rust-rutabaga_gfx-a16.git
+
+[submodule "external/ruy"]
+	path = external/ruy
+	url = https://github.com/bluestacks/external-ruy-a16.git
+
+[submodule "external/s2-geometry-library-java"]
+	path = external/s2-geometry-library-java
+	url = https://github.com/bluestacks/external-s2-geometry-library-java-a16.git
+
+[submodule "external/sandboxed-api"]
+	path = external/sandboxed-api
+	url = https://github.com/bluestacks/external-sandboxed-api-a16.git
+
+[submodule "external/scapy"]
+	path = external/scapy
+	url = https://github.com/bluestacks/external-scapy-a16.git
+
+[submodule "external/scrypt"]
+	path = external/scrypt
+	url = https://github.com/bluestacks/external-scrypt-a16.git
+
+[submodule "external/scudo"]
+	path = external/scudo
+	url = https://github.com/bluestacks/external-scudo-a16.git
+
+[submodule "external/sdk-platform-java"]
+	path = external/sdk-platform-java
+	url = https://github.com/bluestacks/external-sdk-platform-java-a16.git
+
+[submodule "external/sdv/vsomeip"]
+	path = external/sdv/vsomeip
+	url = https://github.com/bluestacks/external-sdv-vsomeip-a16.git
+
+[submodule "external/seccomp-tests"]
+	path = external/seccomp-tests
+	url = https://github.com/bluestacks/external-seccomp-tests-a16.git
+
+[submodule "external/selinux"]
+	path = external/selinux
+	url = https://github.com/bluestacks/external-selinux-a16.git
+
+[submodule "external/setfilters"]
+	path = external/setfilters
+	url = https://github.com/bluestacks/external-setfilters-a16.git
+
+[submodule "external/setupcompat"]
+	path = external/setupcompat
+	url = https://github.com/bluestacks/external-setupcompat-a16.git
+
+[submodule "external/setupdesign"]
+	path = external/setupdesign
+	url = https://github.com/bluestacks/external-setupdesign-a16.git
+
+[submodule "external/sg3_utils"]
+	path = external/sg3_utils
+	url = https://github.com/bluestacks/external-sg3_utils-a16.git
+
+[submodule "external/shaderc/spirv-headers"]
+	path = external/shaderc/spirv-headers
+	url = https://github.com/bluestacks/external-shaderc-spirv-headers-a16.git
+
+[submodule "external/shflags"]
+	path = external/shflags
+	url = https://github.com/bluestacks/external-shflags-a16.git
+
+[submodule "external/skia"]
+	path = external/skia
+	url = https://github.com/bluestacks/external-skia-a16.git
+
+[submodule "external/sl4a"]
+	path = external/sl4a
+	url = https://github.com/bluestacks/external-sl4a-a16.git
+
+[submodule "external/slf4j"]
+	path = external/slf4j
+	url = https://github.com/bluestacks/external-slf4j-a16.git
+
+[submodule "external/smack"]
+	path = external/smack
+	url = https://github.com/bluestacks/external-smack-a16.git
+
+[submodule "external/snakeyaml"]
+	path = external/snakeyaml
+	url = https://github.com/bluestacks/external-snakeyaml-a16.git
+
+[submodule "external/sonic"]
+	path = external/sonic
+	url = https://github.com/bluestacks/external-sonic-a16.git
+
+[submodule "external/sonivox"]
+	path = external/sonivox
+	url = https://github.com/bluestacks/external-sonivox-a16.git
+
+[submodule "external/spdx-tools"]
+	path = external/spdx-tools
+	url = https://github.com/bluestacks/external-spdx-tools-a16.git
+
+[submodule "external/speex"]
+	path = external/speex
+	url = https://github.com/bluestacks/external-speex-a16.git
+
+[submodule "external/sqlite"]
+	path = external/sqlite
+	url = https://github.com/bluestacks/external-sqlite-a16.git
+
+[submodule "external/squashfs-tools"]
+	path = external/squashfs-tools
+	url = https://github.com/bluestacks/external-squashfs-tools-a16.git
+
+[submodule "external/starlark-go"]
+	path = external/starlark-go
+	url = https://github.com/bluestacks/external-starlark-go-a16.git
+
+[submodule "external/stg"]
+	path = external/stg
+	url = https://github.com/bluestacks/external-stg-a16.git
+
+[submodule "external/strace"]
+	path = external/strace
+	url = https://github.com/bluestacks/external-strace-a16.git
+
+[submodule "external/stressapptest"]
+	path = external/stressapptest
+	url = https://github.com/bluestacks/external-stressapptest-a16.git
+
+[submodule "external/subsampling-scale-image-view"]
+	path = external/subsampling-scale-image-view
+	url = https://github.com/bluestacks/external-subsampling-scale-image-view-a16.git
+
+[submodule "external/swiftshader"]
+	path = external/swiftshader
+	url = https://github.com/bluestacks/external-swiftshader-a16.git
+
+[submodule "external/tagsoup"]
+	path = external/tagsoup
+	url = https://github.com/bluestacks/external-tagsoup-a16.git
+
+[submodule "external/tcpdump"]
+	path = external/tcpdump
+	url = https://github.com/bluestacks/external-tcpdump-a16.git
+
+[submodule "external/tensorflow"]
+	path = external/tensorflow
+	url = https://github.com/bluestacks/external-tensorflow-a16.git
+
+[submodule "external/testng"]
+	path = external/testng
+	url = https://github.com/bluestacks/external-testng-a16.git
+
+[submodule "external/tflite-support"]
+	path = external/tflite-support
+	url = https://github.com/bluestacks/external-tflite-support-a16.git
+
+[submodule "external/threetenbp"]
+	path = external/threetenbp
+	url = https://github.com/bluestacks/external-threetenbp-a16.git
+
+[submodule "external/timezone-boundary-builder"]
+	path = external/timezone-boundary-builder
+	url = https://github.com/bluestacks/external-timezone-boundary-builder-a16.git
+
+[submodule "external/tink"]
+	path = external/tink
+	url = https://github.com/bluestacks/external-tink-a16.git
+
+[submodule "external/tink-java"]
+	path = external/tink-java
+	url = https://github.com/bluestacks/external-tink-java-a16.git
+
+[submodule "external/tinyalsa"]
+	path = external/tinyalsa
+	url = https://github.com/bluestacks/external-tinyalsa-a16.git
+
+[submodule "external/tinyalsa_new"]
+	path = external/tinyalsa_new
+	url = https://github.com/bluestacks/external-tinyalsa_new-a16.git
+
+[submodule "external/tinycompress"]
+	path = external/tinycompress
+	url = https://github.com/bluestacks/external-tinycompress-a16.git
+
+[submodule "external/tinyxml2"]
+	path = external/tinyxml2
+	url = https://github.com/bluestacks/external-tinyxml2-a16.git
+
+[submodule "external/toolchain-utils"]
+	path = external/toolchain-utils
+	url = https://github.com/bluestacks/external-toolchain-utils-a16.git
+
+[submodule "external/toybox"]
+	path = external/toybox
+	url = https://github.com/bluestacks/external-toybox-a16.git
+
+[submodule "external/tpm2-tss"]
+	path = external/tpm2-tss
+	url = https://github.com/bluestacks/external-tpm2-tss-a16.git
+
+[submodule "external/trace-cmd"]
+	path = external/trace-cmd
+	url = https://github.com/bluestacks/external-trace-cmd-a16.git
+
+[submodule "external/tremolo"]
+	path = external/tremolo
+	url = https://github.com/bluestacks/external-tremolo-a16.git
+
+[submodule "external/trusty/arm-trusted-firmware"]
+	path = external/trusty/arm-trusted-firmware
+	url = https://github.com/bluestacks/external-trusty-arm-trusted-firmware-a16.git
+
+[submodule "external/trusty/bootloader"]
+	path = external/trusty/bootloader
+	url = https://github.com/bluestacks/external-trusty-bootloader-a16.git
+
+[submodule "external/trusty/headers"]
+	path = external/trusty/headers
+	url = https://github.com/bluestacks/external-trusty-headers-a16.git
+
+[submodule "external/trusty/lk"]
+	path = external/trusty/lk
+	url = https://github.com/bluestacks/external-trusty-lk-a16.git
+
+[submodule "external/trusty/musl"]
+	path = external/trusty/musl
+	url = https://github.com/bluestacks/external-trusty-musl-a16.git
+
+[submodule "external/truth"]
+	path = external/truth
+	url = https://github.com/bluestacks/external-truth-a16.git
+
+[submodule "external/turbine"]
+	path = external/turbine
+	url = https://github.com/bluestacks/external-turbine-a16.git
+
+[submodule "external/ublksrv"]
+	path = external/ublksrv
+	url = https://github.com/bluestacks/external-ublksrv-a16.git
+
+[submodule "external/unicode"]
+	path = external/unicode
+	url = https://github.com/bluestacks/external-unicode-a16.git
+
+[submodule "external/usb-ids"]
+	path = external/usb-ids
+	url = https://github.com/bluestacks/external-usb-ids-a16.git
+
+[submodule "external/uwb"]
+	path = external/uwb
+	url = https://github.com/bluestacks/external-uwb-a16.git
+
+[submodule "external/v4l-utils"]
+	path = external/v4l-utils
+	url = https://github.com/bluestacks/external-v4l-utils-a16.git
+
+[submodule "external/v4l2_codec2"]
+	path = external/v4l2_codec2
+	url = https://github.com/bluestacks/external-v4l2_codec2-a16.git
+
+[submodule "external/vboot_reference"]
+	path = external/vboot_reference
+	url = https://github.com/bluestacks/external-vboot_reference-a16.git
+
+[submodule "external/virglrenderer"]
+	path = external/virglrenderer
+	url = https://github.com/bluestacks/external-virglrenderer-a16.git
+
+[submodule "external/virtio-media"]
+	path = external/virtio-media
+	url = https://github.com/bluestacks/external-virtio-media-a16.git
+
+[submodule "external/vixl"]
+	path = external/vixl
+	url = https://github.com/bluestacks/external-vixl-a16.git
+
+[submodule "external/vogar"]
+	path = external/vogar
+	url = https://github.com/bluestacks/external-vogar-a16.git
+
+[submodule "external/volley"]
+	path = external/volley
+	url = https://github.com/bluestacks/external-volley-a16.git
+
+[submodule "external/vulkan-headers"]
+	path = external/vulkan-headers
+	url = https://github.com/bluestacks/external-vulkan-headers-a16.git
+
+[submodule "external/vulkan-validation-layers"]
+	path = external/vulkan-validation-layers
+	url = https://github.com/bluestacks/external-vulkan-validation-layers-a16.git
+
+[submodule "external/walt"]
+	path = external/walt
+	url = https://github.com/bluestacks/external-walt-a16.git
+
+[submodule "external/wayland"]
+	path = external/wayland
+	url = https://github.com/bluestacks/external-wayland-a16.git
+
+[submodule "external/wayland-protocols"]
+	path = external/wayland-protocols
+	url = https://github.com/bluestacks/external-wayland-protocols-a16.git
+
+[submodule "external/webp"]
+	path = external/webp
+	url = https://github.com/bluestacks/external-webp-a16.git
+
+[submodule "external/webrtc"]
+	path = external/webrtc
+	url = https://github.com/bluestacks/external-webrtc-a16.git
+
+[submodule "external/wmediumd"]
+	path = external/wmediumd
+	url = https://github.com/bluestacks/external-wmediumd-a16.git
+
+[submodule "external/wpa_supplicant_8"]
+	path = external/wpa_supplicant_8
+	url = https://github.com/bluestacks/external-wpa_supplicant_8-a16.git
+
+[submodule "external/wuffs-mirror-release-c"]
+	path = external/wuffs-mirror-release-c
+	url = https://github.com/bluestacks/external-wuffs-mirror-release-c-a16.git
+
+[submodule "external/wycheproof"]
+	path = external/wycheproof
+	url = https://github.com/bluestacks/external-wycheproof-a16.git
+
+[submodule "external/xmp_toolkit"]
+	path = external/xmp_toolkit
+	url = https://github.com/bluestacks/external-xmp_toolkit-a16.git
+
+[submodule "external/xz-embedded"]
+	path = external/xz-embedded
+	url = https://github.com/bluestacks/external-xz-embedded-a16.git
+
+[submodule "external/xz-java"]
+	path = external/xz-java
+	url = https://github.com/bluestacks/external-xz-java-a16.git
+
+[submodule "external/yapf"]
+	path = external/yapf
+	url = https://github.com/bluestacks/external-yapf-a16.git
+
+[submodule "external/zlib"]
+	path = external/zlib
+	url = https://github.com/bluestacks/external-zlib-a16.git
+
+[submodule "external/zopfli"]
+	path = external/zopfli
+	url = https://github.com/bluestacks/external-zopfli-a16.git
+
+[submodule "external/zstd"]
+	path = external/zstd
+	url = https://github.com/bluestacks/external-zstd-a16.git
+
+[submodule "external/zucchini"]
+	path = external/zucchini
+	url = https://github.com/bluestacks/external-zucchini-a16.git
+
+[submodule "external/zxing"]
+	path = external/zxing
+	url = https://github.com/bluestacks/external-zxing-a16.git
+
+[submodule "frameworks/av"]
+	path = frameworks/av
+	url = https://github.com/bluestacks/frameworks-av-a16.git
+
+[submodule "frameworks/base"]
+	path = frameworks/base
+	url = https://github.com/bluestacks/frameworks-base-a16.git
+
+[submodule "frameworks/compile/libbcc"]
+	path = frameworks/compile/libbcc
+	url = https://github.com/bluestacks/frameworks-compile-libbcc-a16.git
+
+[submodule "frameworks/compile/mclinker"]
+	path = frameworks/compile/mclinker
+	url = https://github.com/bluestacks/frameworks-compile-mclinker-a16.git
+
+[submodule "frameworks/compile/slang"]
+	path = frameworks/compile/slang
+	url = https://github.com/bluestacks/frameworks-compile-slang-a16.git
+
+[submodule "frameworks/ex"]
+	path = frameworks/ex
+	url = https://github.com/bluestacks/frameworks-ex-a16.git
+
+[submodule "frameworks/hardware/interfaces"]
+	path = frameworks/hardware/interfaces
+	url = https://github.com/bluestacks/frameworks-hardware-interfaces-a16.git
+
+[submodule "frameworks/layoutlib"]
+	path = frameworks/layoutlib
+	url = https://github.com/bluestacks/frameworks-layoutlib-a16.git
+
+[submodule "frameworks/libs/binary_translation"]
+	path = frameworks/libs/binary_translation
+	url = https://github.com/bluestacks/frameworks-libs-binary_translation-a16.git
+
+[submodule "frameworks/libs/gsma_services"]
+	path = frameworks/libs/gsma_services
+	url = https://github.com/bluestacks/frameworks-libs-gsma_services-a16.git
+
+[submodule "frameworks/libs/modules-utils"]
+	path = frameworks/libs/modules-utils
+	url = https://github.com/bluestacks/frameworks-libs-modules-utils-a16.git
+
+[submodule "frameworks/libs/native_bridge_support"]
+	path = frameworks/libs/native_bridge_support
+	url = https://github.com/bluestacks/frameworks-libs-native_bridge_support-a16.git
+
+[submodule "frameworks/libs/service_entitlement"]
+	path = frameworks/libs/service_entitlement
+	url = https://github.com/bluestacks/frameworks-libs-service_entitlement-a16.git
+
+[submodule "frameworks/libs/systemui"]
+	path = frameworks/libs/systemui
+	url = https://github.com/bluestacks/frameworks-libs-systemui-a16.git
+
+[submodule "frameworks/minikin"]
+	path = frameworks/minikin
+	url = https://github.com/bluestacks/frameworks-minikin-a16.git
+
+[submodule "frameworks/multidex"]
+	path = frameworks/multidex
+	url = https://github.com/bluestacks/frameworks-multidex-a16.git
+
+[submodule "frameworks/native"]
+	path = frameworks/native
+	url = https://github.com/bluestacks/frameworks-native-a16.git
+
+[submodule "frameworks/opt/bitmap"]
+	path = frameworks/opt/bitmap
+	url = https://github.com/bluestacks/frameworks-opt-bitmap-a16.git
+
+[submodule "frameworks/opt/calendar"]
+	path = frameworks/opt/calendar
+	url = https://github.com/bluestacks/frameworks-opt-calendar-a16.git
+
+[submodule "frameworks/opt/car/services"]
+	path = frameworks/opt/car/services
+	url = https://github.com/bluestacks/frameworks-opt-car-services-a16.git
+
+[submodule "frameworks/opt/car/setupwizard"]
+	path = frameworks/opt/car/setupwizard
+	url = https://github.com/bluestacks/frameworks-opt-car-setupwizard-a16.git
+
+[submodule "frameworks/opt/chips"]
+	path = frameworks/opt/chips
+	url = https://github.com/bluestacks/frameworks-opt-chips-a16.git
+
+[submodule "frameworks/opt/colorpicker"]
+	path = frameworks/opt/colorpicker
+	url = https://github.com/bluestacks/frameworks-opt-colorpicker-a16.git
+
+[submodule "frameworks/opt/localepicker"]
+	path = frameworks/opt/localepicker
+	url = https://github.com/bluestacks/frameworks-opt-localepicker-a16.git
+
+[submodule "frameworks/opt/net/ims"]
+	path = frameworks/opt/net/ims
+	url = https://github.com/bluestacks/frameworks-opt-net-ims-a16.git
+
+[submodule "frameworks/opt/net/voip"]
+	path = frameworks/opt/net/voip
+	url = https://github.com/bluestacks/frameworks-opt-net-voip-a16.git
+
+[submodule "frameworks/opt/net/wifi"]
+	path = frameworks/opt/net/wifi
+	url = https://github.com/bluestacks/frameworks-opt-net-wifi-a16.git
+
+[submodule "frameworks/opt/photoviewer"]
+	path = frameworks/opt/photoviewer
+	url = https://github.com/bluestacks/frameworks-opt-photoviewer-a16.git
+
+[submodule "frameworks/opt/setupwizard"]
+	path = frameworks/opt/setupwizard
+	url = https://github.com/bluestacks/frameworks-opt-setupwizard-a16.git
+
+[submodule "frameworks/opt/telephony"]
+	path = frameworks/opt/telephony
+	url = https://github.com/bluestacks/frameworks-opt-telephony-a16.git
+
+[submodule "frameworks/opt/timezonepicker"]
+	path = frameworks/opt/timezonepicker
+	url = https://github.com/bluestacks/frameworks-opt-timezonepicker-a16.git
+
+[submodule "frameworks/opt/tv/tvsystem"]
+	path = frameworks/opt/tv/tvsystem
+	url = https://github.com/bluestacks/frameworks-opt-tv-tvsystem-a16.git
+
+[submodule "frameworks/opt/vcard"]
+	path = frameworks/opt/vcard
+	url = https://github.com/bluestacks/frameworks-opt-vcard-a16.git
+
+[submodule "frameworks/proto_logging"]
+	path = frameworks/proto_logging
+	url = https://github.com/bluestacks/frameworks-proto_logging-a16.git
+
+[submodule "frameworks/rs"]
+	path = frameworks/rs
+	url = https://github.com/bluestacks/frameworks-rs-a16.git
+
+[submodule "frameworks/wilhelm"]
+	path = frameworks/wilhelm
+	url = https://github.com/bluestacks/frameworks-wilhelm-a16.git
+
+[submodule "hardware/broadcom/libbt"]
+	path = hardware/broadcom/libbt
+	url = https://github.com/bluestacks/hardware-broadcom-libbt-a16.git
+
+[submodule "hardware/broadcom/wlan"]
+	path = hardware/broadcom/wlan
+	url = https://github.com/bluestacks/hardware-broadcom-wlan-a16.git
+
+[submodule "hardware/google/aemu"]
+	path = hardware/google/aemu
+	url = https://github.com/bluestacks/hardware-google-aemu-a16.git
+
+[submodule "hardware/google/apf"]
+	path = hardware/google/apf
+	url = https://github.com/bluestacks/hardware-google-apf-a16.git
+
+[submodule "hardware/google/av"]
+	path = hardware/google/av
+	url = https://github.com/bluestacks/hardware-google-av-a16.git
+
+[submodule "hardware/google/camera"]
+	path = hardware/google/camera
+	url = https://github.com/bluestacks/hardware-google-camera-a16.git
+
+[submodule "hardware/google/gfxstream"]
+	path = hardware/google/gfxstream
+	url = https://github.com/bluestacks/hardware-google-gfxstream-a16.git
+
+[submodule "hardware/google/interfaces"]
+	path = hardware/google/interfaces
+	url = https://github.com/bluestacks/hardware-google-interfaces-a16.git
+
+[submodule "hardware/google/pixel"]
+	path = hardware/google/pixel
+	url = https://github.com/bluestacks/hardware-google-pixel-a16.git
+
+[submodule "hardware/google/pixel-sepolicy"]
+	path = hardware/google/pixel-sepolicy
+	url = https://github.com/bluestacks/hardware-google-pixel-sepolicy-a16.git
+
+[submodule "hardware/interfaces"]
+	path = hardware/interfaces
+	url = https://github.com/bluestacks/hardware-interfaces-a16.git
+
+[submodule "hardware/invensense"]
+	path = hardware/invensense
+	url = https://github.com/bluestacks/hardware-invensense-a16.git
+
+[submodule "hardware/libhardware"]
+	path = hardware/libhardware
+	url = https://github.com/bluestacks/hardware-libhardware-a16.git
+
+[submodule "hardware/libhardware_legacy"]
+	path = hardware/libhardware_legacy
+	url = https://github.com/bluestacks/hardware-libhardware_legacy-a16.git
+
+[submodule "hardware/nxp/keymint"]
+	path = hardware/nxp/keymint
+	url = https://github.com/bluestacks/hardware-nxp-keymint-a16.git
+
+[submodule "hardware/nxp/nfc"]
+	path = hardware/nxp/nfc
+	url = https://github.com/bluestacks/hardware-nxp-nfc-a16.git
+
+[submodule "hardware/nxp/secure_element"]
+	path = hardware/nxp/secure_element
+	url = https://github.com/bluestacks/hardware-nxp-secure_element-a16.git
+
+[submodule "hardware/nxp/weaver"]
+	path = hardware/nxp/weaver
+	url = https://github.com/bluestacks/hardware-nxp-weaver-a16.git
+
+[submodule "hardware/qcom/wlan"]
+	path = hardware/qcom/wlan
+	url = https://github.com/bluestacks/hardware-qcom-wlan-a16.git
+
+[submodule "hardware/ril"]
+	path = hardware/ril
+	url = https://github.com/bluestacks/hardware-ril-a16.git
+
+[submodule "hardware/samsung/nfc"]
+	path = hardware/samsung/nfc
+	url = https://github.com/bluestacks/hardware-samsung-nfc-a16.git
+
+[submodule "hardware/st/nfc"]
+	path = hardware/st/nfc
+	url = https://github.com/bluestacks/hardware-st-nfc-a16.git
+
+[submodule "hardware/st/secure_element"]
+	path = hardware/st/secure_element
+	url = https://github.com/bluestacks/hardware-st-secure_element-a16.git
+
+[submodule "hardware/st/secure_element2"]
+	path = hardware/st/secure_element2
+	url = https://github.com/bluestacks/hardware-st-secure_element2-a16.git
+
+[submodule "hardware/synaptics/wlan"]
+	path = hardware/synaptics/wlan
+	url = https://github.com/bluestacks/hardware-synaptics-wlan-a16.git
+
+[submodule "hardware/ti/am57x"]
+	path = hardware/ti/am57x
+	url = https://github.com/bluestacks/hardware-ti-am57x-a16.git
+
+[submodule "kernel/configs"]
+	path = kernel/configs
+	url = https://github.com/bluestacks/kernel-configs-a16.git
+
+[submodule "kernel/prebuilts/6.1/arm64"]
+	path = kernel/prebuilts/6.1/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-6.1-arm64-a16.git
+
+[submodule "kernel/prebuilts/6.1/x86_64"]
+	path = kernel/prebuilts/6.1/x86_64
+	url = https://github.com/bluestacks/kernel-prebuilts-6.1-x86_64-a16.git
+
+[submodule "kernel/prebuilts/6.12/arm64"]
+	path = kernel/prebuilts/6.12/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-6.12-arm64-a16.git
+
+[submodule "kernel/prebuilts/6.12/x86_64"]
+	path = kernel/prebuilts/6.12/x86_64
+	url = https://github.com/bluestacks/kernel-prebuilts-6.12-x86_64-a16.git
+
+[submodule "kernel/prebuilts/6.6/arm64"]
+	path = kernel/prebuilts/6.6/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-6.6-arm64-a16.git
+
+[submodule "kernel/prebuilts/6.6/x86_64"]
+	path = kernel/prebuilts/6.6/x86_64
+	url = https://github.com/bluestacks/kernel-prebuilts-6.6-x86_64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/trusty/6.12/arm64"]
+	path = kernel/prebuilts/common-modules/trusty/6.12/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-trusty-6.12-arm64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/trusty/6.6/arm64"]
+	path = kernel/prebuilts/common-modules/trusty/6.6/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-trusty-6.6-arm64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/6.1/arm64"]
+	path = kernel/prebuilts/common-modules/virtual-device/6.1/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-6.1-arm64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/6.1/x86-64"]
+	path = kernel/prebuilts/common-modules/virtual-device/6.1/x86-64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-6.1-x86-64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/6.12/arm64"]
+	path = kernel/prebuilts/common-modules/virtual-device/6.12/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-6.12-arm64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/6.12/x86-64"]
+	path = kernel/prebuilts/common-modules/virtual-device/6.12/x86-64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-6.12-x86-64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/6.6/arm64"]
+	path = kernel/prebuilts/common-modules/virtual-device/6.6/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-6.6-arm64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/6.6/x86-64"]
+	path = kernel/prebuilts/common-modules/virtual-device/6.6/x86-64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-6.6-x86-64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/mainline/arm64"]
+	path = kernel/prebuilts/common-modules/virtual-device/mainline/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-mainline-arm64-a16.git
+
+[submodule "kernel/prebuilts/common-modules/virtual-device/mainline/x86-64"]
+	path = kernel/prebuilts/common-modules/virtual-device/mainline/x86-64
+	url = https://github.com/bluestacks/kernel-prebuilts-common-modules-virtual-device-mainline-x86-64-a16.git
+
+[submodule "kernel/prebuilts/mainline/arm64"]
+	path = kernel/prebuilts/mainline/arm64
+	url = https://github.com/bluestacks/kernel-prebuilts-mainline-arm64-a16.git
+
+[submodule "kernel/prebuilts/mainline/x86_64"]
+	path = kernel/prebuilts/mainline/x86_64
+	url = https://github.com/bluestacks/kernel-prebuilts-mainline-x86_64-a16.git
+
+[submodule "kernel/tests"]
+	path = kernel/tests
+	url = https://github.com/bluestacks/kernel-tests-a16.git
+
+[submodule "libcore"]
+	path = libcore
+	url = https://github.com/bluestacks/libcore-a16.git
+
+[submodule "libnativehelper"]
+	path = libnativehelper
+	url = https://github.com/bluestacks/libnativehelper-a16.git
+
+[submodule "packages/apps/AvatarPicker"]
+	path = packages/apps/AvatarPicker
+	url = https://github.com/bluestacks/packages-apps-AvatarPicker-a16.git
+
+[submodule "packages/apps/BasicSmsReceiver"]
+	path = packages/apps/BasicSmsReceiver
+	url = https://github.com/bluestacks/packages-apps-BasicSmsReceiver-a16.git
+
+[submodule "packages/apps/Browser2"]
+	path = packages/apps/Browser2
+	url = https://github.com/bluestacks/packages-apps-Browser2-a16.git
+
+[submodule "packages/apps/Calendar"]
+	path = packages/apps/Calendar
+	url = https://github.com/bluestacks/packages-apps-Calendar-a16.git
+
+[submodule "packages/apps/Camera2"]
+	path = packages/apps/Camera2
+	url = https://github.com/bluestacks/packages-apps-Camera2-a16.git
+
+[submodule "packages/apps/Car/CalendarPrebuilt"]
+	path = packages/apps/Car/CalendarPrebuilt
+	url = https://github.com/bluestacks/packages-apps-Car-CalendarPrebuilt-a16.git
+
+[submodule "packages/apps/Car/Cluster"]
+	path = packages/apps/Car/Cluster
+	url = https://github.com/bluestacks/packages-apps-Car-Cluster-a16.git
+
+[submodule "packages/apps/Car/DataSubscriptionReference"]
+	path = packages/apps/Car/DataSubscriptionReference
+	url = https://github.com/bluestacks/packages-apps-Car-DataSubscriptionReference-a16.git
+
+[submodule "packages/apps/Car/DebuggingRestrictionController"]
+	path = packages/apps/Car/DebuggingRestrictionController
+	url = https://github.com/bluestacks/packages-apps-Car-DebuggingRestrictionController-a16.git
+
+[submodule "packages/apps/Car/DialerPrebuilt"]
+	path = packages/apps/Car/DialerPrebuilt
+	url = https://github.com/bluestacks/packages-apps-Car-DialerPrebuilt-a16.git
+
+[submodule "packages/apps/Car/DriverUIPrebuilt"]
+	path = packages/apps/Car/DriverUIPrebuilt
+	url = https://github.com/bluestacks/packages-apps-Car-DriverUIPrebuilt-a16.git
+
+[submodule "packages/apps/Car/LatinIME"]
+	path = packages/apps/Car/LatinIME
+	url = https://github.com/bluestacks/packages-apps-Car-LatinIME-a16.git
+
+[submodule "packages/apps/Car/Launcher"]
+	path = packages/apps/Car/Launcher
+	url = https://github.com/bluestacks/packages-apps-Car-Launcher-a16.git
+
+[submodule "packages/apps/Car/LinkViewer"]
+	path = packages/apps/Car/LinkViewer
+	url = https://github.com/bluestacks/packages-apps-Car-LinkViewer-a16.git
+
+[submodule "packages/apps/Car/LocalMediaPlayer"]
+	path = packages/apps/Car/LocalMediaPlayer
+	url = https://github.com/bluestacks/packages-apps-Car-LocalMediaPlayer-a16.git
+
+[submodule "packages/apps/Car/MediaPrebuilt"]
+	path = packages/apps/Car/MediaPrebuilt
+	url = https://github.com/bluestacks/packages-apps-Car-MediaPrebuilt-a16.git
+
+[submodule "packages/apps/Car/MessengerPrebuilt"]
+	path = packages/apps/Car/MessengerPrebuilt
+	url = https://github.com/bluestacks/packages-apps-Car-MessengerPrebuilt-a16.git
+
+[submodule "packages/apps/Car/Notification"]
+	path = packages/apps/Car/Notification
+	url = https://github.com/bluestacks/packages-apps-Car-Notification-a16.git
+
+[submodule "packages/apps/Car/Provision"]
+	path = packages/apps/Car/Provision
+	url = https://github.com/bluestacks/packages-apps-Car-Provision-a16.git
+
+[submodule "packages/apps/Car/RadioPrebuilt"]
+	path = packages/apps/Car/RadioPrebuilt
+	url = https://github.com/bluestacks/packages-apps-Car-RadioPrebuilt-a16.git
+
+[submodule "packages/apps/Car/References"]
+	path = packages/apps/Car/References
+	url = https://github.com/bluestacks/packages-apps-Car-References-a16.git
+
+[submodule "packages/apps/Car/RotaryController"]
+	path = packages/apps/Car/RotaryController
+	url = https://github.com/bluestacks/packages-apps-Car-RotaryController-a16.git
+
+[submodule "packages/apps/Car/RotaryImePrebuilt"]
+	path = packages/apps/Car/RotaryImePrebuilt
+	url = https://github.com/bluestacks/packages-apps-Car-RotaryImePrebuilt-a16.git
+
+[submodule "packages/apps/Car/Settings"]
+	path = packages/apps/Car/Settings
+	url = https://github.com/bluestacks/packages-apps-Car-Settings-a16.git
+
+[submodule "packages/apps/Car/SettingsIntelligence"]
+	path = packages/apps/Car/SettingsIntelligence
+	url = https://github.com/bluestacks/packages-apps-Car-SettingsIntelligence-a16.git
+
+[submodule "packages/apps/Car/SystemUI"]
+	path = packages/apps/Car/SystemUI
+	url = https://github.com/bluestacks/packages-apps-Car-SystemUI-a16.git
+
+[submodule "packages/apps/Car/SystemUpdater"]
+	path = packages/apps/Car/SystemUpdater
+	url = https://github.com/bluestacks/packages-apps-Car-SystemUpdater-a16.git
+
+[submodule "packages/apps/Car/Templates"]
+	path = packages/apps/Car/Templates
+	url = https://github.com/bluestacks/packages-apps-Car-Templates-a16.git
+
+[submodule "packages/apps/Car/VoiceControl"]
+	path = packages/apps/Car/VoiceControl
+	url = https://github.com/bluestacks/packages-apps-Car-VoiceControl-a16.git
+
+[submodule "packages/apps/Car/systemlibs"]
+	path = packages/apps/Car/systemlibs
+	url = https://github.com/bluestacks/packages-apps-Car-systemlibs-a16.git
+
+[submodule "packages/apps/CarrierConfig"]
+	path = packages/apps/CarrierConfig
+	url = https://github.com/bluestacks/packages-apps-CarrierConfig-a16.git
+
+[submodule "packages/apps/CellBroadcastReceiver"]
+	path = packages/apps/CellBroadcastReceiver
+	url = https://github.com/bluestacks/packages-apps-CellBroadcastReceiver-a16.git
+
+[submodule "packages/apps/CertInstaller"]
+	path = packages/apps/CertInstaller
+	url = https://github.com/bluestacks/packages-apps-CertInstaller-a16.git
+
+[submodule "packages/apps/Contacts"]
+	path = packages/apps/Contacts
+	url = https://github.com/bluestacks/packages-apps-Contacts-a16.git
+
+[submodule "packages/apps/ContactsPicker"]
+	path = packages/apps/ContactsPicker
+	url = https://github.com/bluestacks/packages-apps-ContactsPicker-a16.git
+
+[submodule "packages/apps/DeskClock"]
+	path = packages/apps/DeskClock
+	url = https://github.com/bluestacks/packages-apps-DeskClock-a16.git
+
+[submodule "packages/apps/DevCamera"]
+	path = packages/apps/DevCamera
+	url = https://github.com/bluestacks/packages-apps-DevCamera-a16.git
+
+[submodule "packages/apps/DeviceDiagnostics"]
+	path = packages/apps/DeviceDiagnostics
+	url = https://github.com/bluestacks/packages-apps-DeviceDiagnostics-a16.git
+
+[submodule "packages/apps/Dialer"]
+	path = packages/apps/Dialer
+	url = https://github.com/bluestacks/packages-apps-Dialer-a16.git
+
+[submodule "packages/apps/DocumentsUI"]
+	path = packages/apps/DocumentsUI
+	url = https://github.com/bluestacks/packages-apps-DocumentsUI-a16.git
+
+[submodule "packages/apps/EmergencyInfo"]
+	path = packages/apps/EmergencyInfo
+	url = https://github.com/bluestacks/packages-apps-EmergencyInfo-a16.git
+
+[submodule "packages/apps/EyeDropper"]
+	path = packages/apps/EyeDropper
+	url = https://github.com/bluestacks/packages-apps-EyeDropper-a16.git
+
+[submodule "packages/apps/Gallery"]
+	path = packages/apps/Gallery
+	url = https://github.com/bluestacks/packages-apps-Gallery-a16.git
+
+[submodule "packages/apps/Gallery2"]
+	path = packages/apps/Gallery2
+	url = https://github.com/bluestacks/packages-apps-Gallery2-a16.git
+
+[submodule "packages/apps/HTMLViewer"]
+	path = packages/apps/HTMLViewer
+	url = https://github.com/bluestacks/packages-apps-HTMLViewer-a16.git
+
+[submodule "packages/apps/ImsServiceEntitlement"]
+	path = packages/apps/ImsServiceEntitlement
+	url = https://github.com/bluestacks/packages-apps-ImsServiceEntitlement-a16.git
+
+[submodule "packages/apps/KeyChain"]
+	path = packages/apps/KeyChain
+	url = https://github.com/bluestacks/packages-apps-KeyChain-a16.git
+
+[submodule "packages/apps/Launcher3"]
+	path = packages/apps/Launcher3
+	url = https://github.com/bluestacks/packages-apps-Launcher3-a16.git
+
+[submodule "packages/apps/LegacyCamera"]
+	path = packages/apps/LegacyCamera
+	url = https://github.com/bluestacks/packages-apps-LegacyCamera-a16.git
+
+[submodule "packages/apps/ManagedProvisioning"]
+	path = packages/apps/ManagedProvisioning
+	url = https://github.com/bluestacks/packages-apps-ManagedProvisioning-a16.git
+
+[submodule "packages/apps/Messaging"]
+	path = packages/apps/Messaging
+	url = https://github.com/bluestacks/packages-apps-Messaging-a16.git
+
+[submodule "packages/apps/Multiuser"]
+	path = packages/apps/Multiuser
+	url = https://github.com/bluestacks/packages-apps-Multiuser-a16.git
+
+[submodule "packages/apps/Music"]
+	path = packages/apps/Music
+	url = https://github.com/bluestacks/packages-apps-Music-a16.git
+
+[submodule "packages/apps/MusicFX"]
+	path = packages/apps/MusicFX
+	url = https://github.com/bluestacks/packages-apps-MusicFX-a16.git
+
+[submodule "packages/apps/OnDeviceAppPrediction"]
+	path = packages/apps/OnDeviceAppPrediction
+	url = https://github.com/bluestacks/packages-apps-OnDeviceAppPrediction-a16.git
+
+[submodule "packages/apps/PhoneCommon"]
+	path = packages/apps/PhoneCommon
+	url = https://github.com/bluestacks/packages-apps-PhoneCommon-a16.git
+
+[submodule "packages/apps/PrivateSpace"]
+	path = packages/apps/PrivateSpace
+	url = https://github.com/bluestacks/packages-apps-PrivateSpace-a16.git
+
+[submodule "packages/apps/Protips"]
+	path = packages/apps/Protips
+	url = https://github.com/bluestacks/packages-apps-Protips-a16.git
+
+[submodule "packages/apps/Provision"]
+	path = packages/apps/Provision
+	url = https://github.com/bluestacks/packages-apps-Provision-a16.git
+
+[submodule "packages/apps/QuickAccessWallet"]
+	path = packages/apps/QuickAccessWallet
+	url = https://github.com/bluestacks/packages-apps-QuickAccessWallet-a16.git
+
+[submodule "packages/apps/QuickSearchBox"]
+	path = packages/apps/QuickSearchBox
+	url = https://github.com/bluestacks/packages-apps-QuickSearchBox-a16.git
+
+[submodule "packages/apps/SafetyRegulatoryInfo"]
+	path = packages/apps/SafetyRegulatoryInfo
+	url = https://github.com/bluestacks/packages-apps-SafetyRegulatoryInfo-a16.git
+
+[submodule "packages/apps/SampleLocationAttribution"]
+	path = packages/apps/SampleLocationAttribution
+	url = https://github.com/bluestacks/packages-apps-SampleLocationAttribution-a16.git
+
+[submodule "packages/apps/SecureElement"]
+	path = packages/apps/SecureElement
+	url = https://github.com/bluestacks/packages-apps-SecureElement-a16.git
+
+[submodule "packages/apps/Settings"]
+	path = packages/apps/Settings
+	url = https://github.com/bluestacks/packages-apps-Settings-a16.git
+
+[submodule "packages/apps/SettingsIntelligence"]
+	path = packages/apps/SettingsIntelligence
+	url = https://github.com/bluestacks/packages-apps-SettingsIntelligence-a16.git
+
+[submodule "packages/apps/SpareParts"]
+	path = packages/apps/SpareParts
+	url = https://github.com/bluestacks/packages-apps-SpareParts-a16.git
+
+[submodule "packages/apps/Stk"]
+	path = packages/apps/Stk
+	url = https://github.com/bluestacks/packages-apps-Stk-a16.git
+
+[submodule "packages/apps/StorageManager"]
+	path = packages/apps/StorageManager
+	url = https://github.com/bluestacks/packages-apps-StorageManager-a16.git
+
+[submodule "packages/apps/SystemUIGo"]
+	path = packages/apps/SystemUIGo
+	url = https://github.com/bluestacks/packages-apps-SystemUIGo-a16.git
+
+[submodule "packages/apps/TV"]
+	path = packages/apps/TV
+	url = https://github.com/bluestacks/packages-apps-TV-a16.git
+
+[submodule "packages/apps/Tag"]
+	path = packages/apps/Tag
+	url = https://github.com/bluestacks/packages-apps-Tag-a16.git
+
+[submodule "packages/apps/Test/connectivity"]
+	path = packages/apps/Test/connectivity
+	url = https://github.com/bluestacks/packages-apps-Test-connectivity-a16.git
+
+[submodule "packages/apps/ThemePicker"]
+	path = packages/apps/ThemePicker
+	url = https://github.com/bluestacks/packages-apps-ThemePicker-a16.git
+
+[submodule "packages/apps/Traceur"]
+	path = packages/apps/Traceur
+	url = https://github.com/bluestacks/packages-apps-Traceur-a16.git
+
+[submodule "packages/apps/TvFeedbackConsent"]
+	path = packages/apps/TvFeedbackConsent
+	url = https://github.com/bluestacks/packages-apps-TvFeedbackConsent-a16.git
+
+[submodule "packages/apps/TvSettings"]
+	path = packages/apps/TvSettings
+	url = https://github.com/bluestacks/packages-apps-TvSettings-a16.git
+
+[submodule "packages/apps/TvSystemUI"]
+	path = packages/apps/TvSystemUI
+	url = https://github.com/bluestacks/packages-apps-TvSystemUI-a16.git
+
+[submodule "packages/apps/UniversalMediaPlayer"]
+	path = packages/apps/UniversalMediaPlayer
+	url = https://github.com/bluestacks/packages-apps-UniversalMediaPlayer-a16.git
+
+[submodule "packages/apps/WallpaperPicker2"]
+	path = packages/apps/WallpaperPicker2
+	url = https://github.com/bluestacks/packages-apps-WallpaperPicker2-a16.git
+
+[submodule "packages/inputmethods/LatinIME"]
+	path = packages/inputmethods/LatinIME
+	url = https://github.com/bluestacks/packages-inputmethods-LatinIME-a16.git
+
+[submodule "packages/inputmethods/LeanbackIME"]
+	path = packages/inputmethods/LeanbackIME
+	url = https://github.com/bluestacks/packages-inputmethods-LeanbackIME-a16.git
+
+[submodule "packages/modules/AdServices"]
+	path = packages/modules/AdServices
+	url = https://github.com/bluestacks/packages-modules-AdServices-a16.git
+
+[submodule "packages/modules/AppSearch"]
+	path = packages/modules/AppSearch
+	url = https://github.com/bluestacks/packages-modules-AppSearch-a16.git
+
+[submodule "packages/modules/ArtPrebuilt"]
+	path = packages/modules/ArtPrebuilt
+	url = https://github.com/bluestacks/packages-modules-ArtPrebuilt-a16.git
+
+[submodule "packages/modules/Bluetooth"]
+	path = packages/modules/Bluetooth
+	url = https://github.com/bluestacks/packages-modules-Bluetooth-a16.git
+
+[submodule "packages/modules/CaptivePortalLogin"]
+	path = packages/modules/CaptivePortalLogin
+	url = https://github.com/bluestacks/packages-modules-CaptivePortalLogin-a16.git
+
+[submodule "packages/modules/CellBroadcastService"]
+	path = packages/modules/CellBroadcastService
+	url = https://github.com/bluestacks/packages-modules-CellBroadcastService-a16.git
+
+[submodule "packages/modules/ConfigInfrastructure"]
+	path = packages/modules/ConfigInfrastructure
+	url = https://github.com/bluestacks/packages-modules-ConfigInfrastructure-a16.git
+
+[submodule "packages/modules/Connectivity"]
+	path = packages/modules/Connectivity
+	url = https://github.com/bluestacks/packages-modules-Connectivity-a16.git
+
+[submodule "packages/modules/CrashRecovery"]
+	path = packages/modules/CrashRecovery
+	url = https://github.com/bluestacks/packages-modules-CrashRecovery-a16.git
+
+[submodule "packages/modules/DeviceLock"]
+	path = packages/modules/DeviceLock
+	url = https://github.com/bluestacks/packages-modules-DeviceLock-a16.git
+
+[submodule "packages/modules/DnsResolver"]
+	path = packages/modules/DnsResolver
+	url = https://github.com/bluestacks/packages-modules-DnsResolver-a16.git
+
+[submodule "packages/modules/ExtServices"]
+	path = packages/modules/ExtServices
+	url = https://github.com/bluestacks/packages-modules-ExtServices-a16.git
+
+[submodule "packages/modules/GeoTZ"]
+	path = packages/modules/GeoTZ
+	url = https://github.com/bluestacks/packages-modules-GeoTZ-a16.git
+
+[submodule "packages/modules/Gki"]
+	path = packages/modules/Gki
+	url = https://github.com/bluestacks/packages-modules-Gki-a16.git
+
+[submodule "packages/modules/HealthFitness"]
+	path = packages/modules/HealthFitness
+	url = https://github.com/bluestacks/packages-modules-HealthFitness-a16.git
+
+[submodule "packages/modules/IPsec"]
+	path = packages/modules/IPsec
+	url = https://github.com/bluestacks/packages-modules-IPsec-a16.git
+
+[submodule "packages/modules/ImsMedia"]
+	path = packages/modules/ImsMedia
+	url = https://github.com/bluestacks/packages-modules-ImsMedia-a16.git
+
+[submodule "packages/modules/IntentResolver"]
+	path = packages/modules/IntentResolver
+	url = https://github.com/bluestacks/packages-modules-IntentResolver-a16.git
+
+[submodule "packages/modules/Media"]
+	path = packages/modules/Media
+	url = https://github.com/bluestacks/packages-modules-Media-a16.git
+
+[submodule "packages/modules/ModuleMetadata"]
+	path = packages/modules/ModuleMetadata
+	url = https://github.com/bluestacks/packages-modules-ModuleMetadata-a16.git
+
+[submodule "packages/modules/NetworkStack"]
+	path = packages/modules/NetworkStack
+	url = https://github.com/bluestacks/packages-modules-NetworkStack-a16.git
+
+[submodule "packages/modules/NeuralNetworks"]
+	path = packages/modules/NeuralNetworks
+	url = https://github.com/bluestacks/packages-modules-NeuralNetworks-a16.git
+
+[submodule "packages/modules/Nfc"]
+	path = packages/modules/Nfc
+	url = https://github.com/bluestacks/packages-modules-Nfc-a16.git
+
+[submodule "packages/modules/OnDevicePersonalization"]
+	path = packages/modules/OnDevicePersonalization
+	url = https://github.com/bluestacks/packages-modules-OnDevicePersonalization-a16.git
+
+[submodule "packages/modules/Permission"]
+	path = packages/modules/Permission
+	url = https://github.com/bluestacks/packages-modules-Permission-a16.git
+
+[submodule "packages/modules/Profiling"]
+	path = packages/modules/Profiling
+	url = https://github.com/bluestacks/packages-modules-Profiling-a16.git
+
+[submodule "packages/modules/RemoteKeyProvisioning"]
+	path = packages/modules/RemoteKeyProvisioning
+	url = https://github.com/bluestacks/packages-modules-RemoteKeyProvisioning-a16.git
+
+[submodule "packages/modules/RuntimeI18n"]
+	path = packages/modules/RuntimeI18n
+	url = https://github.com/bluestacks/packages-modules-RuntimeI18n-a16.git
+
+[submodule "packages/modules/Scheduling"]
+	path = packages/modules/Scheduling
+	url = https://github.com/bluestacks/packages-modules-Scheduling-a16.git
+
+[submodule "packages/modules/SdkExtensions"]
+	path = packages/modules/SdkExtensions
+	url = https://github.com/bluestacks/packages-modules-SdkExtensions-a16.git
+
+[submodule "packages/modules/StatsD"]
+	path = packages/modules/StatsD
+	url = https://github.com/bluestacks/packages-modules-StatsD-a16.git
+
+[submodule "packages/modules/Telecom"]
+	path = packages/modules/Telecom
+	url = https://github.com/bluestacks/packages-modules-Telecom-a16.git
+
+[submodule "packages/modules/Telephony"]
+	path = packages/modules/Telephony
+	url = https://github.com/bluestacks/packages-modules-Telephony-a16.git
+
+[submodule "packages/modules/ThreadNetwork"]
+	path = packages/modules/ThreadNetwork
+	url = https://github.com/bluestacks/packages-modules-ThreadNetwork-a16.git
+
+[submodule "packages/modules/UprobeStats"]
+	path = packages/modules/UprobeStats
+	url = https://github.com/bluestacks/packages-modules-UprobeStats-a16.git
+
+[submodule "packages/modules/Uwb"]
+	path = packages/modules/Uwb
+	url = https://github.com/bluestacks/packages-modules-Uwb-a16.git
+
+[submodule "packages/modules/Virtualization"]
+	path = packages/modules/Virtualization
+	url = https://github.com/bluestacks/packages-modules-Virtualization-a16.git
+
+[submodule "packages/modules/Wifi"]
+	path = packages/modules/Wifi
+	url = https://github.com/bluestacks/packages-modules-Wifi-a16.git
+
+[submodule "packages/modules/adb"]
+	path = packages/modules/adb
+	url = https://github.com/bluestacks/packages-modules-adb-a16.git
+
+[submodule "packages/modules/common"]
+	path = packages/modules/common
+	url = https://github.com/bluestacks/packages-modules-common-a16.git
+
+[submodule "packages/modules/desktop/Serviceability"]
+	path = packages/modules/desktop/Serviceability
+	url = https://github.com/bluestacks/packages-modules-desktop-Serviceability-a16.git
+
+[submodule "packages/modules/vndk"]
+	path = packages/modules/vndk
+	url = https://github.com/bluestacks/packages-modules-vndk-a16.git
+
+[submodule "packages/providers/BlockedNumberProvider"]
+	path = packages/providers/BlockedNumberProvider
+	url = https://github.com/bluestacks/packages-providers-BlockedNumberProvider-a16.git
+
+[submodule "packages/providers/BookmarkProvider"]
+	path = packages/providers/BookmarkProvider
+	url = https://github.com/bluestacks/packages-providers-BookmarkProvider-a16.git
+
+[submodule "packages/providers/CalendarProvider"]
+	path = packages/providers/CalendarProvider
+	url = https://github.com/bluestacks/packages-providers-CalendarProvider-a16.git
+
+[submodule "packages/providers/CallLogProvider"]
+	path = packages/providers/CallLogProvider
+	url = https://github.com/bluestacks/packages-providers-CallLogProvider-a16.git
+
+[submodule "packages/providers/ContactsKeysProvider"]
+	path = packages/providers/ContactsKeysProvider
+	url = https://github.com/bluestacks/packages-providers-ContactsKeysProvider-a16.git
+
+[submodule "packages/providers/ContactsProvider"]
+	path = packages/providers/ContactsProvider
+	url = https://github.com/bluestacks/packages-providers-ContactsProvider-a16.git
+
+[submodule "packages/providers/DownloadProvider"]
+	path = packages/providers/DownloadProvider
+	url = https://github.com/bluestacks/packages-providers-DownloadProvider-a16.git
+
+[submodule "packages/providers/MediaProvider"]
+	path = packages/providers/MediaProvider
+	url = https://github.com/bluestacks/packages-providers-MediaProvider-a16.git
+
+[submodule "packages/providers/PartnerBookmarksProvider"]
+	path = packages/providers/PartnerBookmarksProvider
+	url = https://github.com/bluestacks/packages-providers-PartnerBookmarksProvider-a16.git
+
+[submodule "packages/providers/TelephonyProvider"]
+	path = packages/providers/TelephonyProvider
+	url = https://github.com/bluestacks/packages-providers-TelephonyProvider-a16.git
+
+[submodule "packages/providers/TvProvider"]
+	path = packages/providers/TvProvider
+	url = https://github.com/bluestacks/packages-providers-TvProvider-a16.git
+
+[submodule "packages/providers/UserDictionaryProvider"]
+	path = packages/providers/UserDictionaryProvider
+	url = https://github.com/bluestacks/packages-providers-UserDictionaryProvider-a16.git
+
+[submodule "packages/screensavers/Basic"]
+	path = packages/screensavers/Basic
+	url = https://github.com/bluestacks/packages-screensavers-Basic-a16.git
+
+[submodule "packages/screensavers/PhotoTable"]
+	path = packages/screensavers/PhotoTable
+	url = https://github.com/bluestacks/packages-screensavers-PhotoTable-a16.git
+
+[submodule "packages/services/AlternativeNetworkAccess"]
+	path = packages/services/AlternativeNetworkAccess
+	url = https://github.com/bluestacks/packages-services-AlternativeNetworkAccess-a16.git
+
+[submodule "packages/services/BuiltInPrintService"]
+	path = packages/services/BuiltInPrintService
+	url = https://github.com/bluestacks/packages-services-BuiltInPrintService-a16.git
+
+[submodule "packages/services/Car"]
+	path = packages/services/Car
+	url = https://github.com/bluestacks/packages-services-Car-a16.git
+
+[submodule "packages/services/CrossDeviceSync"]
+	path = packages/services/CrossDeviceSync
+	url = https://github.com/bluestacks/packages-services-CrossDeviceSync-a16.git
+
+[submodule "packages/services/DeviceAsWebcam"]
+	path = packages/services/DeviceAsWebcam
+	url = https://github.com/bluestacks/packages-services-DeviceAsWebcam-a16.git
+
+[submodule "packages/services/Iwlan"]
+	path = packages/services/Iwlan
+	url = https://github.com/bluestacks/packages-services-Iwlan-a16.git
+
+[submodule "packages/services/Mms"]
+	path = packages/services/Mms
+	url = https://github.com/bluestacks/packages-services-Mms-a16.git
+
+[submodule "packages/services/Mtp"]
+	path = packages/services/Mtp
+	url = https://github.com/bluestacks/packages-services-Mtp-a16.git
+
+[submodule "packages/services/QualifiedNetworksService"]
+	path = packages/services/QualifiedNetworksService
+	url = https://github.com/bluestacks/packages-services-QualifiedNetworksService-a16.git
+
+[submodule "packages/services/Telecomm"]
+	path = packages/services/Telecomm
+	url = https://github.com/bluestacks/packages-services-Telecomm-a16.git
+
+[submodule "packages/services/Telephony"]
+	path = packages/services/Telephony
+	url = https://github.com/bluestacks/packages-services-Telephony-a16.git
+
+[submodule "packages/wallpapers/LivePicker"]
+	path = packages/wallpapers/LivePicker
+	url = https://github.com/bluestacks/packages-wallpapers-LivePicker-a16.git
+
+[submodule "pdk"]
+	path = pdk
+	url = https://github.com/bluestacks/pdk-a16.git
+
+[submodule "platform_testing"]
+	path = platform_testing
+	url = https://github.com/bluestacks/platform_testing-a16.git
+
+[submodule "prebuilts/abi-dumps/ndk"]
+	path = prebuilts/abi-dumps/ndk
+	url = https://github.com/bluestacks/prebuilts-abi-dumps-ndk-a16.git
+
+[submodule "prebuilts/abi-dumps/platform"]
+	path = prebuilts/abi-dumps/platform
+	url = https://github.com/bluestacks/prebuilts-abi-dumps-platform-a16.git
+
+[submodule "prebuilts/abi-dumps/vndk"]
+	path = prebuilts/abi-dumps/vndk
+	url = https://github.com/bluestacks/prebuilts-abi-dumps-vndk-a16.git
+
+[submodule "prebuilts/android-emulator"]
+	path = prebuilts/android-emulator
+	url = https://github.com/bluestacks/prebuilts-android-emulator-a16.git
+
+[submodule "prebuilts/asuite"]
+	path = prebuilts/asuite
+	url = https://github.com/bluestacks/prebuilts-asuite-a16.git
+
+[submodule "prebuilts/bazel/common"]
+	path = prebuilts/bazel/common
+	url = https://github.com/bluestacks/prebuilts-bazel-common-a16.git
+
+[submodule "prebuilts/build-tools"]
+	path = prebuilts/build-tools
+	url = https://github.com/bluestacks/prebuilts-build-tools-a16.git
+
+[submodule "prebuilts/bundletool"]
+	path = prebuilts/bundletool
+	url = https://github.com/bluestacks/prebuilts-bundletool-a16.git
+
+[submodule "prebuilts/checkcolor"]
+	path = prebuilts/checkcolor
+	url = https://github.com/bluestacks/prebuilts-checkcolor-a16.git
+
+[submodule "prebuilts/checkstyle"]
+	path = prebuilts/checkstyle
+	url = https://github.com/bluestacks/prebuilts-checkstyle-a16.git
+
+[submodule "prebuilts/clang-tools"]
+	path = prebuilts/clang-tools
+	url = https://github.com/bluestacks/prebuilts-clang-tools-a16.git
+
+[submodule "prebuilts/cmake/linux-x86"]
+	path = prebuilts/cmake/linux-x86
+	url = https://github.com/bluestacks/prebuilts-cmake-linux-x86-a16.git
+
+[submodule "prebuilts/cmdline-tools"]
+	path = prebuilts/cmdline-tools
+	url = https://github.com/bluestacks/prebuilts-cmdline-tools-a16.git
+
+[submodule "prebuilts/devtools"]
+	path = prebuilts/devtools
+	url = https://github.com/bluestacks/prebuilts-devtools-a16.git
+
+[submodule "prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8"]
+	path = prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8
+	url = https://github.com/bluestacks/prebuilts-gcc-linux-x86-host-x86_64-linux-glibc2.17-4.8-a16.git
+
+[submodule "prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"]
+	path = prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8
+	url = https://github.com/bluestacks/prebuilts-gcc-linux-x86-host-x86_64-w64-mingw32-4.8-a16.git
+
+[submodule "prebuilts/go/linux-x86"]
+	path = prebuilts/go/linux-x86
+	url = https://github.com/bluestacks/prebuilts-go-linux-x86-a16.git
+
+[submodule "prebuilts/gradle-plugin"]
+	path = prebuilts/gradle-plugin
+	url = https://github.com/bluestacks/prebuilts-gradle-plugin-a16.git
+
+[submodule "prebuilts/jdk/jdk21"]
+	path = prebuilts/jdk/jdk21
+	url = https://github.com/bluestacks/prebuilts-jdk-jdk21-a16.git
+
+[submodule "prebuilts/jdk/jdk25"]
+	path = prebuilts/jdk/jdk25
+	url = https://github.com/bluestacks/prebuilts-jdk-jdk25-a16.git
+
+[submodule "prebuilts/jdk/jdk8"]
+	path = prebuilts/jdk/jdk8
+	url = https://github.com/bluestacks/prebuilts-jdk-jdk8-a16.git
+
+[submodule "prebuilts/ktlint"]
+	path = prebuilts/ktlint
+	url = https://github.com/bluestacks/prebuilts-ktlint-a16.git
+
+[submodule "prebuilts/manifest-merger"]
+	path = prebuilts/manifest-merger
+	url = https://github.com/bluestacks/prebuilts-manifest-merger-a16.git
+
+[submodule "prebuilts/maven_repo/bumptech"]
+	path = prebuilts/maven_repo/bumptech
+	url = https://github.com/bluestacks/prebuilts-maven_repo-bumptech-a16.git
+
+[submodule "prebuilts/misc"]
+	path = prebuilts/misc
+	url = https://github.com/bluestacks/prebuilts-misc-a16.git
+
+[submodule "prebuilts/module_sdk/AdServices"]
+	path = prebuilts/module_sdk/AdServices
+	url = https://github.com/bluestacks/prebuilts-module_sdk-AdServices-a16.git
+
+[submodule "prebuilts/module_sdk/AppSearch"]
+	path = prebuilts/module_sdk/AppSearch
+	url = https://github.com/bluestacks/prebuilts-module_sdk-AppSearch-a16.git
+
+[submodule "prebuilts/module_sdk/Bluetooth"]
+	path = prebuilts/module_sdk/Bluetooth
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Bluetooth-a16.git
+
+[submodule "prebuilts/module_sdk/ConfigInfrastructure"]
+	path = prebuilts/module_sdk/ConfigInfrastructure
+	url = https://github.com/bluestacks/prebuilts-module_sdk-ConfigInfrastructure-a16.git
+
+[submodule "prebuilts/module_sdk/Connectivity"]
+	path = prebuilts/module_sdk/Connectivity
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Connectivity-a16.git
+
+[submodule "prebuilts/module_sdk/CrashRecovery"]
+	path = prebuilts/module_sdk/CrashRecovery
+	url = https://github.com/bluestacks/prebuilts-module_sdk-CrashRecovery-a16.git
+
+[submodule "prebuilts/module_sdk/DeviceLock"]
+	path = prebuilts/module_sdk/DeviceLock
+	url = https://github.com/bluestacks/prebuilts-module_sdk-DeviceLock-a16.git
+
+[submodule "prebuilts/module_sdk/HealthFitness"]
+	path = prebuilts/module_sdk/HealthFitness
+	url = https://github.com/bluestacks/prebuilts-module_sdk-HealthFitness-a16.git
+
+[submodule "prebuilts/module_sdk/IPsec"]
+	path = prebuilts/module_sdk/IPsec
+	url = https://github.com/bluestacks/prebuilts-module_sdk-IPsec-a16.git
+
+[submodule "prebuilts/module_sdk/Media"]
+	path = prebuilts/module_sdk/Media
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Media-a16.git
+
+[submodule "prebuilts/module_sdk/MediaProvider"]
+	path = prebuilts/module_sdk/MediaProvider
+	url = https://github.com/bluestacks/prebuilts-module_sdk-MediaProvider-a16.git
+
+[submodule "prebuilts/module_sdk/Nfc"]
+	path = prebuilts/module_sdk/Nfc
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Nfc-a16.git
+
+[submodule "prebuilts/module_sdk/OnDevicePersonalization"]
+	path = prebuilts/module_sdk/OnDevicePersonalization
+	url = https://github.com/bluestacks/prebuilts-module_sdk-OnDevicePersonalization-a16.git
+
+[submodule "prebuilts/module_sdk/Permission"]
+	path = prebuilts/module_sdk/Permission
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Permission-a16.git
+
+[submodule "prebuilts/module_sdk/Profiling"]
+	path = prebuilts/module_sdk/Profiling
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Profiling-a16.git
+
+[submodule "prebuilts/module_sdk/RemoteKeyProvisioning"]
+	path = prebuilts/module_sdk/RemoteKeyProvisioning
+	url = https://github.com/bluestacks/prebuilts-module_sdk-RemoteKeyProvisioning-a16.git
+
+[submodule "prebuilts/module_sdk/Scheduling"]
+	path = prebuilts/module_sdk/Scheduling
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Scheduling-a16.git
+
+[submodule "prebuilts/module_sdk/SdkExtensions"]
+	path = prebuilts/module_sdk/SdkExtensions
+	url = https://github.com/bluestacks/prebuilts-module_sdk-SdkExtensions-a16.git
+
+[submodule "prebuilts/module_sdk/StatsD"]
+	path = prebuilts/module_sdk/StatsD
+	url = https://github.com/bluestacks/prebuilts-module_sdk-StatsD-a16.git
+
+[submodule "prebuilts/module_sdk/Telephony"]
+	path = prebuilts/module_sdk/Telephony
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Telephony-a16.git
+
+[submodule "prebuilts/module_sdk/Uwb"]
+	path = prebuilts/module_sdk/Uwb
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Uwb-a16.git
+
+[submodule "prebuilts/module_sdk/Wifi"]
+	path = prebuilts/module_sdk/Wifi
+	url = https://github.com/bluestacks/prebuilts-module_sdk-Wifi-a16.git
+
+[submodule "prebuilts/module_sdk/art"]
+	path = prebuilts/module_sdk/art
+	url = https://github.com/bluestacks/prebuilts-module_sdk-art-a16.git
+
+[submodule "prebuilts/module_sdk/conscrypt"]
+	path = prebuilts/module_sdk/conscrypt
+	url = https://github.com/bluestacks/prebuilts-module_sdk-conscrypt-a16.git
+
+[submodule "prebuilts/ndk"]
+	path = prebuilts/ndk
+	url = https://github.com/bluestacks/prebuilts-ndk-a16.git
+
+[submodule "prebuilts/qemu-kernel"]
+	path = prebuilts/qemu-kernel
+	url = https://github.com/bluestacks/prebuilts-qemu-kernel-a16.git
+
+[submodule "prebuilts/r8"]
+	path = prebuilts/r8
+	url = https://github.com/bluestacks/prebuilts-r8-a16.git
+
+[submodule "prebuilts/remoteexecution-client"]
+	path = prebuilts/remoteexecution-client
+	url = https://github.com/bluestacks/prebuilts-remoteexecution-client-a16.git
+
+[submodule "prebuilts/runtime"]
+	path = prebuilts/runtime
+	url = https://github.com/bluestacks/prebuilts-runtime-a16.git
+
+[submodule "prebuilts/rust"]
+	path = prebuilts/rust
+	url = https://github.com/bluestacks/prebuilts-rust-a16.git
+
+[submodule "prebuilts/sdk"]
+	path = prebuilts/sdk
+	url = https://github.com/bluestacks/prebuilts-sdk-a16.git
+
+[submodule "prebuilts/tools"]
+	path = prebuilts/tools
+	url = https://github.com/bluestacks/prebuilts-tools-a16.git
+
+[submodule "prebuilts/vndk/v31"]
+	path = prebuilts/vndk/v31
+	url = https://github.com/bluestacks/prebuilts-vndk-v31-a16.git
+
+[submodule "prebuilts/vndk/v32"]
+	path = prebuilts/vndk/v32
+	url = https://github.com/bluestacks/prebuilts-vndk-v32-a16.git
+
+[submodule "prebuilts/vndk/v33"]
+	path = prebuilts/vndk/v33
+	url = https://github.com/bluestacks/prebuilts-vndk-v33-a16.git
+
+[submodule "prebuilts/vndk/v34"]
+	path = prebuilts/vndk/v34
+	url = https://github.com/bluestacks/prebuilts-vndk-v34-a16.git
+
+[submodule "sdk"]
+	path = sdk
+	url = https://github.com/bluestacks/sdk-a16.git
+
+[submodule "system/apex"]
+	path = system/apex
+	url = https://github.com/bluestacks/system-apex-a16.git
+
+[submodule "system/authgraph"]
+	path = system/authgraph
+	url = https://github.com/bluestacks/system-authgraph-a16.git
+
+[submodule "system/bpf"]
+	path = system/bpf
+	url = https://github.com/bluestacks/system-bpf-a16.git
+
+[submodule "system/bpfprogs"]
+	path = system/bpfprogs
+	url = https://github.com/bluestacks/system-bpfprogs-a16.git
+
+[submodule "system/ca-certificates"]
+	path = system/ca-certificates
+	url = https://github.com/bluestacks/system-ca-certificates-a16.git
+
+[submodule "system/chre"]
+	path = system/chre
+	url = https://github.com/bluestacks/system-chre-a16.git
+
+[submodule "system/connectivity/wificond"]
+	path = system/connectivity/wificond
+	url = https://github.com/bluestacks/system-connectivity-wificond-a16.git
+
+[submodule "system/core"]
+	path = system/core
+	url = https://github.com/bluestacks/system-core-a16.git
+
+[submodule "system/cros-codecs"]
+	path = system/cros-codecs
+	url = https://github.com/bluestacks/system-cros-codecs-a16.git
+
+[submodule "system/dmesgd"]
+	path = system/dmesgd
+	url = https://github.com/bluestacks/system-dmesgd-a16.git
+
+[submodule "system/extras"]
+	path = system/extras
+	url = https://github.com/bluestacks/system-extras-a16.git
+
+[submodule "system/gatekeeper"]
+	path = system/gatekeeper
+	url = https://github.com/bluestacks/system-gatekeeper-a16.git
+
+[submodule "system/gsid"]
+	path = system/gsid
+	url = https://github.com/bluestacks/system-gsid-a16.git
+
+[submodule "system/hardware/interfaces"]
+	path = system/hardware/interfaces
+	url = https://github.com/bluestacks/system-hardware-interfaces-a16.git
+
+[submodule "system/hwservicemanager"]
+	path = system/hwservicemanager
+	url = https://github.com/bluestacks/system-hwservicemanager-a16.git
+
+[submodule "system/incremental_delivery"]
+	path = system/incremental_delivery
+	url = https://github.com/bluestacks/system-incremental_delivery-a16.git
+
+[submodule "system/keymaster"]
+	path = system/keymaster
+	url = https://github.com/bluestacks/system-keymaster-a16.git
+
+[submodule "system/keymint"]
+	path = system/keymint
+	url = https://github.com/bluestacks/system-keymint-a16.git
+
+[submodule "system/libartpalette"]
+	path = system/libartpalette
+	url = https://github.com/bluestacks/system-libartpalette-a16.git
+
+[submodule "system/libbase"]
+	path = system/libbase
+	url = https://github.com/bluestacks/system-libbase-a16.git
+
+[submodule "system/libcppbor"]
+	path = system/libcppbor
+	url = https://github.com/bluestacks/system-libcppbor-a16.git
+
+[submodule "system/libfmq"]
+	path = system/libfmq
+	url = https://github.com/bluestacks/system-libfmq-a16.git
+
+[submodule "system/libhidl"]
+	path = system/libhidl
+	url = https://github.com/bluestacks/system-libhidl-a16.git
+
+[submodule "system/libhwbinder"]
+	path = system/libhwbinder
+	url = https://github.com/bluestacks/system-libhwbinder-a16.git
+
+[submodule "system/libprocinfo"]
+	path = system/libprocinfo
+	url = https://github.com/bluestacks/system-libprocinfo-a16.git
+
+[submodule "system/librustutils"]
+	path = system/librustutils
+	url = https://github.com/bluestacks/system-librustutils-a16.git
+
+[submodule "system/libsysprop"]
+	path = system/libsysprop
+	url = https://github.com/bluestacks/system-libsysprop-a16.git
+
+[submodule "system/libueventd-rs"]
+	path = system/libueventd-rs
+	url = https://github.com/bluestacks/system-libueventd-rs-a16.git
+
+[submodule "system/libufdt"]
+	path = system/libufdt
+	url = https://github.com/bluestacks/system-libufdt-a16.git
+
+[submodule "system/liburingutils"]
+	path = system/liburingutils
+	url = https://github.com/bluestacks/system-liburingutils-a16.git
+
+[submodule "system/libvintf"]
+	path = system/libvintf
+	url = https://github.com/bluestacks/system-libvintf-a16.git
+
+[submodule "system/libziparchive"]
+	path = system/libziparchive
+	url = https://github.com/bluestacks/system-libziparchive-a16.git
+
+[submodule "system/linkerconfig"]
+	path = system/linkerconfig
+	url = https://github.com/bluestacks/system-linkerconfig-a16.git
+
+[submodule "system/logging"]
+	path = system/logging
+	url = https://github.com/bluestacks/system-logging-a16.git
+
+[submodule "system/media"]
+	path = system/media
+	url = https://github.com/bluestacks/system-media-a16.git
+
+[submodule "system/memory/libdmabufheap"]
+	path = system/memory/libdmabufheap
+	url = https://github.com/bluestacks/system-memory-libdmabufheap-a16.git
+
+[submodule "system/memory/libion"]
+	path = system/memory/libion
+	url = https://github.com/bluestacks/system-memory-libion-a16.git
+
+[submodule "system/memory/libmeminfo"]
+	path = system/memory/libmeminfo
+	url = https://github.com/bluestacks/system-memory-libmeminfo-a16.git
+
+[submodule "system/memory/libmemtrack"]
+	path = system/memory/libmemtrack
+	url = https://github.com/bluestacks/system-memory-libmemtrack-a16.git
+
+[submodule "system/memory/libmemunreachable"]
+	path = system/memory/libmemunreachable
+	url = https://github.com/bluestacks/system-memory-libmemunreachable-a16.git
+
+[submodule "system/memory/lmkd"]
+	path = system/memory/lmkd
+	url = https://github.com/bluestacks/system-memory-lmkd-a16.git
+
+[submodule "system/memory/mmd"]
+	path = system/memory/mmd
+	url = https://github.com/bluestacks/system-memory-mmd-a16.git
+
+[submodule "system/netd"]
+	path = system/netd
+	url = https://github.com/bluestacks/system-netd-a16.git
+
+[submodule "system/nvram"]
+	path = system/nvram
+	url = https://github.com/bluestacks/system-nvram-a16.git
+
+[submodule "system/secretkeeper"]
+	path = system/secretkeeper
+	url = https://github.com/bluestacks/system-secretkeeper-a16.git
+
+[submodule "system/secure_element"]
+	path = system/secure_element
+	url = https://github.com/bluestacks/system-secure_element-a16.git
+
+[submodule "system/security"]
+	path = system/security
+	url = https://github.com/bluestacks/system-security-a16.git
+
+[submodule "system/see/authmgr"]
+	path = system/see/authmgr
+	url = https://github.com/bluestacks/system-see-authmgr-a16.git
+
+[submodule "system/sepolicy"]
+	path = system/sepolicy
+	url = https://github.com/bluestacks/system-sepolicy-a16.git
+
+[submodule "system/server_configurable_flags"]
+	path = system/server_configurable_flags
+	url = https://github.com/bluestacks/system-server_configurable_flags-a16.git
+
+[submodule "system/teeui"]
+	path = system/teeui
+	url = https://github.com/bluestacks/system-teeui-a16.git
+
+[submodule "system/testing/gtest_extras"]
+	path = system/testing/gtest_extras
+	url = https://github.com/bluestacks/system-testing-gtest_extras-a16.git
+
+[submodule "system/timezone"]
+	path = system/timezone
+	url = https://github.com/bluestacks/system-timezone-a16.git
+
+[submodule "system/tools/aidl"]
+	path = system/tools/aidl
+	url = https://github.com/bluestacks/system-tools-aidl-a16.git
+
+[submodule "system/tools/hidl"]
+	path = system/tools/hidl
+	url = https://github.com/bluestacks/system-tools-hidl-a16.git
+
+[submodule "system/tools/mkbootimg"]
+	path = system/tools/mkbootimg
+	url = https://github.com/bluestacks/system-tools-mkbootimg-a16.git
+
+[submodule "system/tools/sysprop"]
+	path = system/tools/sysprop
+	url = https://github.com/bluestacks/system-tools-sysprop-a16.git
+
+[submodule "system/tools/xsdc"]
+	path = system/tools/xsdc
+	url = https://github.com/bluestacks/system-tools-xsdc-a16.git
+
+[submodule "system/unwinding"]
+	path = system/unwinding
+	url = https://github.com/bluestacks/system-unwinding-a16.git
+
+[submodule "system/update_engine"]
+	path = system/update_engine
+	url = https://github.com/bluestacks/system-update_engine-a16.git
+
+[submodule "system/usb_info_tools"]
+	path = system/usb_info_tools
+	url = https://github.com/bluestacks/system-usb_info_tools-a16.git
+
+[submodule "system/vold"]
+	path = system/vold
+	url = https://github.com/bluestacks/system-vold-a16.git
+
+[submodule "system/zygote"]
+	path = system/zygote
+	url = https://github.com/bluestacks/system-zygote-a16.git
+
+[submodule "test/app_compat/csuite"]
+	path = test/app_compat/csuite
+	url = https://github.com/bluestacks/test-app_compat-csuite-a16.git
+
+[submodule "test/catbox"]
+	path = test/catbox
+	url = https://github.com/bluestacks/test-catbox-a16.git
+
+[submodule "test/cts-root"]
+	path = test/cts-root
+	url = https://github.com/bluestacks/test-cts-root-a16.git
+
+[submodule "test/dittosuite"]
+	path = test/dittosuite
+	url = https://github.com/bluestacks/test-dittosuite-a16.git
+
+[submodule "test/graphics"]
+	path = test/graphics
+	url = https://github.com/bluestacks/test-graphics-a16.git
+
+[submodule "test/mlts/benchmark"]
+	path = test/mlts/benchmark
+	url = https://github.com/bluestacks/test-mlts-benchmark-a16.git
+
+[submodule "test/mlts/models"]
+	path = test/mlts/models
+	url = https://github.com/bluestacks/test-mlts-models-a16.git
+
+[submodule "test/mts"]
+	path = test/mts
+	url = https://github.com/bluestacks/test-mts-a16.git
+
+[submodule "test/robolectric-extensions"]
+	path = test/robolectric-extensions
+	url = https://github.com/bluestacks/test-robolectric-extensions-a16.git
+
+[submodule "test/suite_harness"]
+	path = test/suite_harness
+	url = https://github.com/bluestacks/test-suite_harness-a16.git
+
+[submodule "test/vts"]
+	path = test/vts
+	url = https://github.com/bluestacks/test-vts-a16.git
+
+[submodule "test/vts-testcase/hal"]
+	path = test/vts-testcase/hal
+	url = https://github.com/bluestacks/test-vts-testcase-hal-a16.git
+
+[submodule "test/vts-testcase/kernel"]
+	path = test/vts-testcase/kernel
+	url = https://github.com/bluestacks/test-vts-testcase-kernel-a16.git
+
+[submodule "test/vts-testcase/nbu"]
+	path = test/vts-testcase/nbu
+	url = https://github.com/bluestacks/test-vts-testcase-nbu-a16.git
+
+[submodule "test/vts-testcase/performance"]
+	path = test/vts-testcase/performance
+	url = https://github.com/bluestacks/test-vts-testcase-performance-a16.git
+
+[submodule "test/vts-testcase/security"]
+	path = test/vts-testcase/security
+	url = https://github.com/bluestacks/test-vts-testcase-security-a16.git
+
+[submodule "test/vts-testcase/vndk"]
+	path = test/vts-testcase/vndk
+	url = https://github.com/bluestacks/test-vts-testcase-vndk-a16.git
+
+[submodule "toolchain/pgo-profiles"]
+	path = toolchain/pgo-profiles
+	url = https://github.com/bluestacks/toolchain-pgo-profiles-a16.git
+
+[submodule "tools/aadevtools"]
+	path = tools/aadevtools
+	url = https://github.com/bluestacks/tools-aadevtools-a16.git
+
+[submodule "tools/acloud"]
+	path = tools/acloud
+	url = https://github.com/bluestacks/tools-acloud-a16.git
+
+[submodule "tools/apifinder"]
+	path = tools/apifinder
+	url = https://github.com/bluestacks/tools-apifinder-a16.git
+
+[submodule "tools/apksig"]
+	path = tools/apksig
+	url = https://github.com/bluestacks/tools-apksig-a16.git
+
+[submodule "tools/apkzlib"]
+	path = tools/apkzlib
+	url = https://github.com/bluestacks/tools-apkzlib-a16.git
+
+[submodule "tools/asuite"]
+	path = tools/asuite
+	url = https://github.com/bluestacks/tools-asuite-a16.git
+
+[submodule "tools/carrier_settings"]
+	path = tools/carrier_settings
+	url = https://github.com/bluestacks/tools-carrier_settings-a16.git
+
+[submodule "tools/content_addressed_storage/prebuilts"]
+	path = tools/content_addressed_storage/prebuilts
+	url = https://github.com/bluestacks/tools-content_addressed_storage-prebuilts-a16.git
+
+[submodule "tools/currysrc"]
+	path = tools/currysrc
+	url = https://github.com/bluestacks/tools-currysrc-a16.git
+
+[submodule "tools/deviceinfra/prebuilts"]
+	path = tools/deviceinfra/prebuilts
+	url = https://github.com/bluestacks/tools-deviceinfra-prebuilts-a16.git
+
+[submodule "tools/dexter"]
+	path = tools/dexter
+	url = https://github.com/bluestacks/tools-dexter-a16.git
+
+[submodule "tools/doc_generation"]
+	path = tools/doc_generation
+	url = https://github.com/bluestacks/tools-doc_generation-a16.git
+
+[submodule "tools/external/fat32lib"]
+	path = tools/external/fat32lib
+	url = https://github.com/bluestacks/tools-external-fat32lib-a16.git
+
+[submodule "tools/external_updater"]
+	path = tools/external_updater
+	url = https://github.com/bluestacks/tools-external_updater-a16.git
+
+[submodule "tools/lint_checks"]
+	path = tools/lint_checks
+	url = https://github.com/bluestacks/tools-lint_checks-a16.git
+
+[submodule "tools/loganalysis"]
+	path = tools/loganalysis
+	url = https://github.com/bluestacks/tools-loganalysis-a16.git
+
+[submodule "tools/metalava"]
+	path = tools/metalava
+	url = https://github.com/bluestacks/tools-metalava-a16.git
+
+[submodule "tools/ndkports"]
+	path = tools/ndkports
+	url = https://github.com/bluestacks/tools-ndkports-a16.git
+
+[submodule "tools/netsim"]
+	path = tools/netsim
+	url = https://github.com/bluestacks/tools-netsim-a16.git
+
+[submodule "tools/platform-compat"]
+	path = tools/platform-compat
+	url = https://github.com/bluestacks/tools-platform-compat-a16.git
+
+[submodule "tools/repohooks"]
+	path = tools/repohooks
+	url = https://github.com/bluestacks/tools-repohooks-a16.git
+
+[submodule "tools/rootcanal"]
+	path = tools/rootcanal
+	url = https://github.com/bluestacks/tools-rootcanal-a16.git
+
+[submodule "tools/security"]
+	path = tools/security
+	url = https://github.com/bluestacks/tools-security-a16.git
+
+[submodule "tools/test/connectivity"]
+	path = tools/test/connectivity
+	url = https://github.com/bluestacks/tools-test-connectivity-a16.git
+
+[submodule "tools/test/mobly_extensions"]
+	path = tools/test/mobly_extensions
+	url = https://github.com/bluestacks/tools-test-mobly_extensions-a16.git
+
+[submodule "tools/test/mobly_snippets"]
+	path = tools/test/mobly_snippets
+	url = https://github.com/bluestacks/tools-test-mobly_snippets-a16.git
+
+[submodule "tools/test/openhst"]
+	path = tools/test/openhst
+	url = https://github.com/bluestacks/tools-test-openhst-a16.git
+
+[submodule "tools/tradefederation/contrib"]
+	path = tools/tradefederation/contrib
+	url = https://github.com/bluestacks/tools-tradefederation-contrib-a16.git
+
+[submodule "tools/tradefederation/core"]
+	path = tools/tradefederation/core
+	url = https://github.com/bluestacks/tools-tradefederation-core-a16.git
+
+[submodule "tools/tradefederation/prebuilts"]
+	path = tools/tradefederation/prebuilts
+	url = https://github.com/bluestacks/tools-tradefederation-prebuilts-a16.git
+
+[submodule "tools/treble"]
+	path = tools/treble
+	url = https://github.com/bluestacks/tools-treble-a16.git
+
+[submodule "tools/trebuchet"]
+	path = tools/trebuchet
+	url = https://github.com/bluestacks/tools-trebuchet-a16.git
+
+[submodule "trusty/device/arm/generic-arm64"]
+	path = trusty/device/arm/generic-arm64
+	url = https://github.com/bluestacks/trusty-device-arm-generic-arm64-a16.git
+
+[submodule "trusty/device/arm/vexpress-a15"]
+	path = trusty/device/arm/vexpress-a15
+	url = https://github.com/bluestacks/trusty-device-arm-vexpress-a15-a16.git
+
+[submodule "trusty/device/common"]
+	path = trusty/device/common
+	url = https://github.com/bluestacks/trusty-device-common-a16.git
+
+[submodule "trusty/device/desktop"]
+	path = trusty/device/desktop
+	url = https://github.com/bluestacks/trusty-device-desktop-a16.git
+
+[submodule "trusty/device/nxp/imx7d"]
+	path = trusty/device/nxp/imx7d
+	url = https://github.com/bluestacks/trusty-device-nxp-imx7d-a16.git
+
+[submodule "trusty/device/x86/generic-x86_64"]
+	path = trusty/device/x86/generic-x86_64
+	url = https://github.com/bluestacks/trusty-device-x86-generic-x86_64-a16.git
+
+[submodule "trusty/hardware/nxp"]
+	path = trusty/hardware/nxp
+	url = https://github.com/bluestacks/trusty-hardware-nxp-a16.git
+
+[submodule "trusty/host/common"]
+	path = trusty/host/common
+	url = https://github.com/bluestacks/trusty-host-common-a16.git
+
+[submodule "trusty/kernel"]
+	path = trusty/kernel
+	url = https://github.com/bluestacks/trusty-kernel-a16.git
+
+[submodule "trusty/user/app/authmgr"]
+	path = trusty/user/app/authmgr
+	url = https://github.com/bluestacks/trusty-user-app-authmgr-a16.git
+
+[submodule "trusty/user/app/avb"]
+	path = trusty/user/app/avb
+	url = https://github.com/bluestacks/trusty-user-app-avb-a16.git
+
+[submodule "trusty/user/app/cast-auth"]
+	path = trusty/user/app/cast-auth
+	url = https://github.com/bluestacks/trusty-user-app-cast-auth-a16.git
+
+[submodule "trusty/user/app/confirmationui"]
+	path = trusty/user/app/confirmationui
+	url = https://github.com/bluestacks/trusty-user-app-confirmationui-a16.git
+
+[submodule "trusty/user/app/gatekeeper"]
+	path = trusty/user/app/gatekeeper
+	url = https://github.com/bluestacks/trusty-user-app-gatekeeper-a16.git
+
+[submodule "trusty/user/app/keymaster"]
+	path = trusty/user/app/keymaster
+	url = https://github.com/bluestacks/trusty-user-app-keymaster-a16.git
+
+[submodule "trusty/user/app/keymint"]
+	path = trusty/user/app/keymint
+	url = https://github.com/bluestacks/trusty-user-app-keymint-a16.git
+
+[submodule "trusty/user/app/sample"]
+	path = trusty/user/app/sample
+	url = https://github.com/bluestacks/trusty-user-app-sample-a16.git
+
+[submodule "trusty/user/app/secretkeeper"]
+	path = trusty/user/app/secretkeeper
+	url = https://github.com/bluestacks/trusty-user-app-secretkeeper-a16.git
+
+[submodule "trusty/user/app/storage"]
+	path = trusty/user/app/storage
+	url = https://github.com/bluestacks/trusty-user-app-storage-a16.git
+
+[submodule "trusty/user/base"]
+	path = trusty/user/base
+	url = https://github.com/bluestacks/trusty-user-base-a16.git
+
+[submodule "trusty/user/desktop"]
+	path = trusty/user/desktop
+	url = https://github.com/bluestacks/trusty-user-desktop-a16.git
+
+[submodule "trusty/vendor/google/aosp"]
+	path = trusty/vendor/google/aosp
+	url = https://github.com/bluestacks/trusty-vendor-google-aosp-a16.git
+
+[submodule "bootable/newinstaller"]
+	path = bootable/newinstaller
+	url = git@github.com:bluestacks/bootable-newinstaller-a16.git
+[submodule "external/efibootmgr"]
+	path = external/efibootmgr
+	url = git@github.com:bluestacks/external-efibootmgr-a16.git
+[submodule "external/efivar"]
+	path = external/efivar
+	url = git@github.com:bluestacks/external-efivar-a16.git
+[submodule "external/syslinux"]
+	path = external/syslinux
+	url = git@github.com:bluestacks/external-syslinux-a16.git
+[submodule "kernel-a16"]
+	path = kernel-a16
+	url = git@github.com:bluestacks/kernel-common-a16.git
+[submodule "prebuilts/clang/host/linux-x86"]
+	path = prebuilts/clang/host/linux-x86
+	url = https://github.com/bluestacks/prebuilts-clang-host-linux-x86-a16.git
