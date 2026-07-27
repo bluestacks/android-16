@@ -62,10 +62,10 @@ public:
 class CMessage : public LightRefBase<CMessage>{
 public:
     int32_t what;
-    int32_t arg0;
+    uintptr_t arg0;
 
     CMessage(int32_t what,
-             int32_t arg0 = 0)
+             uintptr_t arg0 = 0)
         : what(what), arg0(arg0) {}
 
     virtual ~CMessage() {}
