@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">BstCommandProcessor</string>
+    <string name="market_required_prompt">
+        The package %s that you are trying to install requires Google Market to work properly. Search Web for Google Market installation recipe?
+    </string>
+    <string name="market_feature_prompt">
+        To use all the features of package %s, please install Google Market on this device. Search Web for Google Market installation recipe?
+    </string>
+    <string name="snapshot_app_required">
+       No snapshot sharing application is installed.
+    </string>
+    <string name="authentication_error">
+        Authentication is required. You need to sign in to your Google Account.
+    </string>
+
+    <string name="wizard_script_uri" translatable="false">
+        android.resource://com.android.settings/raw/wizard_script
+    </string>
+
+    <string name="permlab_bluetoothShareManager">Access download manager.</string>
+    <string name="permdesc_bluetoothShareManager">
+        Allows the app to access the BluetoothShare manager and use it to transfer files.
+    </string>
+
+    <string name="permlab_bluetoothWhitelist">Whitelist bluetooth device access.</string>
+    <string name="permdesc_bluetoothWhitelist">
+        Allows the app to temporarily whitelist a Bluetooth device, allowing that device to send files to this device without user confirmation.
+    </string>
+    <string name="accessibility_service_description" translatable="false">Accessibility service for BS5 Player</string>
+    <string name="not_available">This item isn\'t available in your country.</string>
+    <string name="install">Install</string>
+    <string name="try_again">Try again</string>
+    <string name="device_not_compatible">Your device isn\'t compatible with this version.</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="cancel">Cancel</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="authentication_error">
+        ต้องมีการตรวจสอบสิทธิ์ คุณจำเป็นต้องลงชื่อเข้าใช้บัญชี Google ของคุณ
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"เข้าถึงตัวจัดการการดาวน์โหลด"</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"อนุญาตให้แอปพลิเคชันเข้าถึงและใช้ตัวจัดการ BluetoothShare เพื่อถ่ายโอนไฟล์"</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"รายการที่อนุญาตการเข้าถึงอุปกรณ์บลูทูธ"</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"อนุญาตให้แอปบันทึกอุปกรณ์บลูทูธในรายการที่อนุญาตเป็นการชั่วคราว ซึ่งจะทำให้อุปกรณ์ดังกล่าวสามารถส่งไฟล์มายังอุปกรณ์นี้ได้โดยไม่ต้องยืนยันผู้ใช้"</string>
+    <string name="not_available">รายการนี้ไม่มีให้บริการในประเทศของคุณ</string>
+    <string name="install">ติดตั้ง</string>
+    <string name="try_again">ลองอีกครั้ง</string>
+    <string name="device_not_compatible">อุปกรณ์ของคุณไม่รองรับการใช้งานกับรุ่นนี้</string>
+    <string name="uninstall">ถอนการติดตั้ง</string>
+    <string name="cancel">ยกเลิก</string>
+</resources>

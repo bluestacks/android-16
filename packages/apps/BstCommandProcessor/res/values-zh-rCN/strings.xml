@@ -1,0 +1,25 @@
+<?xml version="1.0" ?><resources>
+    <string name="market_required_prompt">
+        套件%s，您正试图安装要求谷歌市场才能正常工作。搜索网页，谷歌市场安装配方？
+    </string>
+    <string name="market_feature_prompt">
+        要使用软件包%s 的所有功能，请在此设备上安装谷歌市场。搜索网页，谷歌市场安装配方？
+    </string>
+    <string name="snapshot_app_required">
+        您没有安装快照共享的应用
+    </string>
+    <string name="authentication_error">
+        需要验证身份。您需要登录自己的Google帐号
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"使用下载管理器。"</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"允许应用访问蓝牙共享 (BluetoothShare) 管理器并将其用于传输文件。"</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"将蓝牙设备列入访问权限白名单
+        。"</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"允许该应用暂时将某个蓝牙设备列入白名单，从而允许该设备在不经过用户确认的情况下，将文件发送到本设备。"</string>
+    <string name="not_available">此商品无法在您所在的国家/地区购买或下载。</string>
+    <string name="install">安装</string>
+    <string name="try_again">重试</string>
+    <string name="device_not_compatible">您的设备与此版本不兼容。</string>
+    <string name="uninstall">卸载</string>
+    <string name="cancel">取消</string>
+</resources>

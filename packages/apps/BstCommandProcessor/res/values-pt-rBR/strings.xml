@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="authentication_error">
+        É necessária autenticação. Você precisa fazer login em sua Conta do Google
+    </string>
+    <string name="not_available">Este item não está disponível em seu país.</string>
+    <string name="install">Instalar</string>
+    <string name="try_again">Repetir</string>
+    <string name="device_not_compatible">Seu dispositivo não é compatível com esta versão.</string>
+    <string name="uninstall">Desinstalar</string>
+    <string name="cancel">Cancelar</string>
+</resources>

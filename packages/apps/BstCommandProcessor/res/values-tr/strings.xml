@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"İndirme yöneticisine erişin."</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"Uygulamaya, BluetoothShare yöneticisine erişme ve bunu dosyaları aktarmak için kullanma izni verir."</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"Bluetooth cihazı erişimine izin ver."</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"Uygulamaya, bir Bluetooth cihazını geçici olarak onaylananlar listesine ekleme izni verir. Böylece, izin verilen cihaz kullanıcının onayı olmadan bu cihaza dosya gönderebilir."</string>
+    <string name="authentication_error">
+        Kimlik doğrulama gerekli. Google Hesabınızda oturum açmalısınız.
+    </string>
+    <string name="not_available">Bu öğe ülkenizde kullanılamıyor.</string>
+    <string name="install">Yükle</string>
+    <string name="try_again">Tekrar dene</string>
+    <string name="device_not_compatible">Cihazınız bu sürümle uyumlu değil.</string>
+    <string name="uninstall">Kaldır</string>
+    <string name="cancel">İptal</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?><resources>
+    <string name="market_required_prompt">
+        El paquete %s que está intentando instalar Google Market necesaria para que funcione correctamente. Búsqueda en la web para la receta de instalación de Google del mercado?
+    </string>
+    <string name="market_feature_prompt">
+        Para utilizar todas las características de paquetei %s, por favor, instale el mercado de Google en este dispositivo. Búsqueda en la web para la receta de instalación de Google del mercado?
+    </string>
+    <string name="snapshot_app_required">
+        No se ha instalado la aplicación compartir instantáneas 
+    </string>
+    <string name="authentication_error">
+        Autenticación obligatoria: debes iniciar sesión en tu cuenta de Google.
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"Acceso al administrador de descargas"</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"Permite que la aplicación acceda al administrador BluetoothShare y lo use para transferir archivos."</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"Acceso de dispositivos Bluetooth autorizados"</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"Permite que la aplicación autorice temporalmente a un dispositivo Bluetooth para que pueda enviar archivos a este dispositivo sin la confirmación del usuario."</string>
+    <string name="not_available">Este elemento no está disponible en tu país.</string>
+    <string name="install">Instalar</string>
+    <string name="try_again">Reintentar</string>
+    <string name="device_not_compatible">Tu dispositivo no es compatible con esta versión.</string>
+    <string name="uninstall">Desinstalar</string>
+    <string name="cancel">Cancelar</string>
+</resources>

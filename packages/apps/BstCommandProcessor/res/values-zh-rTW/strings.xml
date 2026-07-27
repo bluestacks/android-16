@@ -1,0 +1,24 @@
+<?xml version="1.0" ?><resources>
+    <string name="market_required_prompt">
+        套件%s，您正試圖安裝要求谷歌市場才能正常工作。搜索網頁，谷歌市場安裝配方？
+    </string>
+    <string name="market_feature_prompt">
+        要使用軟件包%s 的所有功能，請在此設備上安裝谷歌市場。搜索網頁，谷歌市場安裝配方？
+    </string>
+    <string name="snapshot_app_required">
+        您沒有安裝快照共享的應用
+    </string>
+    <string name="authentication_error">
+        需要驗證。您必須登入您的「Google 帳戶」
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"存取下載管理員。"</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"允許應用程式存取 BluetoothShare 管理員，並可使用 BluetoothShare 管理員傳輸檔案。"</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"將藍牙裝置列入許可清單。"</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"允許應用程式暫時將藍牙裝置加入許可名單，使其不需經過使用者確認即可將檔案傳送到裝置。"</string>
+    <string name="not_available">你的國家/地區不支援這個項目。</string>
+    <string name="install">安裝</string>
+    <string name="try_again">再試一次</string>
+    <string name="device_not_compatible">您的裝置與這個版本不相容。</string>
+    <string name="uninstall">解除安裝</string>
+    <string name="cancel">取消</string>
+</resources>
