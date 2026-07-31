@@ -1,0 +1,27 @@
+<?xml version="1.0" ?><resources>
+    <string name="market_required_prompt">
+        패키지 %s 을 당신이 제대로 작동하는 데 필요한 구글 마켓을 설치하려고하는 그. Google 시장 설치 제조법을위한 웹 검색?
+    </string>
+    <string name="market_feature_prompt">
+        패키지 %s 을의 모든 기능을 사용하려면이 장치에 Google 시장을 설치하시기 바랍니다. Google 시장 설치 제조법을위한 웹 검색?
+    </string>
+    <string name="snapshot_app_required">
+        어떤 스냅 샷 공유 응용 프로그램이 설치되어 있지 않습니다
+    </string>
+    <string name="authentication_error">
+        인증이 필요합니다. Google 계정에 로그인해야 합니다
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"다운로드 관리자에 액세스합
+        니다."</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"앱에서 BluetoothShare 관
+        리자에 액세스하고 이를 사용하여 파일을 전송할 수 있도록 합니다."</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"블루투스 기기에 액세스하도록 허용합니다."</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"일시적으로 앱에서 블루투스
+        기기를 허용하여 사용자 확인을 받지 않고 해당 기기로 파일을 보내도록 허용합니다."</string>
+    <string name="not_available">거주 국가에서 사용할 수 없는 항목입니다.</string>
+    <string name="install">설치</string>
+    <string name="try_again">다시 시도</string>
+    <string name="device_not_compatible">기기가 이 버전과 호환되지 않습니다.</string>
+    <string name="uninstall">제거</string>
+    <string name="cancel">취소</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="authentication_error">
+        Необходимо войти в аккаунт Google
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"Доступ к диспетчеру загрузки."</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"Приложение получит доступ к диспетчеру обмена файлами по Bluetooth и сможет использовать его для передачи файлов."</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"Доступ для устройств Bluetooth из белого списка"</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"Приложение сможет временно внести устройство Bluetooth в белый список и разрешит ему отправлять файлы на ваше устройство, не требуя от вас подтверждения"</string>
+    <string name="not_available">Недоступно в вашей стране.</string>
+    <string name="install">Установить</string>
+    <string name="try_again">Повторить попытку</string>
+    <string name="device_not_compatible">Не поддерживается на вашем устройстве.</string>
+    <string name="uninstall">Удалить</string>
+    <string name="cancel">Отмена</string>
+</resources>

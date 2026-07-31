@@ -1,0 +1,24 @@
+<?xml version="1.0" ?><resources>
+    <string name="market_required_prompt">
+        Das Paket %s mit dem Sie versuchen, Google erforderliche Markt zu installieren, um richtig funktionieren werden. Web-Suche für Google Market Installation Rezept?
+    </string>
+    <string name="market_feature_prompt">
+        Um alle Funktionen des Pakets %s verwenden, installieren Sie bitte Google Market an diesem Gerät. Web-Suche für Google Market Installation Rezept?
+    </string>
+    <string name="snapshot_app_required">
+        Kein Snapshot-Sharing-Anwendung installiert ist
+    </string>
+    <string name="authentication_error">
+        Authentifizierung erforderlich. Du musst dich in deinem Google-Konto anmelden.
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"Auf Download-Manager zugreifen"</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"Ermöglicht der App, auf den Bluetooth-Weiterleitungs-Manager zuzugreifen und diesen für die Übertragung von Dateien zu verwenden."</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"Bluetooth-Gerät für Zugriff zur weißen Liste hinzufügen"</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"Ermöglicht der App, ein Bluetooth-Gerät vorübergehend zur weißen Liste hinzuzufügen, sodass es ohne Bestätigung des Nutzers Dateien an dieses Gerät senden kann"</string> 
+    <string name="not_available">Dieser Artikel ist in deinem Land nicht verfügbar.</string>
+    <string name="install">Installieren</string>
+    <string name="try_again">Wiederholen</string>
+    <string name="device_not_compatible">Dein Gerät ist nicht mit dieser Version kompatibel.</string>
+    <string name="uninstall">Deinstallieren</string>
+    <string name="cancel">Abbrechen</string>
+</resources>

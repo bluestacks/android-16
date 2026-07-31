@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="authentication_error">
+        Diperlukan autentikasi. Anda perlu masuk ke Akun Google.
+    </string>
+</resources>

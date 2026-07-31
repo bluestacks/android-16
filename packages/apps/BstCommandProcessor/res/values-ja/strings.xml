@@ -1,0 +1,27 @@
+<?xml version="1.0" ?><resources>
+    <string name="market_required_prompt">
+        パッケージ%s が正常に機能するために必要なGoogleは市場をインストールしようとしている。 Googleマーケットのインストールレシピの検索ウェブ？
+    </string>
+    <string name="market_feature_prompt">
+        パッケージ%s のすべての機能を使用するには、このデバイスでGoogle市場をインストールしてください。 Googleマーケットのインストールレシピの検索ウェブ？
+    </string>
+    <string name="snapshot_app_required">
+        いいえスナップショットの共有アプリケーションがインストールされていません 
+    </string>
+    <string name="authentication_error">
+        認証が必要です。Googleアカウントにログインしてください
+    </string>
+    <string name="permlab_bluetoothShareManager" msgid="311492132450338925">"ダウンロードマネージャーに
+        アクセスします。"</string>
+    <string name="permdesc_bluetoothShareManager" msgid="8930572979123190223">"BluetoothShareマネージャ
+        ーへのアクセスとそれを利用したファイル転送をアプリに許可します。"</string>
+    <string name="permlab_bluetoothWhitelist" msgid="7091552898592306386">"Bluetooth端末によるアクセスを許可します。"</string>
+    <string name="permdesc_bluetoothWhitelist" msgid="5494513855192170109">"Bluetooth端末によるアクセス
+        を一時的に許可して、ユーザーの確認を受けずにその端末からこの端末にファイルを送信することをアプリに許可します。"</string>
+    <string name="not_available">このアイテムはお住まいの国でご利用いただけません</string>
+    <string name="install">インストール</string>
+    <string name="try_again">再試行</string>
+    <string name="device_not_compatible">お使いのデバイスはこのバージョンに対応していません。</string>
+    <string name="uninstall">アンインストール</string>
+    <string name="cancel">キャンセル</string>
+</resources>
