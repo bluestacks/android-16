@@ -4080,3 +4080,7 @@
 	path = external/alsa-lib
 	url = git@github.com:mark-bst/external-alsa-lib-a13.git
 	branch = aosp16-bst-merge
+[submodule "external/alsa-utils"]
+	path = external/alsa-utils
+	url = git@github.com:mark-bst/external-alsa-utils-a13.git
+	branch = aosp16-bst-merge
