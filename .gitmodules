@@ -4076,3 +4076,7 @@
 	path = hardware/bst/power
 	url = git@github.com:mark-bst/hardware-bst-power-a13.git
 	branch = aosp16-bst-merge
+[submodule "external/alsa-lib"]
+	path = external/alsa-lib
+	url = git@github.com:mark-bst/external-alsa-lib-a13.git
+	branch = aosp16-bst
