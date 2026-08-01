@@ -4060,10 +4060,6 @@
 	path = hardware/bst/audio
 	url = git@github.com:mark-bst/hardware-bst-audio-a13.git
 	branch = aosp16-bst-merge
-[submodule "hardware/bst/camera"]
-	path = hardware/bst/camera
-	url = git@github.com:mark-bst/hardware-bst-camera-a13.git
-	branch = aosp16-bst-merge
 [submodule "hardware/bst/lights"]
 	path = hardware/bst/lights
 	url = git@github.com:mark-bst/hardware-bst-lights-a13.git

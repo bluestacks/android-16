@@ -1,0 +1,79 @@
+#ifndef FSL_MEMORY_H_
+#define FSL_MEMORY_H_
+
+#include <stdint.h>
+#include <cutils/native_handle.h>
+
+namespace fsl {
+
+enum {
+    /* buffer is often read in software */
+    USAGE_SW_READ_OFTEN = 0x00000003,
+    /* buffer is often written in software */
+    USAGE_SW_WRITE_OFTEN = 0x00000030,
+    /* buffer will be used as an OpenGL ES texture */
+    USAGE_HW_TEXTURE = 0x00000100,
+    /* buffer will be used as an OpenGL ES render target */
+    USAGE_HW_RENDER   = 0x00000200,
+    /* buffer will be used by the 2D hardware blitter */
+    USAGE_HW_2D       = 0x00000400,
+    /* buffer will be used by the HWComposer HAL module */
+    USAGE_HW_COMPOSER = 0x00000800,
+    /* buffer will be used with the HW video encoder */
+    USAGE_HW_VIDEO_ENCODER = 0x00010000,
+    /* buffer size of hantro decoder is not to yuv pixel size, it need to
+    * pad some bytes for vpu usage, so add this flag */
+    USAGE_PADDING_BUFFER = 0x80000000,
+};
+
+enum {
+    FLAGS_FRAMEBUFFER    = 0x00000001,
+    FLAGS_ALLOCATION_ION = 0x00000010,
+    FLAGS_ALLOCATION_GPU = 0x00000020,
+    FLAGS_WRAP_GPU       = 0x00000040,
+    FLAGS_CAMERA         = 0x00100000,
+    FLAGS_VIDEO          = 0x00200000,
+    FLAGS_UI             = 0x00400000,
+    FLAGS_CPU            = 0x00800000,
+};
+
+struct MemoryDesc;
+
+struct Memory : public native_handle
+{
+    static inline int sNumInts() {
+        return (((sizeof(Memory) - sizeof(native_handle_t))/sizeof(int)) - sNumFds);
+    }
+    static const int sNumFds = 1;
+    static const int sMagic = 0x3141592;
+
+    Memory(MemoryDesc* desc, int fd);
+    ~Memory();
+    bool isValid();
+
+    int  fd;
+    int  magic;
+    int  flags;
+    int  size;
+    int  offset;
+    uint64_t base __attribute__((aligned(8)));
+    uint64_t phys __attribute__((aligned(8)));
+    int width;
+    int height;
+    int format;
+    int stride;
+    int usage;
+    int pid;
+
+    int fslFormat;
+    int kmsFd;
+    uint32_t fbHandle;
+    uint32_t fbId;
+    uint64_t fsl_reserved[2] __attribute__((aligned(8)));
+
+    /* pointer to viv private. */
+    uint64_t viv_reserved[4] __attribute__((aligned(8)));
+};
+
+}
+#endif /* GRALLOC_PRIV_H_ */
