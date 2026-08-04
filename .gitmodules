@@ -4047,6 +4047,9 @@
 [submodule "external/efivar"]
 	path = external/efivar
 	url = git@github.com:bluestacks/external-efivar-a16.git
+[submodule "external/v86d"]
+	path = external/v86d
+	url = git@github.com:mark-bst/external-v86d-a16.git
 [submodule "external/syslinux"]
 	path = external/syslinux
 	url = git@github.com:bluestacks/external-syslinux-a16.git
