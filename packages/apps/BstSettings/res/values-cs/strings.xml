@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Úložiště</string>
+    <string name="applications_settings">Aplikace</string>
+    <string name="location_settings_title" >Poloha</string>
+    <string name="date_and_time_settings_title" >Datum a čas</string>
+    <string name="language_settings" >Jazyk a zadávání</string>
+    <string name="accessibility_settings" >Usnadnění</string>
+    <string name="header_category_device" >ZAŘÍZENÍ</string>
+    <string name="header_category_personal" >OSOBNÍ</string>
+    <string name="header_category_system" >SYSTÉM</string>
+	<string name="security_settings_title" >"Zabezpečení"</string>
+	<string name="about_settings" product="default" >"Info o telefonu"</string>
+
+    <string name="app_name">Nastavení</string>
+
+    <string name="account_settings_title">"Účty"</string>
+    <string name="home_settings">"Výchozí aplikace"</string>
+</resources>

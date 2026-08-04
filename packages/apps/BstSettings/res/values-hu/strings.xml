@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Tárhely</string>
+    <string name="applications_settings">Alkalmazások</string>
+    <string name="location_settings_title" >Tartózkodási hely</string>
+    <string name="date_and_time_settings_title" >Dátum és idő</string>
+    <string name="language_settings" >Nyelv és bevitel</string>
+    <string name="accessibility_settings" >Kisegítő lehetőségek</string>
+    <string name="header_category_device" >ESZKÖZ</string>
+    <string name="header_category_personal" >SZEMÉLYES</string>
+    <string name="header_category_system" >RENDSZER</string>
+	<string name="security_settings_title" >"Biztonság"</string>
+	<string name="about_settings" product="default" >"A telefonról"</string>
+	
+    <string name="app_name">Beállítások</string>
+
+    <string name="account_settings_title">"Fiókok"</string>
+    <string name="home_settings">"Alapbeállítások"</string>
+</resources>

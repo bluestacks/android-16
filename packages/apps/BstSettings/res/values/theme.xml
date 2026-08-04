@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Settings" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@android:style/Widget.Holo.ActionBar.Solid</item>
+    <item name="android:listPreferredItemHeight">40dp</item>
+    </style>
+</resources>

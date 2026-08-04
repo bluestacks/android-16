@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Pohranjivanje</string>
+    <string name="applications_settings">Aplikacije</string>
+    <string name="location_settings_title" >Lokacija</string>
+    <string name="date_and_time_settings_title" >Datum i vrijeme</string>
+    <string name="language_settings" >Jezik i ulaz</string>
+    <string name="accessibility_settings" >Dostupnost</string>
+    <string name="header_category_device" >UREĐAJ</string>
+    <string name="header_category_personal" >OSOBNO</string>
+    <string name="header_category_system" >SUSTAV</string>
+    <string name="security_settings_title" >"Sigurnost"</string>
+    <string name="about_settings" product="default" >"O telefonu"</string>
+
+    <string name="app_name">Postavke</string>
+    <string name="account_settings_title">"Računi"</string>
+    <string name="home_settings">"Zadane postavke"</string>
+</resources>

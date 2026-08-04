@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="applications_settings">Εφαρμογές</string>
+    <string name="location_settings_title" >Τοποθεσία</string>
+    <string name="date_and_time_settings_title" >Ημερομηνία και ώρα</string>
+    <string name="language_settings" >Γλώσσα και εισαγωγή</string>
+    <string name="accessibility_settings" >Προσβασιμότητα</string>
+    <string name="header_category_device" >ΣΥΣΚΕΥΗ</string>
+    <string name="header_category_personal" >"ΠΡΟΣΩΠΙΚΟΣ"</string>
+    <string name="header_category_system" >ΣΥΣΤΗΜΑ</string>
+	<string name="security_settings_title" >"Ασφάλεια"</string>
+	<string name="about_settings" product="default" >"Σχετικά με το τηλέφωνο"</string>
+	
+    <string name="app_name">Ρυθμίσεις</string>
+    <string name="contacts"> Administrar contactos</string>
+    <string name="file_manager">Importar archivos de Windows</string>
+    <string name="input_method_settings">Seleccionar IME</string>
+
+
+    <string name="selected">Seleccionado</string>
+    <string name="select">Seleccionar</string>
+    <string name="enabled">Activado</string>
+    <string name="input">entrada</string>
+    <string name="input_apk">apk de entrada</string>
+    <string name="setup">Configurar</string>
+    <string name="installed_ime">Instalado</string>
+    <string name="install_ime">1. Instalar</string>
+    <string name="enable_physical_keyboard">Habilitar teclado físico</string>
+    <string name="enable_soft_keyboard">Habilitar teclado en pantalla</string>
+
+    <string name="wait_installingapk">Instalando APK. Por favor, espere...</string>
+    <string name="install_complete">Apk instalado. Habilitar y seleccionar este IME ahora.</string>
+    
+    <string name="account_settings_title">"Λογαριασμοί"</string>
+    <string name="home_settings">"Προεπιλογές"</string>
+</resources>

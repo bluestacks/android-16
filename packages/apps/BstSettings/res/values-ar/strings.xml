@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">التخزين</string>
+    <string name="applications_settings">التطبيقات</string>
+    <string name="location_settings_title">الموقع</string>
+    <string name="date_and_time_settings_title" >"التاريخ والوقت"</string>
+    <string name="language_settings" >"اللغة والإدخال"</string>
+    <string name="accessibility_settings" >"إمكانية الدخول"</string>
+    <string name="header_category_personal" >"شخصي"</string>
+    <string name="header_category_system" >"النظام"</string>
+    <string name="security_settings_title" >"الأمان"</string>
+    <string name="about_settings" product="default" >"حول الهاتف"</string>
+    <string name="home_settings">"الإعدادات الافتراضية"</string>
+
+    
+    <string name="app_name">"الإعدادات"</string>
+    <string name="contacts"> إدارة جهات الاتصال</string>
+    <string name="file_manager">استيراد ملفات ويندوز</string>
+    <string name="input_method_settings">حدد  محرر أسلوب الإدخال IME</string>
+    <string name="header_category_device" >"الجهاز"</string>
+
+    <string name="installing">التثبيت</string>
+    <string name="install">تثبيت</string>
+    <string name="installed_ime">المثبت</string>
+    <string name="selected">المحدد</string>
+    <string name="select">تحديد</string>
+    <string name="enabled">تم التمكين</string>
+    <string name="enable_ime">تمكين</string>
+    <string name="input">الإدخال</string>
+    <string name="input_apk">إدخال apk</string>
+    <string name="setup">الإعداد</string>
+    <string name="install_ime">1. تثبيت</string>
+    <string name="select_default_ime">حدد محرر أسلوب الإدخال IME الافتراضي في أندرويد</string>
+    <string name="enable_physical_keyboard">تمكين لوحة المفاتيح الفعلية</string>
+    <string name="enable_soft_keyboard">تمكين لوحة المفاتيح على الشاشة</string>
+
+    <string name="wait_installingapk">جار تثبيت Apk. الرجاء الانتظار...</string>
+    <string name="install_complete">تم تثبيت Apk. قم بتمكين وتحديد IME هذا الآن.</string>
+    <string name="install_failed">فشل تثبيت Apk. الرجاء المحاولة مرة أخرى.</string>
+
+     <string name="account_settings_title">"الحسابات"</string>
+     <string name="notification_settings">"إشعار صوتي"</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">Память</string>
+    <string name="applications_settings">Приложения</string>
+    <string name="location_settings_title" >Местоположение</string>
+    <string name="date_and_time_settings_title" >Дата и время</string>
+    <string name="language_settings" >Язык и ввод</string>
+    <string name="accessibility_settings" >Спец. возможности</string>
+    <string name="header_category_device" >УСТРОЙСТВО</string>
+    <string name="header_category_personal" >ЛИЧНЫЕ ДАННЫЕ</string>
+    <string name="header_category_system" >СИСТЕМА</string>
+	<string name="security_settings_title" >"Безопасность"</string>
+	<string name="about_settings" >"О телефоне"</string>
+	
+    <string name="app_name">Настройки</string>
+    <string name="contacts"> Управление контактами</string>
+    <string name="file_manager">Импорт файлов Windows</string>
+    <string name="input_method_settings">Выберите IME</string>
+
+
+    <string name="installing">Установка...</string>
+    <string name="install">Установить</string>
+    <string name="installed_ime">Установлено</string>
+    <string name="selected">Выбрано</string>
+    <string name="select">Выберите</string>
+    <string name="enabled">Включено</string>
+    <string name="enable_ime">Включить</string>
+    <string name="input">ввод данных</string>
+    <string name="input_apk">ввод apk</string>
+    <string name="setup">Настройка</string>
+    <string name="install_ime">1. Установить</string>
+    <string name="select_default_ime">Выбрать по умолчанию Android IME</string>
+    <string name="enable_physical_keyboard">Включить физическую клавиатуру</string>
+    <string name="enable_soft_keyboard">Включить экранную клавиатуру</string>
+
+    <string name="wait_installingapk">Установка APK. Пожалуйста, подождите...</string>
+    <string name="install_complete">APK установлен. Включить и выбрать этот IME сейчас.</string>
+    <string name="install_failed">Не удалось выполнить установку APK. Повторите попытку.</string>
+    
+    <string name="account_settings_title">"Аккаунты"</string>
+    <string name="notification_settings">Звук и уведомления</string>
+    <string name="home_settings">"По умолчанию"</string>
+    <string name="step">Шаг %1$d</string>
+    <string name="security_fingerprint_settings">Отпечаток &amp; пальца</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

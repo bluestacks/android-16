@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">저장소</string>
+    <string name="applications_settings">애플리케이션</string>
+    <string name="location_settings_title" >위치</string>
+    <string name="date_and_time_settings_title" >날짜 및 시간</string>
+    <string name="language_settings" >언어 및 키보드</string>
+    <string name="accessibility_settings" >접근성</string>
+    <string name="header_category_device" >기기</string>
+    <string name="header_category_personal" >개인 설정</string>
+    <string name="header_category_system" >시스템</string>
+	<string name="security_settings_title" >"보안"</string>
+	<string name="about_settings" >"휴대전화 정보"</string>
+
+    <string name="app_name">설정</string>
+    <string name="contacts"> 연락처 관리</string>
+    <string name="file_manager">윈도우 파일 가져오기</string>
+    <string name="input_method_settings">IME 선택</string>
+
+
+    <string name="installing">설치 중</string>
+    <string name="install">설치</string>
+    <string name="installed_ime">설치 완료</string>
+    <string name="selected">선택됨</string>
+    <string name="select">선택</string>
+    <string name="enabled">활성 상태</string>
+    <string name="enable_ime">활성화</string>
+    <string name="input">입력</string>
+    <string name="input_apk">입력 apk</string>
+    <string name="setup">설정</string>
+    <string name="install_ime">1. 설치</string>
+    <string name="select_default_ime">기본 안드로이드 IME 선택</string>
+    <string name="enable_physical_keyboard">물리적 키보드 활성화</string>
+    <string name="enable_soft_keyboard">터치스크린 키보드 활성화</string>
+
+    <string name="wait_installingapk">Apk 설치 중... 기다려 주십시오...</string>
+    <string name="install_complete">Apk 설치 완료 지금 해당 IME를 활성화하고 선택하십시오</string>
+    <string name="install_failed">설치하지 못했습니다 다시 시도해 주십시오</string>
+    
+    <string name="account_settings_title">"계정"</string>
+    <string name="notification_settings">사운드 및 알림</string>
+    <string name="home_settings">"기본"</string>
+    <string name="step">단계 %1$d</string>
+    <string name="security_fingerprint_settings">보안 &amp; 지문</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

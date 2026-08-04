@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Pomnilnik</string>
+    <string name="applications_settings">Programi</string>
+    <string name="location_settings_title" >Местоположение</string>
+    <string name="date_and_time_settings_title" >Datum in ura</string>
+    <string name="language_settings" >Jezik in vnos</string>
+    <string name="accessibility_settings" >Pripomočki za ljudi s posebnimi potrebami</string>
+    <string name="header_category_device" >NAPRAVA</string>
+    <string name="header_category_personal" >OSEBNO</string>
+    <string name="header_category_system" >SISTEM</string>
+	<string name="security_settings_title" >"Varnost"</string>
+	<string name="about_settings" >"O telefonu"</string>
+
+    <string name="app_name">Nastavitve</string>
+
+    <string name="account_settings_title">"Računi"</string>
+    <string name="notification_settings">"Zvok in obvestila"</string>
+    <string name="home_settings">"Privzete nastavitve"</string>
+</resources>

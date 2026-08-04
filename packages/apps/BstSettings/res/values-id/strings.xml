@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="app_name">Pengaturan</string>
+    <string name="contacts"> Kelola Kontak</string>
+    <string name="file_manager">Impor File Windows</string>
+    <string name="input_method_settings">Pilih IME</string>
+
+
+    <string name="selected">Terpilih</string>
+    <string name="select">Pilih</string>
+    <string name="enabled">Aktif</string>
+    <string name="input">input</string>
+    <string name="input_apk">input apk</string>
+    <string name="setup">Setel</string>
+    <string name="installed_ime">Terinstal</string>
+    <string name="install_ime">1. Instal</string>
+    <string name="enable_physical_keyboard">Aktifkan Keyboard Fisik</string>
+    <string name="enable_soft_keyboard">Aktifkan Keyboard Pada Layar</string>
+
+    <string name="wait_installingapk">Menginstal Apk. Mohon Tunggu...</string>
+    <string name="install_complete">Apk Terinstal. Aktifkan dan Pilih IME ini sekarang.</string>
+    <string name="notification_settings">Suara &amp; Pemberitahuan</string>
+</resources>

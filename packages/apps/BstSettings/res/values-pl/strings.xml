@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Pamięć</string>
+    <string name="applications_settings">Aplikacje</string>
+    <string name="location_settings_title" >Lokalizacja</string>
+    <string name="date_and_time_settings_title" >Data i czas</string>
+    <string name="language_settings" >Język, klawiatura, głos</string>
+    <string name="accessibility_settings" >Ułatwienia dostępu</string>
+    <string name="header_category_device" >URZĄDZENIE</string>
+    <string name="header_category_personal" >OSOBISTE</string>
+    <string name="header_category_system" >SYSTEM</string>
+	<string name="security_settings_title" >"Zabezpieczenia"</string>
+	<string name="about_settings" >"Informacje o telefonie"</string>
+
+    <string name="app_name">Ustawienia</string>
+
+    <string name="account_settings_title">"Konta"</string>
+    <string name="home_settings">"Domyślne"</string>
+
+    <string name="contacts">Zarządzaj kontaktami</string>
+    <string name="file_manager">Importuj pliki Windows</string>
+    <string name="input_method_settings">Wybierz IME</string>
+    <string name="installing">Instalacja</string>
+    <string name="install">Zainstaluj</string>
+    <string name="installed_ime">Zainstalowane</string>
+    <string name="selected">Wybrane</string>
+    <string name="select">Wybierz</string>
+    <string name="enabled">Włączone</string>
+    <string name="enable_ime">Włącz</string>
+    <string name="input">Wprowadzanie</string>
+    <string name="input_apk">Wprowadzanie apk</string>
+    <string name="setup">Ustaw</string>
+    <string name="install_ime">1. Zainstaluj</string>
+    <string name="select_default_ime">Wybierz domyślne IME Androida</string>
+    <string name="enable_physical_keyboard">Włącz klawiatury fizyczną</string>
+    <string name="enable_soft_keyboard">Włącz klawiaturę ekranową</string>
+    <string name="wait_installingapk">Instalacja Apk. Proszę czekać...</string>
+    <string name="install_complete">Apk zainstalowane. Teraz włącz i wybierz to IME.</string>
+    <string name="install_failed">Instalacja Apk nieudana. Spróbuj ponownie.</string> 
+    <string name="notification_settings">Dźwięki i notyfikacje</string>
+    <string name="security_fingerprint_settings">Zabezpieczenia i odcisk palca</string>
+    <string name="google_account_settings_title">Google</string>
+    <string name="step">Krok %1$d</string>
+</resources>

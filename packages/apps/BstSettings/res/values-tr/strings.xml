@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">Depolama</string>
+    <string name="applications_settings">Uygulamalar</string>
+    <string name="location_settings_title" >Konum</string>
+    <string name="date_and_time_settings_title" >Datum och tid</string>
+    <string name="language_settings" >Dil ve giriş</string>
+    <string name="accessibility_settings" >Erişilebilirlik</string>
+    <string name="header_category_device" >CİHAZ</string>
+    <string name="header_category_personal" >KİŞİSEL</string>
+    <string name="header_category_system" >SİSTEM</string>
+	<string name="security_settings_title" >"Güvenlik"</string>
+	<string name="about_settings" >"Telefon hakkında"</string>
+
+    <string name="app_name">Ayarlar</string>
+    <string name="contacts"> Kişileri Yönetin</string>
+    <string name="file_manager">Windows Dosyalarını Al</string>
+    <string name="input_method_settings">IME Seçin</string>
+
+
+    <string name="selected">Seçili</string>
+    <string name="select">Seç</string>
+    <string name="enabled">Etkin</string>
+    <string name="input">Giriş</string>
+    <string name="input_apk">giriş apk</string>
+    <string name="setup">Ayarla</string>
+    <string name="installed_ime">Kuruldu</string>
+    <string name="install_ime">1. Kur</string>
+    <string name="enable_physical_keyboard">Fiziksel Klavyeyi Etkinleştir</string>
+    <string name="enable_soft_keyboard">Ekran Klavyesini Etkinleştir</string>
+
+    <string name="wait_installingapk">APK Kuruluyor. Lütfen bekleyin...</string>
+    <string name="install_complete">Apk Kuruldu. Bu IME\&apos;yi şimdi etkinleştir ve seç.</string>
+
+    <string name="account_settings_title">"Hesaplar"</string>
+    <string name="notification_settings">Ses &amp; Bildirim</string>
+    <string name="home_settings">"Varsayılanlar"</string>
+    <string name="step">Adım %1$d</string>
+    <string name="installing">Yükleniyor</string>
+    <string name="install">Yükle</string>
+    <string name="enable_ime">Etkinleştir</string>
+    <string name="select_default_ime">Varsayılan Android IME\'sini seç</string>
+    <string name="install_failed">Apk Yüklemesi Başarısız Oldu. Lütfen Yeniden Deneyin</string>
+    <string name="security_fingerprint_settings">Güvenlik</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

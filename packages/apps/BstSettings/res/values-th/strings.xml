@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">ที่เก็บข้อมูล</string>
+    <string name="applications_settings">แอปพลิเคชัน</string>
+    <string name="location_settings_title" >ตำแหน่ง</string>
+    <string name="date_and_time_settings_title" >เวลาและวันที่</string>
+    <string name="language_settings" >ภาษาและการป้อนข้อมูล</string>
+    <string name="accessibility_settings" >การเข้าถึง</string>
+    <string name="header_category_device" >อุปกรณ์</string>
+    <string name="header_category_personal" >ส่วนบุคคล</string>
+    <string name="header_category_system" >ระบบ</string>
+	<string name="security_settings_title" >"ความปลอดภัย"</string>
+	<string name="about_settings" >"เกี่ยวกับโทรศัพท์"</string>
+
+    <string name="app_name">การตั้งค่า</string>
+    <string name="contacts"> จัดการรายชื่อผู้ติดต่อ</string>
+    <string name="file_manager">นำเข้าไฟล์ของ Windows</string>
+    <string name="input_method_settings">เลือก IME</string>
+
+
+    <string name="selected">ที่เลือกไว้</string>
+    <string name="select">เลือก</string>
+    <string name="enabled">เปิดใช้งาน</string>
+    <string name="input">การป้อนข้อมูล</string>
+    <string name="input_apk">อินพุต apk</string>
+    <string name="setup">ติดตั้ง</string>
+    <string name="installed_ime">ติดตั้งแล้ว</string>
+    <string name="install_ime">1. ติดตั้ง</string>
+    <string name="enable_physical_keyboard">เปิดใช้งานแป้นพิมพ์จริง</string>
+    <string name="enable_soft_keyboard">เปิดใช้งานแป้นพิมพ์บนหน้าจอ</string>
+
+    <string name="wait_installingapk">กำลังติดตั้ง APK ... กรุณารอสักครู่ ...</string>
+    <string name="install_complete">ติดตั้ง Apk แล้ว เปิดใช้งานและเลือก IME นี้ในตอนนี้</string>
+    
+    <string name="account_settings_title">"บัญชี"</string>
+    <string name="notification_settings">เสียงและการแจ้งเตือน</string>
+    <string name="home_settings">"ค่าเริ่มต้น"</string>
+    <string name="step">ขั้นตอน %1$d</string>
+    <string name="installing">กำลังติดตั้ง</string>
+    <string name="install">ติดตั้ง</string>
+    <string name="enable_ime">เปิดการใช้งาน</string>
+    <string name="select_default_ime">เลือกค่า IME แอนดรอยด์ตั้งต้น</string>
+    <string name="install_failed">การติดตั้งไฟล์ APK ล้มเหลว โปรดลองอีกครั้ง</string>
+    <string name="security_fingerprint_settings">ความปลอดภัย &amp; ลายนิ้วมือ</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

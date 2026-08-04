@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">Memoria</string>
+    <string name="applications_settings">App</string>
+    <string name="location_settings_title" >Geolocalizzazione</string>
+    <string name="date_and_time_settings_title" >Data e ora</string>
+    <string name="language_settings" >Lingua e immissione</string>
+    <string name="accessibility_settings" >Accessibilità</string>
+    <string name="header_category_device" >DISPOSITIVO</string>
+    <string name="header_category_personal" >PERSONALE</string>
+    <string name="header_category_system" >SISTEMA</string>
+	<string name="home_settings">Default</string>
+	<string name="security_settings_title" >"Sicurezza"</string>
+	<string name="about_settings" product="default" >"Info sul telefono"</string>
+	
+    <string name="app_name">Impostazioni</string>
+    <string name="contacts"> Gestisci contatti</string>
+    <string name="file_manager">Importazione di file di Windows</string>
+    <string name="input_method_settings">Seleziona IME</string>
+
+
+    <string name="selected">Selezionato</string>
+    <string name="select">Seleziona</string>
+    <string name="enabled">Abilitato</string>
+    <string name="input">input</string>
+    <string name="input_apk">input apk</string>
+    <string name="setup">Imposta</string>
+    <string name="installed_ime">Installato</string>
+    <string name="install_ime">1. Installa</string>
+    <string name="enable_physical_keyboard">Abilita tastiera fisica</string>
+    <string name="enable_soft_keyboard">Abilita Tastiera su schermo</string>
+
+    <string name="wait_installingapk">Installazione di APK ... Attendere prego...</string>
+    <string name="install_complete">Apk installato. Abilitare e selezionare questa IME adesso.</string>
+
+    <string name="account_settings_title">"Account"</string>
+    <string name="notification_settings">Suoni e Notifiche</string>
+    <string name="installing">Installando</string>
+    <string name="install">Installa</string>
+    <string name="enable_ime">Abilita</string>
+    <string name="select_default_ime">Seleziona IME Android predefinito</string>
+    <string name="install_failed">Installazione di apk fallita. Per favore riprova</string>
+    <string name="security_fingerprint_settings">Security &amp; impronta</string>
+    <string name="google_account_settings_title">Google</string>
+    <string name="step">Step %1$d </string>
+</resources>

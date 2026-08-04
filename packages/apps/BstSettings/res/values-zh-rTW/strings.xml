@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">儲存空間</string>
+    <string name="applications_settings">應用程式</string>
+    
+    <string name="location_settings_title" >定位</string>
+    <string name="date_and_time_settings_title" >日期與時間</string>
+    <string name="language_settings" >語言與輸入設定</string>
+    <string name="accessibility_settings" >協助工具</string>
+    <string name="header_category_personal" >個人</string>
+    <string name="header_category_system" >系統</string>
+
+
+    <string name="app_name">設定</string>
+    <string name="contacts">  管理連絡人</string>
+    <string name="file_manager">導入Windows文件</string>
+    <string name="input_method_settings">選擇輸入法</string>
+    <string name="header_category_device" >裝置</string>
+	<string name="security_settings_title" >"安全性"</string>
+	<string name="about_settings" >"關於手機"</string>
+
+    <string name="installing">正在安裝</string>
+    <string name="install">安裝</string>
+    <string name="installed_ime">已安裝</string>
+    <string name="selected">已選擇</string>
+    <string name="select">3.選擇</string>
+    <string name="enabled">已啟用</string>
+    <string name="enable_ime">啟用</string>
+    <string name="input">輸入</string>
+    <string name="input_apk">輸入apk</string>
+    <string name="setup">安裝</string>
+    <string name="install_ime">1.安裝</string>
+    <string name="select_default_ime">選擇預設的Android IME</string>
+    <string name="enable_physical_keyboard">啟用鍵盤</string>
+    <string name="enable_soft_keyboard">啟用小鍵盤</string>
+
+    <string name="wait_installingapk">正在安裝APK。請稍候...</string>
+    <string name="install_complete">Apk已安裝。現在就啟用並選擇此輸入法。</string>
+    <string name="install_failed">APK安裝失敗。請重試。</string>
+
+    <string name="account_settings_title">"帳戶"</string>
+    <string name="notification_settings">聲音和通知</string>
+    <string name="home_settings">"預設設定"</string>
+    <string name="step">步驟%1$d</string>
+    <string name="security_fingerprint_settings">安全性及指紋設定</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>
+

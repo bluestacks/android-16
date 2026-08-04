@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	
+<resources
+      xmlns:xliff="urn:oasis:name:tc:xliff:document:1.2" >
+
+    <string name="applications_settings">Apps</string>
+    <string name="location_settings_title">Location</string>
+    <string name="language_settings">Language &amp; input</string>
+    <string name="date_and_time_settings_title">Date &amp; time</string>
+    <string name="accessibility_settings">Accessibility</string>
+    <string name="storage_settings">Storage</string>
+    <string name="header_category_device">Device</string>
+    <string name="header_category_personal">Personal</string>
+    <string name="header_category_system">System</string>
+    <string name="home_settings">Defaults</string> 
+    <string name="app_name">Settings</string>
+    <string name="contacts"> Manage contacts</string>
+    <string name="file_manager">Import windows files</string>
+    <string name="input_method_settings">Select IME</string>
+
+
+    <string name="installing">Installing</string>
+    <string name="install">Install</string>
+    <string name="installed_ime">Installed</string>
+    <string name="selected">Selected</string>
+    <string name="select">Select</string>
+    <string name="enabled">Enabled</string>
+    <string name="enable_ime">Enable</string>
+    <string name="input">input</string>
+    <string name="input_apk">input apk</string>
+    <string name="setup">Set up</string>
+    <string name="install_ime">1. Install</string>
+    <string name="select_default_ime">Select Default Android IME</string>
+    <string name="enable_physical_keyboard">Enable Physical Keyboard</string>
+    <string name="enable_soft_keyboard">Enable OnScreen Keyboard</string>
+
+    <string name="wait_installingapk">Installing Apk. Please Wait...</string>
+    <string name="install_complete">Apk Installed. Enable and Select this IME now.</string>
+    <string name="install_failed">Apk Installation Failed. Please Try Again</string>
+
+
+    <string name="security_fingerprint_settings">Security &amp; fingerprint</string>
+    <string name="security_settings_title">Security</string>
+    <string name="bluestacks_settings_title">BlueStacks %1$s</string>
+    <string name="account_settings_title">Accounts</string>
+    <string name="separator_tag" translatable="false">separator</string>
+    <string name="google_account_settings_title">Google</string>
+
+    <string name="step">Step %1$d </string>
+</resources>
