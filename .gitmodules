@@ -4050,6 +4050,14 @@
 [submodule "external/v86d"]
 	path = external/v86d
 	url = git@github.com:mark-bst/external-v86d-a16.git
+[submodule "external/ffmpeg"]
+	path = external/ffmpeg
+	url = git@github.com:mark-bst/external-ffmpeg-a16.git
+	branch = aosp16-bst-merge
+[submodule "external/stagefright-plugins"]
+	path = external/stagefright-plugins
+	url = git@github.com:mark-bst/external-stagefright-plugins-a16.git
+	branch = aosp16-bst-merge
 [submodule "external/syslinux"]
 	path = external/syslinux
 	url = git@github.com:bluestacks/external-syslinux-a16.git
