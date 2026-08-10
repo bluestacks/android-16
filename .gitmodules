@@ -4049,14 +4049,14 @@
 	url = git@github.com:bluestacks/external-efivar-a16.git
 [submodule "external/v86d"]
 	path = external/v86d
-	url = git@github.com:mark-bst/external-v86d-a16.git
+	url = git@github.com:bluestacks/external-v86d-a16.git
 [submodule "external/ffmpeg"]
 	path = external/ffmpeg
-	url = git@github.com:mark-bst/external-ffmpeg-a16.git
+	url = git@github.com:bluestacks/external-ffmpeg-a16.git
 	branch = aosp16-bst-merge
 [submodule "external/stagefright-plugins"]
 	path = external/stagefright-plugins
-	url = git@github.com:mark-bst/external-stagefright-plugins-a16.git
+	url = git@github.com:bluestacks/external-stagefright-plugins-a16.git
 	branch = aosp16-bst-merge
 [submodule "external/syslinux"]
 	path = external/syslinux
