@@ -4067,19 +4067,19 @@
 	url = https://github.com/bluestacks/prebuilts-clang-host-linux-x86-a16.git
 [submodule "hardware/bst/audio"]
 	path = hardware/bst/audio
-	url = git@github.com:bluestacks/hardware-bst-audio-a13.git
+	url = git@github.com:bluestacks/hardware-bst-audio-a16.git
 [submodule "hardware/bst/lights"]
 	path = hardware/bst/lights
-	url = git@github.com:bluestacks/hardware-bst-lights-a13.git
+	url = git@github.com:bluestacks/hardware-bst-lights-a16.git
 [submodule "hardware/bst/memtrack"]
 	path = hardware/bst/memtrack
-	url = git@github.com:bluestacks/hardware-bst-memtrack-a13.git
+	url = git@github.com:bluestacks/hardware-bst-memtrack-a16.git
 [submodule "hardware/bst/power"]
 	path = hardware/bst/power
-	url = git@github.com:bluestacks/hardware-bst-power-a13.git
+	url = git@github.com:bluestacks/hardware-bst-power-a16.git
 [submodule "external/alsa-lib"]
 	path = external/alsa-lib
-	url = git@github.com:bluestacks/external-alsa-lib-a13.git
+	url = git@github.com:bluestacks/external-alsa-lib-a16.git
 [submodule "external/alsa-utils"]
 	path = external/alsa-utils
-	url = git@github.com:bluestacks/external-alsa-utils-a13.git
+	url = git@github.com:bluestacks/external-alsa-utils-a16.git
