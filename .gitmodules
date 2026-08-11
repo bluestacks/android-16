@@ -4053,11 +4053,9 @@
 [submodule "external/ffmpeg"]
 	path = external/ffmpeg
 	url = git@github.com:bluestacks/external-ffmpeg-a16.git
-	branch = bst-v5.22.210-A16
 [submodule "external/stagefright-plugins"]
 	path = external/stagefright-plugins
 	url = git@github.com:bluestacks/external-stagefright-plugins-a16.git
-	branch = bst-v5.22.210-A16
 [submodule "external/syslinux"]
 	path = external/syslinux
 	url = git@github.com:bluestacks/external-syslinux-a16.git
@@ -4070,24 +4068,18 @@
 [submodule "hardware/bst/audio"]
 	path = hardware/bst/audio
 	url = git@github.com:bluestacks/hardware-bst-audio-a13.git
-	branch = bst-v5.22.210-A16
 [submodule "hardware/bst/lights"]
 	path = hardware/bst/lights
 	url = git@github.com:bluestacks/hardware-bst-lights-a13.git
-	branch = bst-v5.22.210-A16
 [submodule "hardware/bst/memtrack"]
 	path = hardware/bst/memtrack
 	url = git@github.com:bluestacks/hardware-bst-memtrack-a13.git
-	branch = bst-v5.22.210-A16
 [submodule "hardware/bst/power"]
 	path = hardware/bst/power
 	url = git@github.com:bluestacks/hardware-bst-power-a13.git
-	branch = bst-v5.22.210-A16
 [submodule "external/alsa-lib"]
 	path = external/alsa-lib
 	url = git@github.com:bluestacks/external-alsa-lib-a13.git
-	branch = bst-v5.22.210-A16
 [submodule "external/alsa-utils"]
 	path = external/alsa-utils
 	url = git@github.com:bluestacks/external-alsa-utils-a13.git
-	branch = bst-v5.22.210-A16
