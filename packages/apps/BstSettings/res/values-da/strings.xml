@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <string name="storage_settings">Lagerplads</string>
+    <string name="applications_settings">Apps</string>
+    <string name="location_settings_title" >Placering</string>
+    <string name="date_and_time_settings_title" >Dato og tid</string>
+    <string name="language_settings" >Sprog og input</string>
+    <string name="accessibility_settings" >Tilgængelighed</string>
+    <string name="header_category_device" >ENHED</string>
+    <string name="header_category_personal" >PERSONLIG</string>
+    <string name="header_category_system" >SYSTEM</string>
+	<string name="security_settings_title" >"Sikkerhed"</string>
+	<string name="about_settings" product="default" >"Om telefonen"</string>
+	
+    <string name="app_name">Indstillinger</string>
+    <string name="contacts"> Administrér kontakter</string>
+    <string name="file_manager">Importer Windows-filer</string>
+    <string name="input_method_settings">Vælg IME</string>
+
+
+    <string name="selected">Valgt</string>
+    <string name="select"> Vælg</string>
+    <string name="enabled">Aktiveret</string>
+    <string name="input">input</string>
+    <string name="input_apk">input apk</string>
+    <string name="setup">Opsætning
+</string>
+    <string name="installed_ime">Installeret</string>
+    <string name="install_ime">1. Installer</string>
+    <string name="enable_physical_keyboard">Aktiver fysisk tastatur</string>
+    <string name="enable_soft_keyboard">Aktiver skærmtastatur</string>
+
+    <string name="wait_installingapk">Installerer Apk. Vent venligst...</string>
+    <string name="install_complete">Apk installeret. Aktiver og vælg denne IME nu.</string>
+
+    <string name="account_settings_title">"Konti"</string>
+    <string name="home_settings">"Standard"</string>
+</resources>

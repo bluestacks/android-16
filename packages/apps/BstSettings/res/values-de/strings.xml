@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">Speicher</string>
+    <string name="applications_settings">Apps</string>
+    <string name="location_settings_title" >Standort</string>
+    <string name="date_and_time_settings_title" >Datum &amp; Uhrzeit</string>
+    <string name="language_settings" >Sprache &amp; Eingabe</string>
+    <string name="accessibility_settings" >Bedienungshilfen</string>
+    <string name="header_category_device" >Gerät</string>
+    <string name="header_category_personal" >Nutzer</string>
+    <string name="header_category_system" >SYSTEM</string>
+	<string name="security_settings_title" >"Sicherheit"</string>
+	<string name="about_settings" product="default" >"Über das Telefon"</string>
+
+    <string name="app_name">Einstellungen</string>
+    <string name="contacts"> Kontakte verwalten</string>
+    <string name="file_manager">Import von Windows-Dateien</string>
+    <string name="input_method_settings">IME wählen</string>
+
+
+    <string name="installing">Wird installiert</string>
+    <string name="install">Installieren</string>
+    <string name="installed_ime">Installiert</string>
+    <string name="selected">Ausgewählt</string>
+    <string name="select">Auswählen</string>
+    <string name="enabled">Aktiviert</string>
+    <string name="enable_ime">Aktivieren</string>
+    <string name="input">Eingabe</string>
+    <string name="input_apk">Eingangs apk</string>
+    <string name="setup">Einrichten</string>
+    <string name="install_ime">1. Installieren</string>
+    <string name="select_default_ime">Standard Android IME auswählen</string>
+    <string name="enable_physical_keyboard">Physische Tastatur aktivieren</string>
+    <string name="enable_soft_keyboard">Bildschirmtastatur aktivieren</string>
+
+    <string name="wait_installingapk">Installiere Apk ... Bitte warten</string>
+    <string name="install_complete">Apk installiert. Aktivieren und diese IME jetzt auswählen.</string>
+    <string name="install_failed">Apk-Installation fehlgeschlagen Bitte versuchen Sie es erneut.</string>
+    
+    <string name="account_settings_title">"Konten"</string>
+    <string name="notification_settings">"Ton und Benachrichtigungen"</string>
+    <string name="home_settings">"Standardeinstellungen"</string>
+    <string name="step">Schritt %1$d</string>
+    <string name="security_fingerprint_settings">Sicherheit &amp; Fingerabdruck</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

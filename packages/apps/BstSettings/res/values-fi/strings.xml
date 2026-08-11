@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Tallentaminen</string>
+    <string name="applications_settings">Sovellukset</string>
+    <string name="location_settings_title" >Sijainti</string>
+    <string name="date_and_time_settings_title" >Päivämäärä ja aika</string>
+    <string name="language_settings" >Kieli ja syöttötapa</string>
+    <string name="accessibility_settings" >Esteettömyys</string>
+    <string name="header_category_device" >LAITE</string>
+    <string name="header_category_personal" >HENKILÖKOHTAINEN</string>
+    <string name="header_category_system" >JÄRJESTELMÄ</string>
+	<string name="security_settings_title" >"Suojaus"</string>
+	<string name="about_settings" product="default" >"Tietoja puhelimesta"</string>
+	
+    <string name="app_name">Asetukset</string>
+    <string name="contacts"> Yhteystietojen hallinta</string>
+    <string name="file_manager">Tuo Windows-tiedostoja</string>
+    <string name="input_method_settings">Valitse IME</string>
+
+
+    <string name="selected">Valittu</string>
+    <string name="select">Valitse</string>
+    <string name="enabled">Käytössä</string>
+    <string name="input">syöttö</string>
+    <string name="input_apk">syöttö-apk</string>
+    <string name="setup">Määritä</string>
+    <string name="installed_ime">Asennettu</string>
+    <string name="install_ime">1. Asenna</string>
+    <string name="enable_physical_keyboard">Ota fyysinen näppäimistö käyttöön</string>
+    <string name="enable_soft_keyboard">Ota virtuaalinäppäimistö käyttöön</string>
+
+    <string name="wait_installingapk">Apk:ta asennetaan. Odota hetki...</string>
+    <string name="install_complete">Apk asennettu. Ota käyttöön ja valitse tämä IME nyt.</string>
+
+    <string name="account_settings_title">"Tilit"</string>
+    <string name="home_settings">"Oletukset"</string>
+</resources>

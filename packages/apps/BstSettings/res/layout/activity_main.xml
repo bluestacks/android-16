@@ -1,0 +1,78 @@
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="#FFE1E1E0">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="@dimen/framelayout_elevation"
+            android:layout_marginLeft="@dimen/framelayout_padding"
+            android:layout_marginRight="@dimen/framelayout_padding">
+            <include
+                layout="@layout/device"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_separator_height"
+            android:background="@android:color/transparent"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="@dimen/framelayout_elevation"
+            android:layout_marginLeft="@dimen/framelayout_padding"
+            android:layout_marginRight="@dimen/framelayout_padding">
+            <include
+                layout="@layout/personal"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_separator_height"
+            android:background="@android:color/transparent"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="@dimen/framelayout_elevation"
+            android:layout_marginLeft="@dimen/framelayout_padding"
+            android:layout_marginRight="@dimen/framelayout_padding">
+            <include
+                layout="@layout/bluestacks_settings"/>
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_separator_height"
+            android:background="@android:color/transparent"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+             android:elevation="@dimen/framelayout_elevation"
+            android:layout_marginLeft="@dimen/framelayout_padding"
+            android:layout_marginRight="@dimen/framelayout_padding">
+            <include
+                layout="@layout/system"/>
+        </FrameLayout>
+
+</LinearLayout>
+
+</ScrollView>

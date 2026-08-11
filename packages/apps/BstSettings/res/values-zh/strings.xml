@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="storage_settings">存储</string>
+    <string name="applications_settings">应用</string>
+
+    <string name="app_name">设置</string>
+    <string name="contacts"> 管理联系方式</string>
+    <string name="file_manager">导入Windows文件</string>
+    <string name="input_method_settings">选择输入法</string>
+
+
+    <string name="selected">已选择</string>
+    <string name="select">3.选择</string>
+    <string name="enabled">已启用</string>
+    <string name="input">输入</string>
+    <string name="input_apk">输入apk</string>
+    <string name="setup">安装
+</string>
+    <string name="installed_ime">已安装</string>
+    <string name="install_ime">1.安装</string>
+    <string name="enable_physical_keyboard">启用物理键盘</string>
+    <string name="enable_soft_keyboard">启用屏幕键盘</string>
+
+    <string name="wait_installingapk">正在安装Apk。请稍候...</string>
+    <string name="install_complete">Apk已安装。现在就启用并选择此输入法。</string>
+    <string name="notification_settings">声音与通知</string>
+    <string name="home_settings">"默认操作"</string>
+</resources>

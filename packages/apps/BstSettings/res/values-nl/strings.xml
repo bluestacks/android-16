@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Opslagruimte</string>
+    <string name="applications_settings">Apps</string>
+    <string name="location_settings_title" >Locatie</string>
+    <string name="date_and_time_settings_title" >Datum en tijd</string>
+    <string name="language_settings" >Taal en invoer</string>
+    <string name="accessibility_settings" >Toegankelijkheid</string>
+    <string name="header_category_device" >APPARAAT</string>
+    <string name="header_category_personal" >PERSOONLIJK</string>
+    <string name="header_category_system" >SYSTEEM</string>
+	<string name="security_settings_title" >"Beveiliging"</string>
+	<string name="about_settings" >"Over de telefoon"</string>
+
+    <string name="app_name">Instellingen</string>
+
+    <string name="account_settings_title">"Accounts"</string>
+</resources>

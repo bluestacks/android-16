@@ -4047,6 +4047,15 @@
 [submodule "external/efivar"]
 	path = external/efivar
 	url = git@github.com:bluestacks/external-efivar-a16.git
+[submodule "external/v86d"]
+	path = external/v86d
+	url = git@github.com:bluestacks/external-v86d-a16.git
+[submodule "external/ffmpeg"]
+	path = external/ffmpeg
+	url = git@github.com:bluestacks/external-ffmpeg-a16.git
+[submodule "external/stagefright-plugins"]
+	path = external/stagefright-plugins
+	url = git@github.com:bluestacks/external-stagefright-plugins-a16.git
 [submodule "external/syslinux"]
 	path = external/syslinux
 	url = git@github.com:bluestacks/external-syslinux-a16.git
@@ -4056,3 +4065,21 @@
 [submodule "prebuilts/clang/host/linux-x86"]
 	path = prebuilts/clang/host/linux-x86
 	url = https://github.com/bluestacks/prebuilts-clang-host-linux-x86-a16.git
+[submodule "hardware/bst/audio"]
+	path = hardware/bst/audio
+	url = git@github.com:bluestacks/hardware-bst-audio-a16.git
+[submodule "hardware/bst/lights"]
+	path = hardware/bst/lights
+	url = git@github.com:bluestacks/hardware-bst-lights-a16.git
+[submodule "hardware/bst/memtrack"]
+	path = hardware/bst/memtrack
+	url = git@github.com:bluestacks/hardware-bst-memtrack-a16.git
+[submodule "hardware/bst/power"]
+	path = hardware/bst/power
+	url = git@github.com:bluestacks/hardware-bst-power-a16.git
+[submodule "external/alsa-lib"]
+	path = external/alsa-lib
+	url = git@github.com:bluestacks/external-alsa-lib-a16.git
+[submodule "external/alsa-utils"]
+	path = external/alsa-utils
+	url = git@github.com:bluestacks/external-alsa-utils-a16.git

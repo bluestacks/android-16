@@ -1,0 +1,8 @@
+cc_binary {
+    name: "bstime",
+    srcs: ["Main.cpp"],
+    shared_libs: [
+        "libcutils",
+        "liblog",
+    ],
+}

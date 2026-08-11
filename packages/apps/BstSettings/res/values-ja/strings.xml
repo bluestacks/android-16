@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">ストレージ</string>
+    <string name="applications_settings">アプリ</string>
+    <string name="location_settings_title" >位置情報</string>
+    <string name="date_and_time_settings_title" >日付と時刻</string>
+    <string name="language_settings" >言語と入力</string>
+    <string name="accessibility_settings" >ユーザー補助</string>
+    <string name="header_category_device" >端末</string>
+    <string name="header_category_personal" >ユーザー設定</string>
+    <string name="header_category_system" >システム</string>
+	<string name="security_settings_title" >"セキュリティ"</string>
+	<string name="about_settings" >"端末情報"</string>
+
+    <string name="app_name">設定</string>
+    <string name="contacts"> 連絡先の管理</string>
+    <string name="file_manager">Windowsファイルのインポート</string>
+    <string name="input_method_settings">IMEを選択</string>
+
+
+    <string name="installing">インストール中</string>
+    <string name="install">インストール</string>
+    <string name="installed_ime">インストール</string>
+    <string name="selected">選択</string>
+    <string name="select">3.選択</string>
+    <string name="enabled">有効</string>
+    <string name="enable_ime">有効</string>
+    <string name="input">入力</string>
+    <string name="input_apk">入力APK</string>
+    <string name="setup">セットアップ</string>
+    <string name="install_ime">1.インストール</string>
+    <string name="select_default_ime">デフォルトのAndroid IMEを選択</string>
+    <string name="enable_physical_keyboard">物理キーボードを有効にする</string>
+    <string name="enable_soft_keyboard">オンスクリーンキーボードを有効にする</string>
+
+    <string name="wait_installingapk">APKをインストール中しばらくお待ちください...</string>
+    <string name="install_complete">APKをインストールしました。このIMEを有効にして選択します。</string>
+    <string name="install_failed">APKのインストールに失敗しました。もう一度やり直してください。</string>
+
+    <string name="account_settings_title">"アカウント"</string>
+    <string name="notification_settings">サウンドと通知</string>
+    <string name="home_settings">"デフォルト"</string>
+    <string name="step">ステップ %1$d</string>
+    <string name="security_fingerprint_settings">セキュリティ &amp; fingerprint</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

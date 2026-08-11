@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Stocare</string>
+    <string name="applications_settings">Aplicaţii</string>
+    <string name="location_settings_title" >Locație</string>
+    <string name="date_and_time_settings_title" >Data şi ora</string>
+    <string name="language_settings" >Limbă și introducere de text</string>
+    <string name="accessibility_settings" >Accesibilitate</string>
+    <string name="header_category_device" >DISPOZITIV</string>
+    <string name="header_category_personal" >PERSONAL</string>
+    <string name="header_category_system" >SISTEM</string>
+	<string name="security_settings_title" >"Securitate"</string>
+	<string name="about_settings" >"Despre telefon"</string>
+	
+    <string name="app_name">Setări</string>
+
+    <string name="account_settings_title">"Conturi"</string>
+    <string name="home_settings">"Prestabilite"</string>
+</resources>

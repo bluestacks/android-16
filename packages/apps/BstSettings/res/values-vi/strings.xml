@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">Dung lượng</string>
+    <string name="applications_settings">Apps</string>
+    <string name="location_settings_title" >Vị trí</string>
+    <string name="date_and_time_settings_title" >Ngày &amp; giờ</string>
+    <string name="language_settings" >Ngôn ngữ &amp; phương thức nhập</string>
+    <string name="accessibility_settings" >Khả năng truy cập</string>
+    <string name="header_category_device" >THIẾT BỊ</string>
+    <string name="header_category_personal" >CÁ NHÂN</string>
+    <string name="header_category_system" >HỆ THỐNG</string>
+    <string name="home_settings">Trang chủ</string >
+	<string name="security_settings_title" >"Bảo mật"</string>
+	<string name="about_settings" >"Giới thiệu về điện thoại"</string>
+
+    <string name="app_name">Cài đặt</string>
+    <string name="contacts"> Quản lý danh bạ</string>
+    <string name="file_manager">Truy nhập tập tin của Windows</string>
+    <string name="input_method_settings">Chọn IME</string>
+
+
+    <string name="installing">Đang cài đặt</string>
+    <string name="install">Cài đặt</string>
+    <string name="installed_ime">Đã cài đặt</string>
+    <string name="selected">Đã chọn</string>
+    <string name="select">Chọn</string>
+    <string name="enabled">Đã bật</string>
+    <string name="enable_ime">Bật</string>
+    <string name="input">nhập</string>
+    <string name="input_apk">nhập apk</string>
+    <string name="setup">Cài đặt</string>
+    <string name="install_ime">1. Cài đặt</string>
+    <string name="select_default_ime">Chọn Android IME mặc định</string>
+    <string name="enable_physical_keyboard">Bật bàn phím cứng</string>
+    <string name="enable_soft_keyboard">Bật bàn phím cảm ứng</string>
+
+    <string name="wait_installingapk">Đang cài đặt Apk. Vui lòng đợi...</string>
+    <string name="install_complete">Đã cài đặt apk. Bật và chọn IME này ngay bây giờ.</string>
+    <string name="install_failed">Cài đặt Apk thất bại. Vui lòng thử lại</string>
+
+    <string name="notification_settings">"Âm thanh và Thông báo"</string>
+    <string name="account_settings_title">"Tài khoản"</string>
+    <string name="step">Bước%1$d</string>
+    <string name="security_fingerprint_settings">An ninh &amp; vân tay</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

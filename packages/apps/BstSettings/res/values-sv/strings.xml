@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Lagring</string>
+    <string name="applications_settings">Appar</string>
+    <string name="location_settings_title" >Plats</string>
+    <string name="date_and_time_settings_title" >Datum och tid</string>
+    <string name="language_settings" >Språk och inmatning</string>
+    <string name="accessibility_settings" >Tillgänglighet</string>
+    <string name="header_category_device" >UTRUSTNING</string>
+    <string name="header_category_personal" >PERSONLIGT</string>
+    <string name="header_category_system" >SYSTEM</string>
+	<string name="security_settings_title" >"Säkerhet"</string>
+	<string name="about_settings" >"Om telefonen"</string>
+
+    <string name="app_name">Inställningar</string>
+    <string name="contacts"> Hantera kontakter</string>
+    <string name="file_manager">Importera Windows-filer</string>
+    <string name="input_method_settings">Välj IME</string>
+
+
+    <string name="selected">Vald</string>
+    <string name="select">Välj</string>
+    <string name="enabled">Aktiverad</string>
+    <string name="input">inmatning</string>
+    <string name="input_apk">inmatning APK</string>
+    <string name="setup">Sätta upp</string>
+    <string name="installed_ime">Installerad</string>
+    <string name="install_ime">1. Installera</string>
+    <string name="enable_physical_keyboard">Aktivera fysiskt tangentbord</string>
+    <string name="enable_soft_keyboard">Aktivera skärmtangentbord</string>
+
+    <string name="wait_installingapk">Installera Apk. Vänta...</string>
+    <string name="install_complete">Apk installerat. Aktivera och välj denna IME nu.</string>
+
+    <string name="notification_settings">"Ljud och avisering"</string> 
+    <string name="account_settings_title">"Konton"</string>
+    <string name="home_settings">"Standardvärden"</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/category_title_layout_height"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/bluestacks_settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluestacks_settings_title"
+            android:textSize="@dimen/category_title_size"
+            android:layout_margin="@dimen/category_title_layout_margin"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/select_ime_settings"
+            android:layout_height="@dimen/single_setting_container_height"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:onClick="onClick"
+            android:layout_marginLeft="@dimen/single_setting_container_margin"
+            android:layout_marginRight="@dimen/single_setting_container_margin"
+            android:duplicateParentState="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_height="@dimen/single_setting_layout_height"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/single_setting_layout_padding_left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_settings_select_ime"
+                    android:layout_margin="@dimen/single_setting_container_margin"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/input_method_settings"
+                    android:textSize="@dimen/single_setting_text_size"
+                    android:layout_marginLeft="@dimen/single_setting_text_margin_left"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/select_ime_settings_separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@android:color/darker_gray"
+                android:tag="@string/separator_tag"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/manage_contacts_settings"
+            android:layout_height="@dimen/single_setting_container_height"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:onClick="onClick"
+            android:layout_marginLeft="@dimen/single_setting_container_margin"
+            android:layout_marginRight="@dimen/single_setting_container_margin"
+            android:duplicateParentState="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_height="@dimen/single_setting_layout_height"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/single_setting_layout_padding_left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_settings_manage_contacts"
+                    android:layout_margin="@dimen/single_setting_container_margin"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/contacts"
+                    android:textSize="@dimen/single_setting_text_size"
+                    android:layout_marginLeft="@dimen/single_setting_text_margin_left"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/manage_contacts_settings_separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@android:color/darker_gray"
+                android:tag="@string/separator_tag"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+        <LinearLayout
+            android:id="@+id/import_windows_files_settings"
+            android:layout_height="@dimen/single_setting_container_height"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:onClick="onClick"
+            android:layout_marginLeft="@dimen/single_setting_container_margin"
+            android:layout_marginRight="@dimen/single_setting_container_margin"
+            android:duplicateParentState="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_height="@dimen/single_setting_layout_height"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/single_setting_layout_padding_left">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_settings_import_windows_files"
+                    android:layout_margin="@dimen/single_setting_container_margin"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/file_manager"
+                    android:textSize="@dimen/single_setting_text_size"
+                    android:layout_marginLeft="@dimen/single_setting_text_margin_left"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/import_windows_files_settings_separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone"
+                android:tag="@string/separator_tag"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

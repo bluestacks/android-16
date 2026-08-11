@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="date_and_time_settings_title">Definir data &amp; hora</string>
+    <string name="storage_settings">Armazenamento</string>
+    <string name="applications_settings">Aplicativos</string>
+    <string name="location_settings_title" >Localização</string>
+    <string name="language_settings" >Idioma e entrada</string>
+    <string name="accessibility_settings" >Acessibilidade</string>
+    <string name="header_category_device" >DISPOSITIVO</string>
+    <string name="header_category_personal" >PESSOAL</string>
+    <string name="header_category_system" >SISTEMA</string>
+	<string name="security_settings_title" >"Segurança"</string>
+	<string name="about_settings" >"Sobre o telefone"</string>
+
+    <string name="app_name">Configurações</string>
+    <string name="contacts"> Gerir Contactos</string>
+    <string name="file_manager">Importar ficheiros do Windows</string>
+    <string name="input_method_settings">Selecionar o método de entrada</string>
+
+
+    <string name="installing">A instalar</string>
+    <string name="install">Instalar</string>
+    <string name="installed_ime">Instalado</string>
+    <string name="selected">Selecionado</string>
+    <string name="select">Selecionar</string>
+    <string name="enabled">Ativado</string>
+    <string name="enable_ime">Ativar</string>
+    <string name="input">Entrada</string>
+    <string name="input_apk">entrada de apk</string>
+    <string name="setup">Configurar</string>
+    <string name="install_ime">1. Instalar</string>
+    <string name="select_default_ime">Selecione Método de entrada Padrão Android</string>
+    <string name="enable_physical_keyboard">Ativar o teclado físico</string>
+    <string name="enable_soft_keyboard">Ativar o teclado do ecrã</string>
+
+    <string name="wait_installingapk">A instalar o Apk. Por favor, aguarde...</string>
+    <string name="install_complete">Apk instalado. Ativar e selecionar este método de entrada agora.</string>
+    <string name="install_failed">A instalação do APK falhou Por favor, tente novamente.</string>
+    
+    <string name="account_settings_title">"Contas"</string>
+    <string name="notification_settings">Som e Notificação</string>
+    <string name="home_settings">"Padrões"</string>
+    <string name="step">Passo %1$d</string>
+    <string name="security_fingerprint_settings">Segurança &amp; digital</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

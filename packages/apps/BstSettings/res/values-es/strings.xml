@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">Almacenamiento</string>
+    <string name="applications_settings">Aplicaciones</string>
+    <string name="location_settings_title" >Ubicación</string>
+    <string name="date_and_time_settings_title" >Fecha y hora</string>
+    <string name="language_settings" >Idioma e introducción de texto</string>
+    <string name="accessibility_settings" >Accesibilidad</string>
+    <string name="header_category_device" >DISPOSITIVO</string>
+    <string name="header_category_personal" >PERSONAL</string>
+    <string name="header_category_system" >SISTEMA</string>
+	<string name="security_settings_title" >"Seguridad"</string>
+	<string name="about_settings" product="default" >"Información del teléfono"</string>
+
+    <string name="app_name">Ajustes</string>
+    <string name="contacts"> Administrar contactos</string>
+    <string name="file_manager">Importar archivos de Windows</string>
+    <string name="input_method_settings">Seleccionar IME</string>
+
+
+    <string name="installing">Instalando</string>
+    <string name="install">Instalar</string>
+    <string name="installed_ime">Instalado</string>
+    <string name="selected">Seleccionado</string>
+    <string name="select">Seleccionar</string>
+    <string name="enabled">Activado</string>
+    <string name="enable_ime">Activar</string>
+    <string name="input">entrada</string>
+    <string name="input_apk">apk de entrada</string>
+    <string name="setup">Configurar</string>
+    <string name="install_ime">1. Instalar</string>
+    <string name="select_default_ime">Seleccionar el IME predeterminado de Android</string>
+    <string name="enable_physical_keyboard">Habilitar teclado físico</string>
+    <string name="enable_soft_keyboard">Habilitar teclado en pantalla</string>
+
+    <string name="wait_installingapk">Instalando Apk. Por favor, espere...</string>
+    <string name="install_complete">Apk instalado. Habilitar y seleccionar este IME ahora.</string>
+    <string name="install_failed">Instalación de Apk fallida. Por favor, inténtelo de nuevo.</string>
+    
+    <string name="account_settings_title">"Cuentas"</string>
+    <string name="notification_settings">Sonido y notificación</string>
+    <string name="home_settings">"Valores predeterminados"</string>
+    <string name="step">Paso %1$d</string>
+    <string name="security_fingerprint_settings">Seguridad &amp; huella dactilar</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

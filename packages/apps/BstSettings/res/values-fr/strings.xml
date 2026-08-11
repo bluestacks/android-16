@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="storage_settings">Stockage</string>
+    <string name="applications_settings">Applications</string>
+    <string name="location_settings_title" >Emplacement</string>
+    <string name="date_and_time_settings_title" >Date et heure</string>
+    <string name="language_settings" >Langue; contribution</string>
+    <string name="accessibility_settings" >Accessibilité</string>
+    <string name="header_category_device" >APPAREIL</string>
+    <string name="header_category_personal" >PERSONNEL</string>
+    <string name="header_category_system" >SYSTÈME</string>
+	<string name="security_settings_title" >"Sécurité"</string>
+	<string name="about_settings" product="default" >"À propos du téléphone"</string>
+	
+    <string name="app_name">Paramètres</string>
+    <string name="contacts"> Gérer les contacts</string>
+    <string name="file_manager">Importer des fichiers Windows</string>
+    <string name="input_method_settings">Sélectionnez IME</string>
+
+
+    <string name="selected">Sélectionné</string>
+    <string name="select">Sélectionner</string>
+    <string name="enabled">Activé</string>
+    <string name="input">entrée</string>
+    <string name="input_apk">entrée apk</string>
+    <string name="setup">Mettre en place</string>
+    <string name="installed_ime">Installé</string>
+    <string name="install_ime">1. Installer</string>
+    <string name="enable_physical_keyboard">Activer le clavier physique</string>
+    <string name="enable_soft_keyboard">Activer le clavier à l\&apos;écran</string>
+
+    <string name="wait_installingapk">Installation d\&apos;APK. Veuillez patienter...</string>
+    <string name="install_complete">Apk installé. Activer et sélectionner cette IME maintenant.</string>
+
+    <string name="account_settings_title">"Comptes"</string>
+    <string name="notification_settings">Son &amp; notification</string>
+    <string name="home_settings">"Paramètres par défaut"</string>
+    <string name="step">%1$d étape</string>
+    <string name="installing">Installation</string>
+    <string name="install">Installer</string>
+    <string name="enable_ime">Activer</string>
+    <string name="select_default_ime">Sélectionnez IME Android par défaut</string>
+    <string name="install_failed">L\'installation d\'Apk a échoué. Veuillez réessayer</string>
+    <string name="security_fingerprint_settings">Sécurité et empreinte digitale</string>
+    <string name="google_account_settings_title">Google</string>
+</resources>

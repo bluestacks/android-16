@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+    <string name="storage_settings">Хранилище</string>
+    <string name="applications_settings">Приложения</string>
+    <string name="location_settings_title">Местоположение</string>
+    <string name="date_and_time_settings_title" >Дата и час</string>
+    <string name="language_settings" >Език и въвеждане</string>
+    <string name="accessibility_settings" >Достъпност</string>
+    <string name="header_category_device" >УСТРОЙСТВО</string>
+    <string name="header_category_personal" >ЛИЧНИ</string>
+    <string name="header_category_system" >СИСТЕМНИ</string>
+	<string name="security_settings_title" >"Сигурност"</string>
+	<string name="about_settings" product="default" >"Всичко за телефона"</string>
+
+    <string name="app_name">"Настройки"</string>
+
+    <string name="account_settings_title">"Профили"</string>
+    <string name="notification_settings">"Звук и известяване"</string>
+    <string name="home_settings">"Настройки по подразбиране"</string>
+</resources>
