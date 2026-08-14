@@ -1328,6 +1328,13 @@ public class BstCommandLoop {
         }
 
         File pkg = new File(apkFilePath);
+        if (!pkg.exists() || !pkg.canRead()) {
+            Log.e(TAG, "installApk: cannot read apk at " + apkFilePath);
+            mApkInstallResponse.response = PackageManager.INSTALL_FAILED_INTERNAL_ERROR;
+            mApkInstallResponse.errorString = "apk not readable: " + apkFilePath;
+            return PackageManager.INSTALL_FAILED_INTERNAL_ERROR;
+        }
+
 
         File[] files = new File[1];
         files[0] = pkg;
