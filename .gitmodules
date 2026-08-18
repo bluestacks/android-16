@@ -1426,9 +1426,6 @@
 [submodule "external/rust/android-crates-io"]
 	path = external/rust/android-crates-io
 	url = git@github.com:bluestacks/external-rust-android-crates-io-a16.git
-[submodule "external/rust/autocxx"]
-	path = external/rust/autocxx
-	url = git@github.com:bluestacks/external-rust-autocxx-a16.git
 [submodule "external/rust/beto-rust"]
 	path = external/rust/beto-rust
 	url = git@github.com:bluestacks/external-rust-beto-rust-a16.git
@@ -2011,9 +2008,6 @@
 [submodule "packages/apps/Car/DialerPrebuilt"]
 	path = packages/apps/Car/DialerPrebuilt
 	url = git@github.com:bluestacks/packages-apps-Car-DialerPrebuilt-a16.git
-[submodule "packages/apps/Car/DriverUIPrebuilt"]
-	path = packages/apps/Car/DriverUIPrebuilt
-	url = git@github.com:bluestacks/packages-apps-Car-DriverUIPrebuilt-a16.git
 [submodule "packages/apps/Car/LatinIME"]
 	path = packages/apps/Car/LatinIME
 	url = git@github.com:bluestacks/packages-apps-Car-LatinIME-a16.git
@@ -2047,9 +2041,6 @@
 [submodule "packages/apps/Car/RotaryController"]
 	path = packages/apps/Car/RotaryController
 	url = git@github.com:bluestacks/packages-apps-Car-RotaryController-a16.git
-[submodule "packages/apps/Car/RotaryImePrebuilt"]
-	path = packages/apps/Car/RotaryImePrebuilt
-	url = git@github.com:bluestacks/packages-apps-Car-RotaryImePrebuilt-a16.git
 [submodule "packages/apps/Car/Settings"]
 	path = packages/apps/Car/Settings
 	url = git@github.com:bluestacks/packages-apps-Car-Settings-a16.git
@@ -2347,9 +2338,6 @@
 [submodule "packages/modules/common"]
 	path = packages/modules/common
 	url = git@github.com:bluestacks/packages-modules-common-a16.git
-[submodule "packages/modules/desktop/Serviceability"]
-	path = packages/modules/desktop/Serviceability
-	url = git@github.com:bluestacks/packages-modules-desktop-Serviceability-a16.git
 [submodule "packages/modules/vndk"]
 	path = packages/modules/vndk
 	url = git@github.com:bluestacks/packages-modules-vndk-a16.git
@@ -2824,9 +2812,6 @@
 [submodule "test/dittosuite"]
 	path = test/dittosuite
 	url = git@github.com:bluestacks/test-dittosuite-a16.git
-[submodule "test/graphics"]
-	path = test/graphics
-	url = git@github.com:bluestacks/test-graphics-a16.git
 [submodule "test/mlts/benchmark"]
 	path = test/mlts/benchmark
 	url = git@github.com:bluestacks/test-mlts-benchmark-a16.git
