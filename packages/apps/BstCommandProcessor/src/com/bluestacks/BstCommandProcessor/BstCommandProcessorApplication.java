@@ -6,6 +6,7 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;
 import android.app.AlertDialog;
 import android.app.Application;
+import android.app.Instrumentation;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -87,6 +88,7 @@ import java.util.TimeZone;
 
 import java.util.regex.Pattern;
 import com.bluestacks.BstCommandProcessor.UiAccessibilityService;
+import com.bluestacks.BstCommandProcessor.Accessibility.KeyCommandExecutor;
 
 /**
  *
@@ -168,10 +170,12 @@ public class BstCommandProcessorApplication extends Application {
     private static final boolean VERBOSE = android.os.SystemProperties.getInt("bst.debug.bstcmdapp", 0) > 1;
     private static final boolean DBG_BST_REFERRAL = DBG || SystemProperties.getInt("bst.debug.referral", 0) > 0;
     private static final boolean DBG_BST_IAP = DBG || SystemProperties.getInt("bst.debug.iap", 0) > 0;
+    private static final boolean DBG_COMMANDS = DBG || SystemProperties.getInt("bst.debug.commands", 0) > 0;
 
     private static BstCommandProcessorApplication singleton;
     private static Context appContext;
     private static Service mService;
+    private static KeyCommandExecutor mKeyCommandExecutor;
 
     // creating a new thread for handling all host calls
     private HandlerThread mHandlerThreadForHostCalls = new HandlerThread("threadForHostCalls");
@@ -287,6 +291,8 @@ public class BstCommandProcessorApplication extends Application {
         super.onCreate();
         singleton = this;
         appContext = getApplicationContext();
+        Instrumentation instrumentation = new Instrumentation();
+        mKeyCommandExecutor = new KeyCommandExecutor(instrumentation, DBG_COMMANDS);
         mHandler = new Handler(getMainLooper());
         mHandlerThreadForHostCalls.start();
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -526,7 +532,7 @@ public class BstCommandProcessorApplication extends Application {
 
     private void setServiceComponentState(IPackageManager mPm, ComponentName cn, int newState, int flags, int userId) {
         try {
-            // A16: IPackageManager.setComponentEnabledSetting gained a `callingPackage` arg.
+            // A16: IPackageManager.setComponentEnabledSetting gained a callingPackage arg.
             mPm.setComponentEnabledSetting(cn, newState, flags, userId, getPackageName());
             Log.d(TAG, "Component " + cn.toShortString() + " new state: "
                     + enabledSettingToString(mPm.getComponentEnabledSetting(cn, userId)));
@@ -1085,6 +1091,10 @@ public class BstCommandProcessorApplication extends Application {
                 }
             });
         }
+    }
+
+    public static KeyCommandExecutor getKeyCommandExecutor() {
+        return mKeyCommandExecutor;
     }
 
     public static Context getAppContext() {

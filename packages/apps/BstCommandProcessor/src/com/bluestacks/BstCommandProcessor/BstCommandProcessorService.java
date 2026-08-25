@@ -433,6 +433,13 @@ public class BstCommandProcessorService extends Service {
                 String interval = String.valueOf(bundle.getInt("statsInterval"));
                 app.makeHostCall(BstCommandProcessorApplication.UPDATE_STATS_INTERVAL, interval);
             }
+            else if (intentAction.equalsIgnoreCase("setSmartDownloadEnabled"))
+            {
+                Bundle bundle = intent.getExtras();
+                boolean enabled = (bundle != null) && bundle.getBoolean("enabled", false);
+                Log.d(TAG, "setSmartDownloadEnabled enabled = " + enabled);
+                cmdHandler.setSmartDownloadEnabled(enabled);
+            }
             else if (intentAction.equalsIgnoreCase("nowggAccountAdded")) {
                 Log.d(TAG, "nowggAccountAdded");
                 String response = intent.getStringExtra("response");

@@ -1,6 +1,7 @@
 package com.bluestacks.BstCommandProcessor.Accessibility;
 
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -419,6 +420,8 @@ public final class UiAutomationExecutor {
             throw new IllegalStateException("handleOpenApp: UI not ready for action");
         }
 
+        Context context = BstCommandProcessorApplication.getInstance().getApplicationContext();
+
         switch (type) {
 
             case "component": {
@@ -440,7 +443,10 @@ public final class UiAutomationExecutor {
                 }
 
 
-                BstCommandProcessorUtils.startActivity(intent);
+                if (!BstCommandProcessorUtils.launchIntentAndWait(context, intent)) {
+                    throw new IllegalArgumentException(
+                            "handleOpenApp: failed to launch component: " + packageName + "/" + component);
+                }
                 humanDelay(UiActionType.OPEN_APP);
                 return;
             }
@@ -452,7 +458,7 @@ public final class UiAutomationExecutor {
                             "handleOpenApp: package_name required for launch type package");
                 }
                 Log.d(LOG_TAG, String.format("handleOpenApp: launching package %s", packageName));
-                if (!BstCommandProcessorUtils.openApp(packageName)) {
+                if (!BstCommandProcessorUtils.launchAndWait(context, packageName)) {
                     throw new IllegalArgumentException(
                             "handleOpenApp: failed to launch package: " + packageName);
                 }
@@ -476,7 +482,10 @@ public final class UiAutomationExecutor {
                     intent.setPackage(params.get("package_name"));
                 }
 
-                BstCommandProcessorUtils.startActivity(intent);
+                if (!BstCommandProcessorUtils.launchIntentAndWait(context, intent)) {
+                    throw new IllegalArgumentException(
+                            "handleOpenApp: failed to launch uri: " + uri);
+                }
                 humanDelay(UiActionType.OPEN_APP);
                 return;
             }
@@ -761,7 +770,10 @@ public final class UiAutomationExecutor {
         }
 
         for (char c : text.toCharArray()) {
-            InputUtils.setText(String.valueOf(c));
+            if (!InputUtils.setText(String.valueOf(c))) {
+                throw new IllegalStateException("handleSetText: failed to set text");
+            }
+
             humanDelay(UiActionType.SET_TEXT);
         }
 
@@ -1103,7 +1115,7 @@ public final class UiAutomationExecutor {
     /**
      * Wait for global UI to be quiet (no window/content events) for quiet duration.
      */
-    private static boolean waitForGlobalUiQuiet(long quietDurationMs, long timeoutMs, long pollIntervalMs) {
+    public static boolean waitForGlobalUiQuiet(long quietDurationMs, long timeoutMs, long pollIntervalMs) {
         long startTime = SystemClock.uptimeMillis();
 
         do {
