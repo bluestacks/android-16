@@ -54,7 +54,10 @@
                 <meta-data
                     android:name="android.accessibilityservice"
                     android:resource="@xml/accessibility_service_config" />
-        </service>
+     </service>
+     <service android:name=".BstCommandProcessorIntentService"
+            android:enabled="true"
+            android:exported="true" />
 
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>

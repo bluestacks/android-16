@@ -1,6 +1,8 @@
 package com.bluestacks.BstCommandProcessor;
 
 import android.app.ActivityManager;
+import android.app.ActivityTaskManager;
+import android.app.WaitResult;
 import android.app.Instrumentation;
 import android.app.Service;
 import android.content.Context;
@@ -14,6 +16,7 @@ import android.os.Environment;
 import android.os.FileUtils;
 import android.os.Process;
 import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -124,6 +127,47 @@ public class BstCommandProcessorUtils {
             Log.w(TAG,"Exception in copying file " + sourceFile + " to " + destFile + ": " + e.getMessage());
             if (DBG) e.printStackTrace();
             return false;
+        }
+        return true;
+    }
+
+    public static boolean copyDirectory(File srcDir, File dstDir) {
+        if (!srcDir.isDirectory()) {
+            Log.e(TAG, "copyDirectory: Source is not a directory: " + srcDir);
+            return false;
+        }
+
+        if (dstDir.exists() && !dstDir.isDirectory()) {
+            Log.e(TAG, "copyDirectory: Destination exists but is not a directory: " + dstDir);
+            return false;
+        }
+
+        if (!dstDir.exists()) {
+            if (!dstDir.mkdirs()) {
+                Log.e(TAG, "copyDirectory: Failed to create directory: " + dstDir);
+                return false;
+            }
+        }
+
+        File[] files = srcDir.listFiles();
+        if (files == null) {
+            Log.e(TAG, "copyDirectory: Failed to list files in directory (is null): " + srcDir.getAbsolutePath());
+            return false;
+        }
+
+        for (File file : files) {
+            File dstFile = new File(dstDir, file.getName());
+            if (file.isDirectory()) {
+                if (!copyDirectory(file, dstFile)) {
+                    Log.e(TAG, "copyDirectory: Recursive copy failed for directory: " + file.getName());
+                    return false;
+                }
+            } else {
+                if (!copyFile(file, dstFile)) {
+                    Log.e(TAG, "copyDirectory: Copy failed for file: " + file.getName());
+                    return false;
+                }
+            }
         }
         return true;
     }
@@ -459,6 +503,56 @@ public class BstCommandProcessorUtils {
             Intent launchIntent = pm.getLaunchIntentForPackage(packageName);
             return startActivity(launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
         } catch (Exception e) { 
+            return false;
+        }
+    }
+
+    public static boolean launchAndWait(Context context, String packageName) {
+        try {
+            Intent intent = context.getPackageManager().getLaunchIntentForPackage(packageName);
+            if (intent == null) {
+                Log.e(TAG, "No launch intent for: " + packageName);
+                return false;
+            }
+            return launchIntentAndWait(context, intent);
+        } catch (Exception e) {
+            Log.e(TAG, "Launch failed for " + packageName, e);
+            return false;
+        }
+    }
+
+    public static boolean launchIntentAndWait(Context context, Intent intent) {
+        try {
+            if (intent == null) {
+                Log.e(TAG, "Intent is null");
+                return false;
+            }
+            if ((intent.getFlags() & Intent.FLAG_ACTIVITY_NEW_TASK) == 0) {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            }
+            String resolvedType = intent.resolveTypeIfNeeded(context.getContentResolver());
+            WaitResult waitResult = ActivityTaskManager.getService().startActivityAndWait(
+                    null, context.getPackageName(), null, intent, resolvedType,
+                    null, null, 0, 0, null, null, UserHandle.USER_CURRENT);
+            if (waitResult == null) {
+                Log.e(TAG, "startActivityAndWait returned null for intent: " + intent);
+                return false;
+            }
+            boolean success = waitResult.result == ActivityManager.START_SUCCESS
+                    || waitResult.result == ActivityManager.START_TASK_TO_FRONT
+                    || waitResult.result == ActivityManager.START_DELIVERED_TO_TOP;
+            String msg = String.format(
+                "Intent launch %s: %s in %dms (result code: %d)",
+                success ? "success" : "failure",
+                waitResult.who,
+                waitResult.totalTime,
+                waitResult.result
+            );
+            Log.i(TAG, msg);
+
+            return success;
+        } catch (Exception e) {
+            Log.e(TAG, "Intent launch failed: " + intent, e);
             return false;
         }
     }

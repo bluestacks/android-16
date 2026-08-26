@@ -3,8 +3,8 @@ package com.bluestacks.BstCommandProcessor;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.ActivityManager;
-import android.app.ActivityManagerNative;
 import android.app.ActivityTaskManager;
+import android.app.ActivityManagerNative;
 import android.app.AlarmManager;
 import android.app.IActivityManager;
 import android.app.Instrumentation;
@@ -282,6 +282,7 @@ public class BstCommandLoop {
     private static final ClipboardManager mBstClipboardManager = (ClipboardManager) BstCommandProcessorApplication.getInstance().getSystemService(Context.CLIPBOARD_SERVICE);
     private static final AudioManager mAudioManager = (AudioManager) BstCommandProcessorApplication.getInstance().getSystemService(Context.AUDIO_SERVICE);
     private static Service mService = BstCommandProcessorApplication.getInstance().getServiceHandler();
+    private static final Context mContext = BstCommandProcessorApplication.getInstance().getApplicationContext();
     private static boolean mIsVolumeMuted = mAudioManager.isStreamMute(AudioManager.STREAM_MUSIC);
 
     // file to store list of blacklisted packages still installed
@@ -289,12 +290,151 @@ public class BstCommandLoop {
 
     private static final APKInstallResponse mApkInstallResponse = new APKInstallResponse();
 
+    // define time variables for checking UI stability
+    private static final int QUIET_DURATION_MS = 300;
+    private static final int TIMEOUT_MS = 2000;
+    private static final int POLL_INTERVAL_MS = 80;
+
     // defined in hd/Source/hcall/include/HcallCcCodes.h
-    private static final int HCALL_CC_hcallInputCmdResponse = 10;
+    private static final int HCALL_CC_hcallGcallCmdResponse = 10;
+    private static final int HCALL_CC_hcallSetSmartDownloadEnabled = 11; // 0xB, keep in sync with HcallCcCodes.h
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
+
+    public String agentImportFilesClbk(String payload) {
+        Log.d(TAG, "agentImportFilesClbk called with payload length: " + (payload != null ? payload.length() : "null"));
+        JSONObject response = new JSONObject();
+        JSONArray failedFiles = new JSONArray();
+        String status = "success";
+
+        try {
+            JSONObject request = new JSONObject(payload);
+            String sharedDir = request.getString("sharedDir");
+            String guestDest = request.getString("guestDest");
+            JSONArray files = request.getJSONArray("files");
+            Log.d(TAG, "Parsed import request: sharedDir=" + sharedDir + ", guestDest=" + guestDest + ", files.length=" + files.length());
+
+            for (int i = 0; i < files.length(); i++) {
+                JSONObject fileInfo = files.getJSONObject(i);
+                String src = fileInfo.getString("src");
+                String dst = fileInfo.getString("dst");
+
+                File srcDir = new File(BST_SHARED_FOLDER_PATH, sharedDir);
+                File srcFile = new File(srcDir, src);
+                File dstFile = new File(guestDest, dst);
+
+                if (DBG) Log.d(TAG, "Importing: " + srcFile.getAbsolutePath() + " -> " + dstFile.getAbsolutePath());
+
+                try {
+                    if (srcFile.isDirectory()) {
+                        if (!copyDirectory(srcFile, dstFile)) {
+                            throw new IOException("Failed to copy directory from " + srcFile.getAbsolutePath() + " to " + dstFile.getAbsolutePath());
+                        }
+                    } else {
+                        File parentDir = dstFile.getParentFile();
+                        if (parentDir != null && !parentDir.exists()) {
+                            if (!parentDir.mkdirs()) {
+                                throw new IOException("Failed to create directory: " + parentDir.getAbsolutePath());
+                            }
+                        }
+
+                        if (!copyFile(srcFile, dstFile)) {
+                            throw new IOException("Failed to copy file from " + srcFile.getAbsolutePath() + " to " + dstFile.getAbsolutePath());
+                        }
+                    }
+                    Log.d(TAG, "Successfully imported " + src + " to " + dst);
+                } catch (Exception e) {
+                    Log.e(TAG, "Failed to import " + src + ": " + e.getMessage(), e);
+                    failedFiles.put(src);
+                    status = "failure";
+                }
+            }
+        } catch (JSONException e) {
+            Log.e(TAG, "Failed to parse import payload: " + e.getMessage());
+            status = "failure";
+            try { response.put("error", "Invalid JSON payload"); } catch (JSONException je) {}
+        }
+
+        try {
+            response.put("status", status);
+            if (failedFiles.length() > 0) {
+                response.put("failed_files", failedFiles);
+            }
+        } catch (JSONException e) {
+            // Should not happen
+        }
+
+        String resultJson = response.toString();
+        if (DBG) Log.d(TAG, "agentImportFilesClbk returning resultJson: " + resultJson);
+        return resultJson;
+    }
+
+    public String agentExportFilesClbk(String payload) {
+        if (DBG) Log.d(TAG, "agentExportFilesClbk called with payload: " + payload);
+        JSONObject response = new JSONObject();
+        JSONArray failedFiles = new JSONArray();
+        String status = "success";
+
+        try {
+            JSONObject request = new JSONObject(payload);
+            String sharedDir = request.getString("sharedDir");
+            String hostDest = request.getString("hostDest");
+            JSONArray files = request.getJSONArray("files");
+            if (DBG) Log.d(TAG, "Parsed export request: sharedDir=" + sharedDir + ", hostDest=" + hostDest + ", files.length=" + files.length());
+
+            File exportDir = new File(BST_SHARED_FOLDER_PATH, sharedDir);
+            if (!exportDir.exists() && !exportDir.mkdirs()) {
+                throw new IOException("Failed to create export directory: " + exportDir.getAbsolutePath());
+            }
+
+            for (int i = 0; i < files.length(); i++) {
+                JSONObject fileInfo = files.getJSONObject(i);
+                String src = fileInfo.getString("src");
+                String dst = fileInfo.getString("dst");
+
+                File srcFile = new File(src);
+                File dstFile = new File(exportDir, dst);
+
+                if (DBG) Log.d(TAG, "Exporting: " + srcFile.getAbsolutePath() + " -> " + dstFile.getAbsolutePath());
+
+                try {
+                    if (srcFile.isDirectory()) {
+                        if (!copyDirectory(srcFile, dstFile)) {
+                            throw new IOException("Failed to copy directory from " + srcFile.getAbsolutePath() + " to " + dstFile.getAbsolutePath());
+                        }
+                    } else {
+                        if (!copyFile(srcFile, dstFile)) {
+                            throw new IOException("Failed to copy file from " + srcFile.getAbsolutePath() + " to " + dstFile.getAbsolutePath());
+                        }
+                    }
+                    Log.d(TAG, "Successfully exported " + src + " to " + dst);
+                } catch (Exception e) {
+                    Log.e(TAG, "Failed to export " + src + ": " + e.getMessage(), e);
+                    failedFiles.put(src);
+                    status = "failure";
+                }
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to process export payload: " + e.getMessage());
+            status = "failure";
+            try { response.put("error", "Invalid payload or I/O error: " + e.getMessage()); } catch (JSONException je) {}
+        }
+
+        try {
+            response.put("status", status);
+            if (failedFiles.length() > 0) {
+                response.put("failed_files", failedFiles);
+            }
+        } catch (JSONException e) {
+            // Should not happen
+        }
+
+        String resultJson = response.toString();
+        if (DBG) Log.d(TAG, "agentExportFilesClbk returning resultJson: " + resultJson);
+        return resultJson;
+    }
 
     public BstCommandLoop() {
         if (DBG) Log.d(TAG, "BstCommandLoop constructor called");
-        Log.d(TAG, "BstCommandLoop constructor called");
         // Loading native lib
         System.loadLibrary("gcall_jni");
         if (native_init() != 0) {
@@ -666,10 +806,27 @@ public class BstCommandLoop {
         BstCommandProcessorApplication.getInstance().getAppContext().sendBroadcastAsUser(intent, Process.myUserHandle());
     }
 
+    // Notify the launcher a smart download started (it marks the pkg in-flight to show the loader).
+    private void sendSmartDownloadStarted(String pkgName) {
+        Intent intent = new Intent();
+        intent.setAction("com.bluestacks.action.SMART_DOWNLOAD_STARTED");
+        intent.setComponent(new ComponentName("com.uncube.launcher3", "com.bluestacks.launcher.receivers.SmartDownloadStartReceiver"));
+        intent.putExtra("pkg_name", pkgName);
+        BstCommandProcessorApplication.getInstance().getAppContext().sendBroadcastAsUser(intent, Process.myUserHandle());
+    }
+
     private void sendStopRecordingBroadCast() {
         Intent intent = new Intent();
         intent.setPackage("com.android.systemui");
         intent.setAction("com.bluestacks.action.STOP_RECORDING");
+        BstCommandProcessorApplication.getInstance().getAppContext().sendBroadcastAsUser(intent, Process.myUserHandle());
+    }
+
+    private void sendSmartDownloadEnrollmentChanged(boolean enabled) {
+        Intent intent = new Intent();
+        intent.setAction("com.bluestacks.action.SMART_DOWNLOAD_ENROLLMENT_CHANGED");
+        intent.setComponent(new ComponentName("com.uncube.launcher3", "com.bluestacks.launcher.receivers.SmartDownloadEnrollmentReceiver"));
+        intent.putExtra("enabled", enabled);
         BstCommandProcessorApplication.getInstance().getAppContext().sendBroadcastAsUser(intent, Process.myUserHandle());
     }
 
@@ -719,8 +876,8 @@ public class BstCommandLoop {
         }
     }
 
-    private int launchActivityClbk(String pkgName, String activity, String extras) {
-        if (DBG) Log.d(TAG, "launchActivityClbk function called, pkgName: " + pkgName + " activity: " + activity+ " extras: " + extras);
+    private int _executeLaunchActivity(String pkgName, String activity, String extras) {
+        if (DBG) Log.d(TAG, "_executeLaunchActivity function called, pkgName: " + pkgName + " activity: " + activity+ " extras: " + extras);
         SystemProperties.set("bst.accounts.package", pkgName);
         String className = getClassNameFromActivity(activity);
         Intent intent = new Intent("android.intent.action.MAIN");
@@ -761,8 +918,12 @@ public class BstCommandLoop {
         int rval = -1;
         if (pkgName.equals("com.bluestacks.quest") || pkgName.equals("com.bluestacks.filemanager")) {
             SystemProperties.set("bst.config.calling_package", "com.bluestacks.BstCommandProcessor");
-            mService.startActivityAsUser(intent, Process.myUserHandle());
-            return 0;
+            boolean launchSuccess = BstCommandProcessorUtils.launchIntentAndWait(mContext, intent);
+            if (!launchSuccess) {
+                Log.e(TAG, "launchIntentAndWait failed for package: " + pkgName);
+            }
+            handleGcallCmdResponse("launchActivityClbk", launchSuccess);
+            return launchSuccess ? 0 : -1;
         }
 
         //Case ROB-2964 : in case of set location dont go back to launcher instead go back to the previous app
@@ -792,24 +953,51 @@ public class BstCommandLoop {
             }
 
             SystemProperties.set("bst.config.calling_package", "com.bluestacks.BstCommandProcessor");
+            boolean launchSuccess = false;
             if (taskId >= 0) {
                 // This is an active task; it should just go to the foreground.
                 Log.d(TAG, "moving " + taskId + " to front");
                 mActivityManager.moveTaskToFront(taskId, ActivityManager.MOVE_TASK_WITH_HOME);
+                launchSuccess = true;
             } else {
-                mService.startActivityAsUser(intent, Process.myUserHandle());
+                launchSuccess = BstCommandProcessorUtils.launchIntentAndWait(mContext, intent);
+                if (!launchSuccess) {
+                    Log.e(TAG, "launchIntentAndWait failed for package: " + pkgName);
+                }
             }
-            rval = 0;
+            handleGcallCmdResponse("launchActivityClbk", launchSuccess);
+            rval = launchSuccess ? 0 : -1;
         } catch (Exception e) {
             Log.e(TAG, "Exception while trying to launch pkg: " + pkgName + " using activity: " + activity);
-            e.printStackTrace();
+            handleGcallCmdResponse("launchActivityClbk", false);
+            rval = -1;
         }
         return rval;
     }
 
+    private int launchActivityClbk(String pkgName, String activity, String extras) {
+        if (DBG) Log.d(TAG, "launchActivityClbk function called, pkgName: " + pkgName + " activity: " + activity+ " extras: " + extras);
+        return _executeLaunchActivity(pkgName, activity, extras);
+    }
+
+    private int reLaunchActivityClbk(String pkgName, String activity, String extras) {
+        if (DBG) Log.d(TAG, "reLaunchActivityClbk function called, pkgName: " + pkgName + " activity: " + activity+ " extras: " + extras);
+        // 1. Call the existing public stop method
+        stopAppClbk(pkgName);
+
+        // 2. Schedule delayed launch to avoid race conditions, as stop is async.
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (DBG) Log.d(TAG, "Executing delayed launch for " + pkgName);
+                launchActivityClbk(pkgName, activity, extras);
+            }
+        }, 500); // 500ms delay
+        return 0;
+    }
+
     private void launchUrlClbk (String url) {
         if (DBG) Log.d(TAG, "launchUrlClbk function called, url: " + url);
-
         try {
             Uri uri = Uri.parse(url);
             Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -927,6 +1115,10 @@ public class BstCommandLoop {
 
     private void launchAppStoreClbk(String store, String packageName, String extraData, String source) {
         //startUrlTracking(packageName, source);
+        // Smart download (host gcall source tag): tell the launcher the package so it shows the loader.
+        if ("smart_downloads".equals(source)) {
+            sendSmartDownloadStarted(packageName);
+        }
         if (OEM.equals("nxt_cn") && store.equals("com.bluestacks.gamecenter")) {
             launchGameCenter(packageName, extraData, "ApkInstallation", false, source);
             return;
@@ -1063,6 +1255,10 @@ public class BstCommandLoop {
 
     private void setDifferentImagePkgsClbk(String file) {
         Log.d(TAG, "setDifferentImagePkgsClbk file: " + file);
+        if (file == null || file.isEmpty()) {
+            Log.e(TAG, "setDifferentImagePkgsClbk called with null or empty file string.");
+            return;
+        }
         File inFile = new File(BST_SHARED_FOLDER_PATH + "/" + file);
         File outFile = new File("/data/downloads/.different_image_pkgs");
         boolean isCopyFile = copyFile(inFile, outFile);
@@ -1127,34 +1323,59 @@ public class BstCommandLoop {
         }
     }
 
+    /**
+     * Interface for input actions.
+     * Used to wrap operations (tap, swipe, text) for deferred execution after UI stability checks.
+     */
+    public interface InputAction {
+        boolean run();
+    }
+
+    /**
+     * Waits for the UI to stabilize before executing the specified input action.
+     * @param commandName The name of the command (used for logging and responses).
+     * @param action      The specific input logic (returns a boolean indicating success).
+     */
+    private void executeWhenUiStable(String commandName, InputAction action) {
+        Log.d(TAG, "Submitting task to executor: " + commandName);
+
+        try {
+             Log.i(TAG, "Wait for UI Quiet...");
+             boolean isStable = UiAutomationExecutor.waitForGlobalUiQuiet(QUIET_DURATION_MS, TIMEOUT_MS, POLL_INTERVAL_MS);
+             Log.i(TAG, "UI Stable result: " + isStable);
+
+             boolean result = false;
+             if (isStable) {
+                 result = action.run();
+             } else {
+                 Log.w(TAG, "UI unstable, skipping execution");
+             }
+
+             handleGcallCmdResponse(commandName, result);
+        } catch (Exception e) {
+             Log.e(TAG, commandName + " execution failed", e);
+             handleGcallCmdResponse(commandName, false);
+        }
+    }
+
     private void inputSwipeCommandClbk(int mStartX, int mStartY, int mEndX, int mEndY, int mDurationMsecs) {
         Log.d(TAG, "inputSwipeCommandClbk: mStartX=" + mStartX + ", mStartY=" + mStartY + ", mEndX=" + mEndX + ", mEndY=" + mEndY);
-        boolean ret = InputUtils.swipe(mStartX, mStartY, mEndX, mEndY, mDurationMsecs);
-
-        handleInputCmdResponse("swipe", ret);
+        executeWhenUiStable("swipe", () -> InputUtils.swipe(mStartX, mStartY, mEndX, mEndY, mDurationMsecs));
     }
 
     private void inputTapCommandClbk(int mX, int mY) {
         Log.d(TAG, "inputTapCommandClbk: mX=" + mX + ", mY=" + mY);
-        boolean ret = InputUtils.tap(mX, mY);
-
-        handleInputCmdResponse("tap", ret);
+        executeWhenUiStable("tap", () -> InputUtils.tap(mX, mY));
     }
 
     private void inputPressKeyCommandClbk(int keyCode) {
         Log.d(TAG, "inputPressKeyCommandClbk: keyCode=" + keyCode);
-        boolean ret = InputUtils.pressKey(keyCode);
-
-        handleInputCmdResponse("press_key", ret);
+        executeWhenUiStable("press_key", () -> InputUtils.pressKey(keyCode));
     }
 
-    private int inputSetTextCommandClbk(String text) {
+    private void inputSetTextCommandClbk(String text) {
         Log.d(TAG, "inputSetTextCommandClbk: text=" + text);
-        boolean ret = InputUtils.setText(text);
-
-        handleInputCmdResponse("input_text", ret);
-
-        return 0;
+        executeWhenUiStable("input_text", () -> InputUtils.setText(text));
     }
 
     private void enableAndroidAdsClbk(boolean enable, String extraData) {
@@ -1197,6 +1418,12 @@ public class BstCommandLoop {
                 break;
             case BstCommandCCcodes.GCALL_CC_AutoExecutor:
                 handleAutoExecutor(name);
+                break;
+            case BstCommandCCcodes.GCALL_CC_SetSmartDownloadEnabled:
+                Log.d(TAG, "commonCommandClbk SetSmartDownloadEnabled: " + name);
+                boolean smartDownloadEnabled = "1".equals(name);
+                SystemProperties.set("bst.enable_smart_downloads", smartDownloadEnabled ? "1" : "0");
+                sendSmartDownloadEnrollmentChanged(smartDownloadEnabled);
                 break;
             default:
                 break;
@@ -1290,7 +1517,7 @@ public class BstCommandLoop {
         });
     }
 
-    private void handleInputCmdResponse(String action, boolean ret) {
+    private void handleGcallCmdResponse(String action, boolean ret) {
         BstHostCallManager hCallManager = (BstHostCallManager) BstCommandProcessorApplication
             .getInstance().getSystemService(Context.BST_HOST_CALL);
 
@@ -1298,13 +1525,21 @@ public class BstCommandLoop {
             Log.e(TAG, "Failed to obtain BstHostCallManager for action: " + action +
                 "; cannot send result back to HD side!");
             return;
-
         }
 
         String status = ret ? "SUCCESS" : "FAILED";
         String message = action + " execution " + (ret ? "success." : "failed.");
 
-        hCallManager.commonCommand(HCALL_CC_hcallInputCmdResponse, status, message);
+        hCallManager.commonCommand(HCALL_CC_hcallGcallCmdResponse, status, message);
+    }
+
+    // Persist Smart Downloads opt-in to host conf bst.enable_smart_downloads (host writes + commits); name = "1"/"0".
+    public void setSmartDownloadEnabled(boolean enabled) {
+        Log.d(TAG, "setSmartDownloadEnabled enabled = " + enabled);
+        // Keep the guest's boot-synced sysprop fresh too, so other guest readers (or a launcher
+        // restart) see the new state without waiting for the next boot sync.
+        SystemProperties.set("bst.enable_smart_downloads", enabled ? "1" : "0");
+        mBstHostCallManagerService.commonCommand(HCALL_CC_hcallSetSmartDownloadEnabled, enabled ? "1" : "0", "");
     }
 
     /**
@@ -2766,6 +3001,11 @@ public class BstCommandLoop {
         return BstCommandProcessorUtils.copyFile(sourceFile, destFile);
     }
 
+    // This function will copy directory from srcDir to dstDir.
+    private boolean copyDirectory(File srcDir, File dstDir) {
+        return BstCommandProcessorUtils.copyDirectory(srcDir, dstDir);
+    }
+
     void uninstallBlacklistedApps() {
         File blacklistAppFile = new File(bstBlacklistedInstalledAppListPath);
         if (!blacklistAppFile.exists())
@@ -2852,18 +3092,21 @@ public class BstCommandLoop {
             List<ActivityManager.RunningTaskInfo> runningTasks = mActivityManager.getRunningTasks(50);
             num_task = runningTasks.size();
 
-            for ( int i = 0; i < num_task; i++) {
+            List<Integer> tasksToRemove = new ArrayList<>();
+            for (int i = 0; i < num_task; i++) {
                 ActivityManager.RunningTaskInfo info = runningTasks.get(i);
-                if (info.baseActivity.getPackageName().equalsIgnoreCase(pkgName)) {
-                    persistenttaskId = info.id;
+                if (info.baseActivity != null && info.baseActivity.getPackageName().equalsIgnoreCase(pkgName)) {
+                    tasksToRemove.add(info.id);
                     isInRunningTaskstack = true;
-                    if (DBG) Log.d(TAG, "Calling removetask for pkg:" + pkgName + " ,taskId:" + persistenttaskId);
-                    // A13: mActivityManager.removeTaskWrapper(persistenttaskId, true)  -- BlueStacks 自加的 patch，
-                    //      A16 干净 fork 里没移植过来。
-                    // A16: AOSP 的 task 删除 API 在 ActivityTaskManager.removeTask(int)（A10 起就如此，
-                    //      A13/A16 都存在）。本 app sharedUserId=android.uid.system，自动持 MANAGE_ACTIVITY_TASKS。
-                    ActivityTaskManager.getInstance().removeTask(persistenttaskId);
                 }
+            }
+
+            // Now, remove the tasks after the iteration is complete
+            for (Integer taskId : tasksToRemove) {
+                if (DBG) Log.d(TAG, "Calling removetask for pkg:" + pkgName + " ,taskId:" + taskId);
+                // A16: removeTaskWrapper was an A13 BlueStacks addition; AOSP exposes
+                // ActivityTaskManager.removeTask(int) (uid system holds MANAGE_ACTIVITY_TASKS).
+                ActivityTaskManager.getInstance().removeTask(taskId);
             }
 
             if (!isInRunningTaskstack) {

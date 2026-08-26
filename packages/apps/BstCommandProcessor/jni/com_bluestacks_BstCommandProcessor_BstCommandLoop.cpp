@@ -33,6 +33,9 @@
 
 #include <linux/uinput.h>
 
+#include <dirent.h>
+#include <sys/stat.h>
+
 XLOG_SET_MODULE (XLOG_MODULE_GCALL);
 
 typedef struct ThreadPool {
@@ -68,6 +71,7 @@ static jmethodID g_uninstallAppMethod;
 static jmethodID g_stopAppMethod;
 static jmethodID g_takeScreenshotMethod;
 static jmethodID g_launchActivityMethod;
+static jmethodID g_reLaunchActivityMethod;
 static jmethodID g_launchUrlMethod;
 static jmethodID g_importFilesMethod;
 static jmethodID g_exportFilesMethod;
@@ -100,6 +104,8 @@ static jmethodID g_inputSwipeCommandMethod;
 static jmethodID g_inputTapCommandMethod;
 static jmethodID g_inputPressKeyCommandMethod;
 static jmethodID g_inputSetTextCommandMethod;
+static jmethodID g_agentImportFilesClbk;
+static jmethodID g_agentExportFilesClbk;
 
 static bool dbg = false;
 static bool isAbsoluteMouse = true;
@@ -211,7 +217,87 @@ out:
     return;
 }
 
-/*
+void _gcallAgentImportFilesClbk(string requestIdStr, string payloadStr)
+{
+    const char* requestId = requestIdStr.c_str();
+    const char* payload = payloadStr.c_str();
+    ALOGD("_gcallAgentImportFilesClbk called with requestId: %s, payload: %s", requestId, payload);
+
+    jstring jpayload = g_env->NewStringUTF(payload);
+    if (jpayload == NULL) {
+        ALOGE("Failed to create jstring from payload in _gcallAgentImportFilesClbk");
+        hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"JNI could not create string\"}");
+        return;
+    }
+
+    jstring jResultJson = (jstring)g_env->CallObjectMethod(g_bstCommandLoopObject, g_agentImportFilesClbk, jpayload);
+    g_env->DeleteLocalRef(jpayload);
+
+    if (g_env->ExceptionCheck()) {
+        ALOGE("Exception calling agentImportFilesClbk");
+        g_env->ExceptionDescribe();
+        g_env->ExceptionClear();
+        hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"Java exception occurred during agentImportFilesClbk\"}");
+        return;
+    }
+
+    if (jResultJson != NULL) {
+        const char* resultJsonCStr = g_env->GetStringUTFChars(jResultJson, NULL);
+        if (resultJsonCStr) {
+            ALOGD("hcallAgentFileTransferCompletedRpc with requestId: %s, result: %s", requestId, resultJsonCStr);
+            hcallAgentFileTransferCompletedRpc(requestId, resultJsonCStr);
+            g_env->ReleaseStringUTFChars(jResultJson, resultJsonCStr);
+        } else {
+            hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"Failed to get result JSON from Java\"}");
+        }
+        g_env->DeleteLocalRef(jResultJson);
+    } else {
+        ALOGE("NULL result from agentImportFilesClbk");
+        hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"NULL result from Java method\"}");
+    }
+}
+
+void _gcallAgentExportFilesClbk(string requestIdStr, string payloadStr)
+{
+    const char* requestId = requestIdStr.c_str();
+    const char* payload = payloadStr.c_str();
+    ALOGD("_gcallAgentExportFilesClbk called with requestId: %s, payload: %s", requestId, payload);
+
+    jstring jpayload = g_env->NewStringUTF(payload);
+    if (jpayload == NULL) {
+        ALOGE("Failed to create jstring from payload in _gcallAgentExportFilesClbk");
+        hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"JNI could not create string\"}");
+        return;
+    }
+
+    jstring jResultJson = (jstring)g_env->CallObjectMethod(g_bstCommandLoopObject, g_agentExportFilesClbk, jpayload);
+    g_env->DeleteLocalRef(jpayload);
+
+    if (g_env->ExceptionCheck()) {
+        ALOGE("Exception calling agentExportFilesClbk");
+        g_env->ExceptionDescribe();
+        g_env->ExceptionClear();
+        hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"Java exception occurred during agentExportFilesClbk\"}");
+        return;
+    }
+
+    if (jResultJson != NULL) {
+        const char* resultJsonCStr = g_env->GetStringUTFChars(jResultJson, NULL);
+        if (resultJsonCStr) {
+            ALOGD("hcallAgentFileTransferCompletedRpc with requestId: %s, result: %s", requestId, resultJsonCStr);
+            hcallAgentFileTransferCompletedRpc(requestId, resultJsonCStr);
+            g_env->ReleaseStringUTFChars(jResultJson, resultJsonCStr);
+        } else {
+            hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"Failed to get result JSON from Java\"}");
+        }
+        g_env->DeleteLocalRef(jResultJson);
+    } else {
+        ALOGE("NULL result from agentExportFilesClbk");
+        hcallAgentFileTransferCompletedRpc(requestId, "{\"status\":\"failure\", \"error\":\"NULL result from Java method\"}");
+    }
+}
+
+ /*
  * Gcall handler functions.
  */
 void _gcallSetDeviceProfileClbk(string deviceProfileCodeStr, string deviceCarrierCodeStr) {
@@ -598,6 +684,53 @@ out:
     return;
 }
 
+
+void _gcallReLaunchActivityClbk(string packageStr, string activityStr, string extrasStr) {
+    const char* package = packageStr.c_str();
+    const char* activity = activityStr.c_str();
+    const char* extras = extrasStr.c_str();
+    if (dbg) ALOGD("%s called: package %s, activity %s, extras %s", __func__, package, activity, extras);
+    jint status = -1;
+
+    jstring jActivity = NULL;
+    jstring jExtras = NULL;
+    jstring jPackage = g_env->NewStringUTF(package);
+    if (jPackage == NULL) {
+        ALOGE("%s OOM error for NewStringUTF %s", __func__, package);
+        goto out;
+    }
+    jActivity = g_env->NewStringUTF(activity);
+    if (jActivity == NULL) {
+        ALOGE("%s OOM error for NewStringUTF %s", __func__, activity);
+        goto out;
+    }
+    jExtras = g_env->NewStringUTF(extras);
+    if (jExtras == NULL) {
+        ALOGE("%s OOM error for NewStringUTF %s", __func__, extras);
+        goto out;
+    }
+
+    if (dbg) ALOGD("%s calling JAVA callback function with args: package= %s and activity = %s and extras %s", __func__, package, activity, extras);
+    status = g_env->CallIntMethod(g_bstCommandLoopObject, g_reLaunchActivityMethod, jPackage, jActivity, jExtras);
+    checkAndClearExceptionFromCallback(g_env, __func__);
+
+out:
+    if (dbg) ALOGD("%s returning %d using hcall function", __func__, status);
+    xerr_t rval = hcallOnReLaunchActivityCompletedRpc(status);
+    if (rval != XERR_SUCCESS) {
+        ALOGE("RPC failed for %s, error %d", __func__, rval);
+    } else {
+        ALOGI("%s returning , hcall rval = %d", __func__, rval);
+    }
+    if (jPackage)
+        g_env->DeleteLocalRef(jPackage);
+    if (jActivity)
+        g_env->DeleteLocalRef(jActivity);
+    if (jExtras)
+        g_env->DeleteLocalRef(jExtras);
+
+    return;
+}
 
 void _gcallLaunchUrlClbk(string urlStr) {
     const char* url = urlStr.c_str();
@@ -1169,7 +1302,6 @@ void _gcallInputPressKeyCommandClbk(i32 keyCode) {
 void _gcallInputSetTextCommandClbk(string textStr) {
     const char* text = textStr.c_str();
     if (dbg) ALOGD("%s called: text: %s", __func__, text);
-    jint status = -1;
 
     jstring jText = g_env->NewStringUTF(text);
     if (jText == NULL) {
@@ -1178,12 +1310,10 @@ void _gcallInputSetTextCommandClbk(string textStr) {
     }
 
     if (dbg) ALOGD("%s calling JAVA callback function with args: text = %s", __func__, text);
-    status = g_env->CallIntMethod(g_bstCommandLoopObject, g_inputSetTextCommandMethod, jText);
+    g_env->CallVoidMethod(g_bstCommandLoopObject, g_inputSetTextCommandMethod, jText);
     checkAndClearExceptionFromCallback(g_env, __func__);
 
 out:
-    if (dbg) ALOGD("%s returning %d using hcall function", __func__, status);
-
     if (jText)
         g_env->DeleteLocalRef(jText);
 
@@ -1533,6 +1663,14 @@ void gcallLaunchActivityClbk(const char* package, const char* activity, const ch
         });
 }
 
+void gcallReLaunchActivityClbk(const char* package, const char* activity, const char* extras) {
+    ALOGI("%s called: package %s, activity %s, extras %s", __func__, package, activity, extras);
+    xthrPoolAddTask(&g_thr_pool.threadPool, [packageStr = string(package), activityStr = string(activity), extrasStr = string(extras)]
+        {
+            _gcallReLaunchActivityClbk(packageStr, activityStr, extrasStr);
+        });
+}
+
 void gcallLaunchUrlClbk(const char* url) {
     ALOGI("%s called: url %s", __func__, url);
     xthrPoolAddTask(&g_thr_pool.threadPool, [urlStr = string(url)]
@@ -1799,6 +1937,22 @@ void gcallInputSetTextCommandClbk(const char* text) {
         });
 }
 
+void gcallAgentImportFilesClbk(const char* requestId, const char* payload) {
+    ALOGI("%s called", __func__);
+    xthrPoolAddTask(&g_thr_pool.threadPool, [requestIdStr = string(requestId), payloadStr = string(payload)]
+        {
+            _gcallAgentImportFilesClbk(requestIdStr, payloadStr);
+        });
+}
+
+void gcallAgentExportFilesClbk(const char* requestId, const char* payload) {
+    ALOGI("%s called", __func__);
+    xthrPoolAddTask(&g_thr_pool.threadPool, [requestIdStr = string(requestId), payloadStr = string(payload)]
+        {
+            _gcallAgentExportFilesClbk(requestIdStr, payloadStr);
+        });
+}
+
 /*
  * HCALL handlers and utility functions
  */
@@ -1995,6 +2149,12 @@ int register_com_bluestacks_BstCommandProcessor_BstCommandLoop(JavaVM *jvm, JNIE
         goto err;
     }
 
+    g_reLaunchActivityMethod = env->GetMethodID(g_bstCommandLoopClass, "reLaunchActivityClbk", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I");
+    if (g_reLaunchActivityMethod == NULL) {
+        ALOGE("Error in getting method identifier for reLaunchActivityClbk");
+        goto err;
+    }
+
     g_launchUrlMethod  = env->GetMethodID(g_bstCommandLoopClass, "launchUrlClbk", "(Ljava/lang/String;)V");
     if (g_launchUrlMethod == NULL) {
         ALOGE("Error in getting method identifier for launchUrlClbk");
@@ -2181,9 +2341,21 @@ int register_com_bluestacks_BstCommandProcessor_BstCommandLoop(JavaVM *jvm, JNIE
         goto err;
     }
 
-    g_inputSetTextCommandMethod = env->GetMethodID(g_bstCommandLoopClass, "inputSetTextCommandClbk", "(Ljava/lang/String;)I");
+    g_inputSetTextCommandMethod = env->GetMethodID(g_bstCommandLoopClass, "inputSetTextCommandClbk", "(Ljava/lang/String;)V");
     if (g_inputSetTextCommandMethod == NULL) {
         ALOGE("Error in getting method identifier for inputSetTextCommandClbk");
+        goto err;
+    }
+
+    g_agentImportFilesClbk = env->GetMethodID(g_bstCommandLoopClass, "agentImportFilesClbk", "(Ljava/lang/String;)Ljava/lang/String;");
+    if (g_agentImportFilesClbk == NULL) {
+        ALOGE("Unable to find method agentImportFilesClbk with signature");
+        goto err;
+    }
+
+    g_agentExportFilesClbk = env->GetMethodID(g_bstCommandLoopClass, "agentExportFilesClbk", "(Ljava/lang/String;)Ljava/lang/String;");
+    if (g_agentExportFilesClbk == NULL) {
+        ALOGE("Unable to find method agentExportFilesClbk with signature");
         goto err;
     }
 
