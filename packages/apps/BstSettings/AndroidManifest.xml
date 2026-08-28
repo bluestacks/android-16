@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bluestacks.settings"
-    android:versionCode="69"
-    android:versionName="69.1" >
+    android:versionCode="70"
+    android:versionName="69.2" >
 
     <uses-sdk android:minSdkVersion="25"
-            android:targetSdkVersion="25"/>
+            android:targetSdkVersion="28"/>
 
     <queries>
         <package android:name="com.andorid.settings" />
