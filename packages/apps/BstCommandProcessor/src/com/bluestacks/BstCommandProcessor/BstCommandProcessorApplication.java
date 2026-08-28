@@ -102,9 +102,19 @@ class BstBootCompletedReceiver extends BroadcastReceiver
     {
         BstCommandProcessorUtils.clearGoogleAppsData(TAG);
 
-        Log.d(TAG, "syncInstalledApps");
-        BstCommandProcessorApplication.getInstance().getCommandHandler().syncInstalledApps();
-        BstCommandProcessorApplication.getInstance().setLocationData();
+        // Offload syncInstalledApps to background thread to avoid blocking
+        // BOOT_COMPLETED ordered broadcast dispatch (~457ms of Binder IPCs).
+        // The underlying JNI call (native_syncInstalledApps) is already fire-and-forget
+        // via xthrPoolAddTask, so only the getInstalledPackagesInfo() gathering blocks.
+        final BstCommandProcessorApplication app = BstCommandProcessorApplication.getInstance();
+        app.postToHostCallThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(TAG, "syncInstalledApps");
+                app.getCommandHandler().syncInstalledApps();
+            }
+        });
+        app.setLocationData();
 
         if (SystemProperties.get("bst.bluestacks_account_id").isEmpty()) {
             String email = SystemProperties.get("persist.sys.user.email");
@@ -1679,6 +1689,22 @@ public class BstCommandProcessorApplication extends Application {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
+        }
+    }
+
+    /**
+     * Post a task to the background threadForHostCalls HandlerThread.
+     * @hide
+     */
+    void postToHostCallThread(Runnable task) {
+        if (mHandlerForHostCalls == null) {
+            mHandlerForHostCalls = new Handler(mHandlerThreadForHostCalls.getLooper());
+        }
+        if (mHandlerForHostCalls != null) {
+            mHandlerForHostCalls.post(task);
+        } else {
+            Log.e(TAG, "postToHostCallThread: mHandlerForHostCalls is null, running on caller thread");
+            task.run();
         }
     }
 

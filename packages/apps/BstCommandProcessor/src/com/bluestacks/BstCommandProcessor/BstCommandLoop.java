@@ -85,7 +85,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.Locale;
 import java.util.Map;
 import java.util.zip.ZipEntry;
@@ -2972,7 +2974,7 @@ public class BstCommandLoop {
                 Configuration config = am.getConfiguration();
                 Log.d(TAG, "setting newlocale: " + newLocale + " current locale: " + Locale.getDefault().toString());
 
-                if (config.locale != newLocale) {
+                if (!newLocale.equals(config.locale)) {
                     // Will set userSetLocale to indicate this isn't some passing default - the user
                     // wants this remembered
                     Log.d(TAG,"setting locale :" + newLocale.toString());
@@ -2983,6 +2985,12 @@ public class BstCommandLoop {
                     SystemProperties.set("bst.locale", arg);
                     // Trigger the dirty bit for the Settings Provider.
                     BackupManager.dataChanged("com.android.providers.settings");
+                } else {
+                    // Same locale in a different tag form (bst.locale=zh-CN vs
+                    // persist.sys.locale=zh-Hans-CN). Applying it would dispatch a spurious
+                    // LOCALE_CHANGED at every boot and pull receiver apps (com.bluestacks.home,
+                    // and transitively gms.persistent) into the boot critical window.
+                    Log.d(TAG, "locale unchanged (" + newLocale + "), skip updatePersistentConfiguration");
                 }
                 Log.d(TAG, "newLocale set: " + Locale.getDefault().toString());
                 rval = 0;
@@ -3157,61 +3165,69 @@ public class BstCommandLoop {
      */
     String getInstalledPackagesInfo() {
         PackageManager pm = mService.getPackageManager();
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-        intent.addCategory(Intent.CATEGORY_HOME);
-        List<ResolveInfo> launcherPkgList = pm.queryIntentActivities(intent, 0);
+
+        // --- Optimization: batch-query all packages with CATEGORY_LAUNCHER in one IPC ---
+        // Previously we did queryIntentActivities(CATEGORY_LAUNCHER) per package (114 IPCs),
+        // 98 of which returned empty lists and were discarded. Now we do a single query
+        // without setPackage() to get all launcher activities across all packages at once,
+        // then build a lookup map. This reduces 114 IPCs to 1.
+        Intent launcherIntent = new Intent(Intent.ACTION_MAIN);
+        launcherIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+        List<ResolveInfo> allLauncherActivities = pm.queryIntentActivities(launcherIntent, 0);
+        // Map: packageName -> ResolveInfo (first launcher activity per package)
+        Map<String, ResolveInfo> launcherActivityMap = new HashMap<>();
+        for (ResolveInfo ri : allLauncherActivities) {
+            String pkg = ri.activityInfo.packageName;
+            if (!launcherActivityMap.containsKey(pkg)) {
+                launcherActivityMap.put(pkg, ri);
+            }
+        }
+        if (DBG) Log.d(TAG, "getInstalledPackagesInfo: found " + launcherActivityMap.size()
+                + " packages with launcher activities");
+
+        // Also get home app list in the same initial batch (1 IPC, was 1 IPC before — unchanged)
+        Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+        homeIntent.addCategory(Intent.CATEGORY_HOME);
+        Set<String> homeAppPackages = new HashSet<>();
+        for (ResolveInfo ri : pm.queryIntentActivities(homeIntent, 0)) {
+            homeAppPackages.add(ri.activityInfo.packageName);
+        }
 
         JSONObject json = new JSONObject();
-        PackageInfo packageInfo = null;
         try {
             JSONArray array = new JSONArray();
+            // Single getInstalledApplications call (1 IPC, was 1 IPC before — unchanged)
             List<ApplicationInfo> appsInfo = pm.getInstalledApplications(PackageManager.GET_META_DATA);
             for (ApplicationInfo app : appsInfo) {
-                boolean isSystemApp = false;
                 String packageName = app.packageName;
-                if (BstCommandProcessorUtils.isSystemApp(app)) {
-                    isSystemApp = true;
-                    if (DBG) Log.d(TAG, "packageName: " + packageName + ", is a system app");
+
+                // Skip packages without launcher activity — no IPC needed (was 2 wasted IPCs before)
+                ResolveInfo launcherInfo = launcherActivityMap.get(packageName);
+                if (launcherInfo == null) {
+                    continue;
                 }
 
-                int versionCode = 0;
-                String appLabel = null;
-                String activity = null;
+                boolean isSystemApp = BstCommandProcessorUtils.isSystemApp(app);
+                if (DBG && isSystemApp) Log.d(TAG, "packageName: " + packageName + ", is a system app");
+
+                String activity = launcherInfo.activityInfo.name;
+                String appLabel = (String) launcherInfo.loadLabel(pm);
+                if (appLabel == null) {
+                    appLabel = packageName;
+                }
+
                 String versionName = "";
+                int versionCode = 0;
                 try {
-                    packageInfo = pm.getPackageInfo(packageName, PackageManager.GET_CONFIGURATIONS);
+                    PackageInfo packageInfo = pm.getPackageInfo(packageName, PackageManager.GET_CONFIGURATIONS);
                     versionCode = packageInfo.versionCode;
-
-                    if (packageInfo.versionName != null)
+                    if (packageInfo.versionName != null) {
                         versionName = packageInfo.versionName;
-
-                    /* Populate the list of Apps that matches the query data */
-                    Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
-                    mainIntent.setPackage(packageName);
-                    mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-
-                    List<ResolveInfo> infoList = pm.queryIntentActivities(mainIntent, 0);
-                    if (infoList == null) {
-                        Log.e(TAG, "No matching package found by PM for the given data: " + packageName);
-                        continue;
-                    }
-
-                    for (ResolveInfo info : infoList) {
-                        activity = info.activityInfo.name;
-                        appLabel = (String) info.loadLabel(pm);
                     }
                 } catch (Exception iex) {
                     Log.w(TAG, "Failed to retrieve packageInfo : " + iex.getMessage());
                     if (DBG) iex.printStackTrace();
                 }
-
-                if (activity == null) {
-                    if (DBG) Log.d(TAG, "activity name is null for package : " + packageName);
-                    continue;
-                }
-
-                if (appLabel == null)
-                    appLabel = packageName;
 
                 JSONObject appJson = new JSONObject();
                 appJson.put("package", packageName);
@@ -3219,14 +3235,8 @@ public class BstCommandLoop {
                 appJson.put("appLabel", appLabel);
                 appJson.put("versionCode", versionCode);
                 appJson.put("versionName", versionName);
-                appJson.put("isHomeApp", false);
+                appJson.put("isHomeApp", homeAppPackages.contains(packageName));
                 appJson.put("isSystemApp", isSystemApp);
-                if (!launcherPkgList.isEmpty()) {
-                    for (ResolveInfo resolveInfo : launcherPkgList) {
-                        if (resolveInfo.activityInfo.packageName.equals(packageName))
-                            appJson.put("isHomeApp", true);
-                    }
-                }
 
                 if (mBstFilterAppsManager.isRotateDisabled(packageName)) {
                     appJson.put("orientation", "Disabled");
