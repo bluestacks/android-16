@@ -587,7 +587,15 @@ public class BstCommandProcessorService extends Service {
         nwLocation.setAccuracy(Criteria.ACCURACY_FINE);
         nwLocation.setTime(System.currentTimeMillis());
         nwLocation.setElapsedRealtimeNanos(System.nanoTime());
-        mLocationManager.setTestProviderLocation(LocationManager.NETWORK_PROVIDER, nwLocation);
+        // A16: LocationManager.setTestProviderLocation() throws BadLocationException for
+        // (0,0) (API validation added after A9). The host sends 0,0 before the user has
+        // picked a location; keep the saved value but skip injecting the test location,
+        // instead of crashing the command processor twice on every first boot.
+        if (latitude == 0.0 && longitude == 0.0) {
+            Log.w(TAG, "setBstLocation: skipping test provider location for (0,0)");
+        } else {
+            mLocationManager.setTestProviderLocation(LocationManager.NETWORK_PROVIDER, nwLocation);
+        }
         saveLocationDataToSharedPrefs(data);
     }
 
