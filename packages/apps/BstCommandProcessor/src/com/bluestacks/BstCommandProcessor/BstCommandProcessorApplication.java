@@ -301,6 +301,7 @@ public class BstCommandProcessorApplication extends Application {
         super.onCreate();
         singleton = this;
         appContext = getApplicationContext();
+
         Instrumentation instrumentation = new Instrumentation();
         mKeyCommandExecutor = new KeyCommandExecutor(instrumentation, DBG_COMMANDS);
         mHandler = new Handler(getMainLooper());

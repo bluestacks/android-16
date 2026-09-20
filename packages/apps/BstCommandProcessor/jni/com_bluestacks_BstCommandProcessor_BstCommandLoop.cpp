@@ -93,6 +93,7 @@ static jmethodID g_showNativeMousePointer;
 static jmethodID g_setDifferentImagePkgs;
 static jmethodID g_setCustomAppOrientation;
 static jmethodID g_setAirplaneModeMethod;
+static jmethodID g_setFreeformLaunchMethod;
 static jmethodID g_startRecording;
 static jmethodID g_enableAndroidAds;
 static jmethodID g_androidInterstitialAdSetting;
@@ -1134,6 +1135,16 @@ void _gcallSetAirplaneModeClbk(bool enable) {
     return;
 }
 
+void _gcallSetFreeformLaunchClbk(bool enable) {
+    if (dbg) ALOGD("%s called: enable = %d", __func__, enable);
+
+    if (dbg) ALOGD("%s calling JAVA callback function with args: enable = %d", __func__, enable);
+    g_env->CallVoidMethod(g_bstCommandLoopObject, g_setFreeformLaunchMethod, enable);
+    checkAndClearExceptionFromCallback(g_env, __func__);
+
+    return;
+}
+
 void _gcallStartRecordingClbk(bool start) {
     if (dbg) ALOGD("%s called: start = %d", __func__, start);
 
@@ -1848,6 +1859,14 @@ void gcallSetAirplaneModeClbk(bool enable) {
             });
 }
 
+void gcallSetFreeformLaunchClbk(bool enable) {
+    ALOGE("%s called: enable = %d", __func__, enable);
+    xthrPoolAddTask(&g_thr_pool.threadPool, [enable]
+            {
+                _gcallSetFreeformLaunchClbk(enable);
+            });
+}
+
 void gcallStartRecordingClbk(bool start) {
     ALOGE("%s called: start = %d", __func__, start);
     xthrPoolAddTask(&g_thr_pool.threadPool, [start]
@@ -2278,6 +2297,12 @@ int register_com_bluestacks_BstCommandProcessor_BstCommandLoop(JavaVM *jvm, JNIE
     g_setAirplaneModeMethod = env->GetMethodID(g_bstCommandLoopClass, "setAirplaneModeClbk", "(Z)V");
     if (g_setAirplaneModeMethod == NULL) {
         ALOGE("Error in getting method identifier for setAirplaneModeClbk");
+        goto err;
+    }
+
+    g_setFreeformLaunchMethod = env->GetMethodID(g_bstCommandLoopClass, "setFreeformLaunchClbk", "(Z)V");
+    if (g_setFreeformLaunchMethod == NULL) {
+        ALOGE("Error in getting method identifier for setFreeformLaunchClbk");
         goto err;
     }
 

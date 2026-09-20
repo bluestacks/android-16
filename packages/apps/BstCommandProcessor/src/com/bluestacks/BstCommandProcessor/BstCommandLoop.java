@@ -1302,6 +1302,22 @@ public class BstCommandLoop {
         SystemProperties.set("bst.airplane_mode_active", enable ? "1" : "0");
     }
 
+    private void setFreeformLaunchClbk(boolean enable) {
+        Log.d(TAG, "setFreeformLaunchClbk enable : " + enable);
+        SystemProperties.set("bst.freeform_launch", enable ? "1" : "0");
+        // The desktop taskbar gate follows the window mode switch.
+        SystemProperties.set("bst.hide_taskbar", enable ? "1" : "0");
+        // Kick the AOSP launcher so its taskbar re-evaluates the gates now.
+        try {
+            java.lang.Process p = Runtime.getRuntime().exec(new String[]{
+                    "am", "force-stop", "com.android.launcher3"});
+            p.waitFor();
+        } catch (Exception e) {
+            Log.e(TAG, "force-stop launcher3: " + e.getMessage());
+        }
+    }
+
+
     private void startRecordingClbk(boolean start) {
         Log.d(TAG, "startRecordingClbk start : " + start);
         SystemProperties.set("bst.config.getevents", start ? "1" : "0");
