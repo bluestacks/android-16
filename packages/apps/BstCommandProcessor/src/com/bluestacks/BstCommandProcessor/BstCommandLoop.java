@@ -1305,17 +1305,19 @@ public class BstCommandLoop {
     private void setFreeformLaunchClbk(boolean enable) {
         Log.d(TAG, "setFreeformLaunchClbk enable : " + enable);
         SystemProperties.set("bst.freeform_launch", enable ? "1" : "0");
-        // The desktop taskbar gate follows the window mode switch.
         SystemProperties.set("bst.hide_taskbar", enable ? "1" : "0");
-        // Kick the AOSP launcher so its taskbar re-evaluates the gates now.
+        // Send broadcast for Launcher3 to do the full Clear All sequence;
+        // receiver handles desk removal, task cleanup, and self-restart.
         try {
-            java.lang.Process p = Runtime.getRuntime().exec(new String[]{
-                    "am", "force-stop", "com.android.launcher3"});
-            p.waitFor();
+            Intent clearIntent = new Intent("com.bluestacks.action.CLEAR_DESKS");
+            clearIntent.setPackage("com.android.launcher3");
+            mContext.sendBroadcast(clearIntent);
         } catch (Exception e) {
-            Log.e(TAG, "force-stop launcher3: " + e.getMessage());
+            Log.e(TAG, "CLEAR_DESKS: " + e.getMessage());
         }
     }
+
+
 
 
     private void startRecordingClbk(boolean start) {
