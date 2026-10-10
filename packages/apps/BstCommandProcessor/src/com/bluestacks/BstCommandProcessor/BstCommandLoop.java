@@ -746,6 +746,13 @@ public class BstCommandLoop {
         intent.setComponent(new ComponentName("com.uncube.launcher3", "com.bluestacks.launcher.receivers.BstAppInstallStartStopReceiver"));
         intent.putExtra("SHOW_INSTALL_LOADER", isInstalling);
         BstCommandProcessorApplication.getInstance().getAppContext().sendBroadcastAsUser(intent, Process.myUserHandle());
+
+        // POL-148: same ping for the Polaris launcher (the bst-v16 home), package-scoped for its runtime
+        // receiver. Sent before _bstInstallApk, so it also covers XAPK extraction, which has no session yet.
+        Intent polaris = new Intent("com.bluestacks.action.SHOW_INSTALL_VIEW");
+        polaris.setPackage("com.bluestacks.polaris");
+        polaris.putExtra("SHOW_INSTALL_LOADER", isInstalling);
+        BstCommandProcessorApplication.getInstance().getAppContext().sendBroadcastAsUser(polaris, Process.myUserHandle());
     }
 
     public void sendShowHideAppInLauncher(int show, String pkgName) {
