@@ -3,7 +3,6 @@ package com.bluestacks.BstCommandProcessor;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.ActivityManager;
-import android.app.ActivityTaskManager;
 import android.app.ActivityManagerNative;
 import android.app.AlarmManager;
 import android.app.IActivityManager;
@@ -3130,9 +3129,8 @@ public class BstCommandLoop {
             // Now, remove the tasks after the iteration is complete
             for (Integer taskId : tasksToRemove) {
                 if (DBG) Log.d(TAG, "Calling removetask for pkg:" + pkgName + " ,taskId:" + taskId);
-                // A16: removeTaskWrapper was an A13 BlueStacks addition; AOSP exposes
-                // ActivityTaskManager.removeTask(int) (uid system holds MANAGE_ACTIVITY_TASKS).
-                ActivityTaskManager.getInstance().removeTask(taskId);
+                // A13: isBstRequest kills the process even while the task is still foreground.
+                mActivityManager.removeTaskWrapper(taskId, true);
             }
 
             if (!isInRunningTaskstack) {
