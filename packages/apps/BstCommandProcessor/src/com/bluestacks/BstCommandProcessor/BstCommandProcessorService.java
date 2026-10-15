@@ -595,6 +595,20 @@ public class BstCommandProcessorService extends Service {
             Log.w(TAG, "setBstLocation: skipping test provider location for (0,0)");
         } else {
             mLocationManager.setTestProviderLocation(LocationManager.NETWORK_PROVIDER, nwLocation);
+            // BS-A16: also mock GPS so GPSTest/Maps (gps/fused) see the same
+            // coordinates as the cloud result, not the Cuttlefish default.
+            Location gpsLocation = new Location(LocationManager.GPS_PROVIDER);
+            mLocationManager.addTestProvider(LocationManager.GPS_PROVIDER,
+                    false, true, false, false, true, true, true,
+                    Criteria.POWER_LOW, Criteria.ACCURACY_FINE);
+            mLocationManager.setTestProviderEnabled(LocationManager.GPS_PROVIDER, true);
+            gpsLocation.setLatitude(latitude);
+            gpsLocation.setLongitude(longitude);
+            gpsLocation.setAltitude(4);
+            gpsLocation.setAccuracy(Criteria.ACCURACY_FINE);
+            gpsLocation.setTime(System.currentTimeMillis());
+            gpsLocation.setElapsedRealtimeNanos(System.nanoTime());
+            mLocationManager.setTestProviderLocation(LocationManager.GPS_PROVIDER, gpsLocation);
         }
         saveLocationDataToSharedPrefs(data);
     }
